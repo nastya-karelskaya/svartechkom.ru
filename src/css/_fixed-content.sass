@@ -2,11 +2,13 @@
     position: fixed
     bottom: 0
     top: 0
-    margin-top: 15px
-    .header 
+    margin-top: 2vh
+
+    .header
+      height: 13vh 
 
       background-color: $dark
-      padding: 32px 40px 32px 40px 
+      // padding: 20px 40px 20px 40px 
 
       -webkit-box-shadow: 0px 0px 34px 0px rgba(55,55,56,1)
       -moz-box-shadow: 0px 0px 34px 0px rgba(55,55,56,1)
@@ -29,20 +31,30 @@
           color: $white
       
     .menu
-      margin-top: 20px
+      height: 81vh
+      margin-top: 2vh
       background-color: #050505
       text-align: center
-      padding: 40px 10px
+      padding: 5vh 10px
+      display: flex
+      flex-direction: column
+      align-content: space-between
+      justify-content: space-between
 
       &-wrapper 
         
         
 
       &-item
-        margin-bottom: 70px
+        // height: 16vh
+        // padding: 3vh 0
+        // margin-bottom: 3vh
         &:last-child 
-          margin-bottom: 0
+          // margin-bottom: 0
         &__icon
+          // height: 6vh
+          img 
+            max-height: 5vh
         &__txt
           margin-top: 10px
           color: $white
