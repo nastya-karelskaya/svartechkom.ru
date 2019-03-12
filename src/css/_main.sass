@@ -1,85 +1,94 @@
 .page
-  //background: $dark url('../images/main/main.jpg') center no-repeat
-
-  &::before 
-    content: ''
-    width: 100%
-    height: 100%
-    position: absolute
-    top: 0
-    left: 0
-    background-color: $dark
-    opacity: .6
-    
-
+ 
+  .empty
 
   .content
-    margin-top: 150px
-    padding: 0px 40px
 
-    .main 
-      padding: 55px 0px 75px 0px
-      &-title
+
+  
+  .main 
+    // 
+    padding: 100px 0px 75px 0px
+    background: $dark url('../images/main/main.jpg') center no-repeat
+
+    position: relative
+
+    &::before 
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background-color: $dark
+      opacity: .6
+    &-title
+      margin-top: 35px
+
+      h1
         color: $white
         font-family: 'Russo One', 'san-serif' 
         font-size: 48px
         text-align: left
         text-transform: uppercase
         letter-spacing: 3px
-        &__part
-          font-size: 24px
-          display: block
-          margin-top: 32px
-          margin-left: 20%
+
+      &__part
+        font-size: 24px
+        display: block
+        margin-top: 25px
+        text-align: center
+        
+        &:last-child
           
-          &:last-child
-            margin-left: 65%
+          text-align: right
 
-      &-txt
-        color: $white
+    &-txt
+      color: $white
 
-        &__title 
-          font-weight: 500
+      &__title 
+        font-weight: 500
 
-        &__descr
-          margin-top: 25px
-
-        &__block
-          margin-top: 70px
-          display: flex
-          flex-direction: row
-
-          .block-descr
-            margin-left: 30px
-            ul
-              list-style: none
-              li
-                list-style: none
-
-      &-img 
-        text-align: right
+      &__descr
         margin-top: 25px
 
+      &__block
+        margin-top: 70px
+        display: flex
+        flex-direction: row
 
-    .services
-      background-color: #ffffff
+        .block-img
+          border: 2px solid $blue
+          -webkit-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) //55,55,56,1
+          -moz-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
+          box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
+
+        .block-descr
+          margin-left: 30px
+          ul
+            list-style: none
+            li
+              list-style: none
+
+    &-img 
+      text-align: right
+      margin-top: 30px
+      
+      img 
+        width: 80%
+        border: 2px solid $blue
+        // width: 80%
+        -webkit-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) //55,55,56,1
+        -moz-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
+        box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
+
+
+  /************* SERVICES ***********/
+  .services
+    background-color: #ffffff
       
 
-  .footer
-    margin: 20px 0px
-    background-color: $dark 
-    padding: 32px 40px 32px 40px 
 
-    &-copyright 
-      color: $white
-      padding-left: 30px
-      text-align: left
+
+
   
-
-    &-politics
-      text-align: right
-      padding-right: 20px
-      color: $white
-
-
-
