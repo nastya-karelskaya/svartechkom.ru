@@ -25,7 +25,7 @@ body .page .content {
 }
 
 body .page .section {
-  padding: 75px 0px;
+  padding: 70px 0px;
 }
 
 body .page .section .title {
@@ -53,12 +53,11 @@ body .page .section .title h2 {
   text-transform: uppercase;
 }
 
-body .page .section .title img {
-  -webkit-box-shadow: 0px 0px 34px 0px #050505;
-  box-shadow: 0px 0px 34px 0px #050505;
+body .page .section-dark {
+  padding: 75px 0px;
 }
 
-body .page .section-white .title h2 {
+body .page .section-dark .title h2 {
   color: #ffffff;
   font-size: 29px;
 }
@@ -441,11 +440,12 @@ body .page .footer-politics {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-family: 'Russo One';
+  font-family: Russo One;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  font-weight: normal;
   background-color: #0096ff;
 }
 
@@ -479,6 +479,31 @@ body .page .footer-politics {
   opacity: .6;
 }
 
+.objects-slider {
+  position: relative;
+  margin-top: 35px;
+}
+
+.objects-slider__left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.objects-slider__left img {
+  height: 37px;
+}
+
+.objects-slider__right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.objects-slider__right img {
+  height: 37px;
+}
+
 .objects-slider__item {
   height: 354px;
   width: 354px;
@@ -486,9 +511,10 @@ body .page .footer-politics {
   background: url("../images/objects/arena.jpeg");
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
-.objects-slider__item::before {
+.objects-slider__item::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -505,14 +531,54 @@ body .page .footer-politics {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  max-width: 207px;
+  background-color: rgba(0, 150, 255, 0.9);
+  padding: 20px 30px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.objects-slider__item .slider-item__button {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
   width: 205px;
-  background-color: #0096ff;
+}
+
+.objects-slider__item .slider-item__button button {
+  width: 100%;
   padding: 20px 0px;
+  padding-right: 35px;
+  display: block;
+  margin: 0 auto;
+  font-family: Russo One;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 2px solid #0096ff;
+}
+
+.objects-slider__item .slider-item__button button:hover {
+  color: #0096ff;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.objects-slider__item .slider-item__button img {
+  position: absolute;
+  top: 17px;
+  right: 25px;
 }
 
 .objects-slider .slider-wrapper {
   text-align: center;
-  padding: 35px 45px;
+  padding: 70px 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +591,97 @@ body .page .footer-politics {
           justify-content: space-between;
 }
 
-.objects-slider .slider-wrapper .objects-slider__item.active-item::before {
-  opacity: 0;
+.objects-slider .slider-wrapper .objects-slider__item.active-item::after {
+  display: none;
+}
+
+.objects-slider .slider-wrapper .objects-slider__item.active-item .slider-item__button {
+  position: relative;
+}
+
+.reasons {
+  background: url("../images/reasons/reasons-back.png") no-repeat center;
+}
+
+.reasons-rowone__item, .reasons-rowtwo__item, .reasons-rowthree__item {
+  display: inline-block;
+  text-align: center;
+}
+
+.reasons-rowone {
+  margin-top: 70px;
+}
+
+.reasons-rowone__item {
+  width: 49%;
+}
+
+.reasons-rowone__item:first-child {
+  padding-right: 20%;
+}
+
+.reasons-rowone__item:last-child {
+  padding-left: 20%;
+}
+
+.reasons-rowone__item .item__title {
+  margin-top: 35px;
+  font-family: Russo One;
+  font-size: 20px;
+  color: #050505;
+}
+
+.reasons-rowtwo {
+  margin-top: 50px;
+}
+
+.reasons-rowtwo__item {
+  width: 99%;
+}
+
+.reasons-rowtwo__item .item__title {
+  margin-top: 35px;
+  font-family: Russo One;
+  font-size: 20px;
+  color: #050505;
+}
+
+.reasons-rowthree {
+  margin-top: 50px;
+}
+
+.reasons-rowthree__item {
+  width: 49%;
+}
+
+.reasons-rowthree__item:first-child {
+  padding-right: 20%;
+}
+
+.reasons-rowthree__item:last-child {
+  padding-left: 20%;
+}
+
+.reasons-rowthree__item .item__title {
+  margin-top: 35px;
+  font-family: Russo One;
+  font-size: 18px;
+  color: #050505;
+}
+
+.reviews {
+  background: url("../images/reviews/reviews-back.jpeg") no-repeat center;
+  position: relative;
+}
+
+.reviews::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #050505;
+  opacity: .6;
 }
 /*# sourceMappingURL=styles.css.map */
