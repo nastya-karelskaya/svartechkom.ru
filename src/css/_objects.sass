@@ -1,15 +1,15 @@
 .objects
   background: url('../images/objects/objects-back.jpeg') no-repeat center
-  position: relative
-  &::before 
-    content: ''
-    width: 100%
-    height: 100%
-    position: absolute
-    top: 0
-    left: 0
-    background-color: $dark
-    opacity: .6
+  
+  // &::before 
+  //   content: ''
+  //   width: 100%
+  //   height: 100%
+  //   position: absolute
+  //   top: 0
+  //   left: 0
+  //   background-color: $dark
+  //   opacity: .6
 
   &-slider
     position: relative 
@@ -37,7 +37,7 @@
       position: relative
 
       text-align: center
-      &::after 
+      &::before
         content: ''
         width: 100%
         height: 100%
@@ -62,56 +62,55 @@
           display: inline-block
           margin: 0 auto
           margin-top: 120px
-          // position: relative
+          position: relative
 
           // position: absolute
           // top: 0 
           // left: 80px
 
         &__button
-          display: inline-block
-          margin: 0 auto
-          margin-top: 60px
-          position: relative
+          position: relative 
+          margin-top: 60px 
+          
           width: 205px
           
           
           
-          button
-            width: 100%
-            padding: 20px 0px
-            padding-right: 35px
-            display: block
-            margin: 0 auto
+        //   button
+        //     width: 100%
+        //     padding: 20px 0px
+        //     padding-right: 35px
+        //     display: block
+        //     margin: 0 auto
 
-            font-family: Russo One
-            font-size: 14px
-            text-transform: uppercase
-            color: $white
-            text-align: center
-            letter-spacing: 1px
-            background-color: rgba(0,0,0,.85)
-            // opacity: .7
+        //     font-family: Russo One
+        //     font-size: 14px
+        //     text-transform: uppercase
+        //     color: $white
+        //     text-align: center
+        //     letter-spacing: 1px
+        //     background-color: rgba(0,0,0,.85)
+        //     // opacity: .7
 
-            border: 2px solid $blue
-            &:hover 
-              color: $blue
-              cursor: pointer
-              transition: color .3s
-            // &::after
-            //   content: ''
-            //   position: absolute
-            //   top: 0
-            //   left: 0
-            //   width: 100%
-            //   height: 100%
-            //   background-color: $dark
-            //   opacity: .5
+        //     border: 2px solid $blue
+        //     &:hover 
+        //       color: $blue
+        //       cursor: pointer
+        //       transition: color .3s
+        //     // &::after
+        //     //   content: ''
+        //     //   position: absolute
+        //     //   top: 0
+        //     //   left: 0
+        //     //   width: 100%
+        //     //   height: 100%
+        //     //   background-color: $dark
+        //     //   opacity: .5
 
-          img 
-            position: absolute
-            top: 17px
-            right: 25px
+        //   img 
+        //     position: absolute
+        //     top: 17px
+        //     right: 25px
 
     .slider-wrapper
       text-align: center
