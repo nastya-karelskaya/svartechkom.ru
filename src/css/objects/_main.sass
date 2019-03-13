@@ -1,0 +1,179 @@
+.objects
+  
+  &-descr
+    font-family: Roboto Mono 
+    font-size: 15px
+    color: $dark
+    text-align: left
+    margin-top: 10px
+    margin-bottom: 50px
+
+  &-grid
+    position: relative 
+    margin-bottom: 55px
+    display: flex 
+    flex-direction: row 
+    justify-content: space-between
+    
+
+    &__item
+      height: 354px
+      width: 30%//354px
+      background-color: $dark
+      background: url('../images/index/objects/arena.jpeg')
+
+      display: inline-block
+      position: relative
+
+      text-align: center
+
+      &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: $dark
+        opacity: .4
+      
+
+      .grid-item
+        
+        &__title
+          font-family: Russo One 
+          font-size: 16px
+          color: $white
+          text-align: center
+          text-transform: uppercase
+          max-width: 207px
+          background-color: rgba(0,150,255, .90)//#0096ff
+          padding: 20px 30px
+          display: inline-block
+          margin: 0 auto
+          margin-top: 120px
+          position: relative
+
+          // position: absolute
+          // top: 0 
+          // left: 80px
+
+        &__button
+          position: relative 
+          margin-top: 60px 
+          
+          width: 205px
+          
+          
+          
+        //   button
+        //     width: 100%
+        //     padding: 20px 0px
+        //     padding-right: 35px
+        //     display: block
+        //     margin: 0 auto
+
+        //     font-family: Russo One
+        //     font-size: 14px
+        //     text-transform: uppercase
+        //     color: $white
+        //     text-align: center
+        //     letter-spacing: 1px
+        //     background-color: rgba(0,0,0,.85)
+        //     // opacity: .7
+
+        //     border: 2px solid $blue
+        //     &:hover 
+        //       color: $blue
+        //       cursor: pointer
+        //       transition: color .3s
+        //     // &::after
+        //     //   content: ''
+        //     //   position: absolute
+        //     //   top: 0
+        //     //   left: 0
+        //     //   width: 100%
+        //     //   height: 100%
+        //     //   background-color: $dark
+        //     //   opacity: .5
+
+        //   img 
+        //     position: absolute
+        //     top: 17px
+        //     right: 25px
+
+    .grid-wrapper
+      text-align: center
+      padding: 70px 45px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      .objects-grid__item.active-item
+        &::after
+          display: none
+
+        .grid-item__button
+          position: relative
+
+
+  &-paginator 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .paginator
+      &-left, &-center, &-right
+        &__wrapper 
+          width: 30% 
+
+        &__digit
+          background-color: $blue
+          height: 70px
+          width: 70px 
+          display: inline-block
+          text-decoration: none
+          &:hover 
+            cursor: pointer
+            
+
+      &-left
+        &__wrapper
+          text-align: right
+        &__digit
+          position: relative
+          img 
+            position: absolute
+            top: 23px
+            left: 25px
+            height: 25px
+          
+
+      &-center
+        &__wrapper
+          text-align: center
+        &__digit
+          color: $white
+          font-family: Russo One
+          font-size: 30px
+          padding-top: 18px
+          
+
+          &.active
+            background-color: $dark
+
+          &:first-child
+            margin-right: 15%
+      
+      &-right
+        &__wrapper
+          text-align: left
+        &__digit
+          position: relative
+          img 
+            position: absolute
+            top: 23px
+            left: 30px
+            height: 25px
+
+
+

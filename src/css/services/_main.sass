@@ -1,8 +1,8 @@
 .services
-  background: url('../images/services/services-back.png') no-repeat center
+  background: url('../images/index/services/services-back.png') no-repeat center
 
-  &-items 
-    margin-top: 50px
+  &-grid 
+    margin-top: 30px
     &__big, &__small
       width: 100%
       
@@ -12,7 +12,7 @@
       height: 215px
       background-color: $dark
       position: relative
-      background-image: url('../images/services/service-bg.jpg') 
+      background-image: url('../images/index/services/service-big.jpeg') 
 
       &::before 
         content: ''
@@ -36,7 +36,7 @@
         width: 32%
         height: 200px
         background-color: $dark
-        background-image: url('../images/services/service-bg.jpg') 
+        background-image: url('../images/index/services/service-small.jpeg') 
 
         display: inline-block
 
@@ -88,6 +88,40 @@
 
         margin-top: -40px
         margin-left: -105px
+
+  &-descr 
+    display: flex
+    flex-direction: row
+    margin-top: 15px
+    &__one, &__two
       
+      display: inline-block
+      font-family: Roboto Mono
+      font-size: 15px 
+
+
+    &__one 
+      width: 45%
+      .descr
+        &-one
+          
+          &__txt
+            
+            ul 
+              margin-top: 20px
+              list-style: none
+              li 
+                list-style: none
+                img 
+                  height: 13px
+
+    &__two
+      width: 54%
+      .descr
+        &-two
+          &__txt
+            margin-bottom: 40px
+
+
 
 

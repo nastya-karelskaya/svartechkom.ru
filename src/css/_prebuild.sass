@@ -9,9 +9,226 @@ body
     vertical-align: middle
     // margin: 0 auto
 
+  .fixed-header
+    position: fixed
+    // bottom: 0
+    top: 0
+    margin-top: 1vh
+    z-index: 100
+    height: 13.5vh 
+    min-height: 90px
+    // max-height: 130px
+    
+
+    .header
+      height: 100%
+      padding: 2vh 20px 2vh 0px
+      
+      display: flex
+      flex-direction: row
+      
+      align-items: center
+      background-color: $dark
+      // padding: 20px 40px 20px 40px 
+
+      -webkit-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1) //55,55,56,1
+      -moz-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
+      box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
+
+      &-wrapper
+        height: 100%
+      
+
+      
+      
+      &-contacts
+        display: flex
+        flex-direction: row
+        // justify-content: space-between
+        align-items: baseline
+        width: 55%
+
+      &-other
+        width: 28%
+        display: flex
+        flex-direction: row
+        // justify-content: space-between
+        align-items: center
+        justify-content: space-between
+
+      &-logo 
+        width: 16%
+        text-align: center
+        padding-right: 2.3%
+        a
+          color: $white
+          font-weight: bold
+          text-transform: uppercase
+          text-decoration: none
+          &:hover 
+            text-decoration: underline
+        
+        
+
+      &-phones, &-address, &-mail 
+        display: inline-block
+        &__top 
+          div 
+            display: inline-block
+            font-family: 'Russo One'
+            font-size: 15px
+            color: $white
+            text-align: left
+
+          
+
+        &__bottom 
+          font-size: 14px
+          color: $white
+          letter-spacing: 0.5px
+
+    
+      &-phones
+        &__top
+          img 
+            width: 20px
+        &__bottom 
+          margin-top: 3px
+        
+        
+      &-address
+        margin-left: 12%
+        &__top
+          img 
+            height: 19px
+        &__bottom
+          margin-top: 6px
+          line-height: 16px
+        
+      
+      &-mail 
+        margin-left: 10%
+        margin-top: 2px
+        &__top
+          img 
+            width: 20px
+        &__bottom 
+          margin-top: 3px
+
+      &-search 
+        // display: flex
+        
+        
+        height: 55px
+        position: relative
+        input
+          height: 55px
+          border: 2px solid #0096ff
+          // margin-top: auto
+          // margin-bottom: auto
+          width: 300px
+          background-color: transparent
+          padding-left: 20px
+          padding-right: 20px
+          color: $white
+          
+          
+        a 
+          display: block
+          position: absolute
+          top: 13px
+          right: 32px 
+          img 
+            
+            width: 20px
+
+
+      &-vk 
+        text-align: center
+        
+        img 
+          height: 30px
+    
+
+
+  .fixed-menu
+    height: 82.5vh
+    max-height: 82.5vh
+    margin-top: 16vh
+    max-width: 15.5%
+    min-width: 195px
+    // max-width: 16.666667%
+    z-index: 100
+    position: fixed
+
+    .menu
+      background-color: #050505
+      padding: 3vh 0px
+      // display: flex
+      // flex-direction: column
+      // align-content: space-between
+      // justify-content: space-between
+      text-align: center
+      height: 100%
+
+      -webkit-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1) //55,55,56,1
+      -moz-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
+      box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
+      
+      
+
+      &-item
+        text-align: center
+        height: 15.3vh //(82.5 - 3 - 3) / 5
+        display: flex
+        flex-direction: column
+        align-content: space-around
+        justify-content: center
+        // padding: 3vh 0
+        // margin-bottom: 3vh
+        &:last-child 
+          // margin-bottom: 0
+        &__icon
+          // height: 6vh
+          img 
+            max-height: 5vh
+        &__txt
+          margin-top: 10px
+          padding: 0px 10px
+          a
+            color: $white
+            font-family: 'Russo One', 'san-serif'
+            font-size: 15px
+            text-decoration: none
+            text-transform: uppercase
+            &:hover 
+              color: $blue
+
+          span
+            display: block
+            width: fit-content
+            margin: 0 auto
+            
+              
+
+        &.active
+          background-color: $white
+          -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          a 
+            color: $dark
+            border-bottom: 2px solid $blue
+            font-size: 16px
+          span
+            border-bottom: 2px solid $blue
+            margin-top: 5px
+
+
+
   .page
-    // padding-top: 15px
-    max-width: 1620px
+    padding-top: 0
+    max-width: 1660px
     margin: 0 auto
     position: relative
     height: 100% 
@@ -27,6 +244,9 @@ body
     .content 
       padding-left: 16%
       padding-right: 20px
+
+
+    /******* SECTIONS *******/
 
     .section 
       padding: 70px 0px
@@ -50,7 +270,8 @@ body
           // -webkit-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) //55,55,56,1
           // -moz-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
           // box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) 
-
+      &-first 
+        padding-top: 170px !important
       &-dark
         padding: 75px 0px
         
@@ -69,6 +290,7 @@ body
             font-size: 29px 
 
 
+    /*********** BUTTONS *********/
     .button
       display: inline-block
       // margin: 0 auto
@@ -108,25 +330,33 @@ body
 
 
 
-    /************* FOOOTER ***********/
-    .footer
-      margin: 20px 0px
-      background-color: $dark 
-      padding: 32px 40px 32px 40px 
-      -webkit-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) //55,55,56,1
-      -moz-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
-      box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
-
-      &-copyright 
-        color: $white
-        padding-left: 30px
-        text-align: left
+  /************* FOOOTER ***********/
+  .footer
+    margin: 20px 0px 1vh 0px
+    height: 8.5vh
+    min-height: 70px
     
+    background-color: $dark 
+    padding: 22px 40px 22px 16% 
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1) //55,55,56,1
+    -moz-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
+    box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
 
-      &-politics
-        text-align: right
-        padding-right: 20px
+    &-copyright 
+      color: $white
+      padding-left: 30px
+      text-align: left
+  
+
+    &-politics
+      text-align: right
+      padding-right: 20px
+      a
+        text-decoration: none
         color: $white
+        &:hover 
+          color: $blue
+          text-decoration: underline
 
 
 
