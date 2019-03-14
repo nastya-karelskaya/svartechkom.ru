@@ -341,12 +341,13 @@ body .page .button {
   display: inline-block;
 }
 
-body .page .button button {
+body .page .button button, body .page .button a {
   width: 100%;
   padding: 17px 0px;
   padding-right: 35px;
   display: block;
   margin: 0 auto;
+  text-decoration: none;
   font-family: Russo One;
   font-size: 14px;
   text-transform: uppercase;
@@ -357,7 +358,7 @@ body .page .button button {
   border: 2px solid #0096ff;
 }
 
-body .page .button button:hover {
+body .page .button button:hover, body .page .button a:hover {
   color: #0096ff;
   cursor: pointer;
   -webkit-transition: color .3s;
