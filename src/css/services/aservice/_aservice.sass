@@ -1,0 +1,303 @@
+.aservice
+  &-main 
+    // 
+    padding: 0px 0px 95px 0px !important
+    background: $dark url('../images/index/main/main.jpg') center no-repeat
+    background-size: cover
+
+    position: relative
+
+    // &::before 
+    //   content: ''
+    //   width: 100%
+    //   height: 100%
+    //   position: absolute
+    //   top: 0
+    //   left: 0
+    //   background-color: $dark
+    //   opacity: .5
+    &-title
+      // margin-top: 35px
+
+      h1
+        color: $white
+        font-family: 'Russo One', 'san-serif' 
+        font-size: 30px
+        // text-align: left
+        // text-transform: uppercase
+        // letter-spacing: 3px
+        // margin: 0
+        margin-top: 20px
+
+    &__wrapper
+      display: flex 
+      flex-direction: row
+      margin-top: 40px
+
+     
+    &__left, &__right
+      color: $white
+      font-family: 'Roboto Mono', 'san-serif' 
+      
+
+       
+    &__left
+      width: 49%
+      
+      .main-left
+        &__txt
+        &__list
+          list-style: none
+          li
+            display: flex 
+            flex-direction: row
+            align-items: center
+            margin-top: 5px
+            img 
+              width: 14px
+              height: 14px
+
+            div
+              margin-left: 10px
+
+
+
+    &__right
+      width: 50%
+      padding-left: 20px
+      .main-right__txt
+        &:last-child
+          margin-top: 35px
+
+
+      
+
+  &-objects
+    background: url('../images/services/aservice/aservice-objects-back.png') center no-repeat
+
+    &-slider
+      position: relative 
+      margin-top: 35px
+      &__left
+        position: absolute
+        left: 35px
+        top: -10px
+        img 
+          height: 37px
+      &__right
+        position: absolute
+        right: 35px
+        bottom: 0
+        img 
+          height: 37px
+
+      &__left, &__right
+        &:hover
+          cursor: pointer 
+
+
+      &__item
+        // height: 354px
+        // width: 354px
+        
+        display: flex
+        flex-direction: row
+        
+        
+
+        .slider-item
+
+          &__photo
+          
+          
+          &__title
+            font-family: Russo One 
+            font-size: 22px
+            color: $blue
+            text-align: left
+            text-transform: uppercase
+            
+            
+            // margin-top: 120px
+            
+
+            // position: absolute
+            // top: 0 
+            // left: 80px
+
+          &__txt 
+            margin-left: 25px
+            margin-top: 10px
+
+          &__descr
+            margin-top: 18px
+            text-align: left
+
+          &__button
+            position: relative 
+            margin-top: 27px 
+            display: block !important
+            width: 205px
+            
+            
+            
+          //   button
+          //     width: 100%
+          //     padding: 20px 0px
+          //     padding-right: 35px
+          //     display: block
+          //     margin: 0 auto
+
+          //     font-family: Russo One
+          //     font-size: 14px
+          //     text-transform: uppercase
+          //     color: $white
+          //     text-align: center
+          //     letter-spacing: 1px
+          //     background-color: rgba(0,0,0,.85)
+          //     // opacity: .7
+
+          //     border: 2px solid $blue
+          //     &:hover 
+          //       color: $blue
+          //       cursor: pointer
+          //       transition: color .3s
+          //     // &::after
+          //     //   content: ''
+          //     //   position: absolute
+          //     //   top: 0
+          //     //   left: 0
+          //     //   width: 100%
+          //     //   height: 100%
+          //     //   background-color: $dark
+          //     //   opacity: .5
+
+          //   img 
+          //     position: absolute
+          //     top: 17px
+          //     right: 25px
+
+      .aservice-slider-wrapper
+        margin-top: 10px
+        text-align: center
+        padding: 50px 95px 50px 85px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .aservice-objects-slider__item
+          &:last-child 
+            margin-left: 30px
+            
+          &.active-item
+            &::after
+              display: none
+
+            .slider-item__button
+              position: relative
+
+
+
+
+  &-order
+    background: url('../images/services/aservice/aservice-order-back.jpeg') no-repeat center
+
+    &-subtitle 
+      margin-top: 30px
+      font-family: Roboto Mono
+      font-size: 15px
+      color: $white
+      
+
+    &-form-wrapper
+      width: 100%
+      display: flex 
+      flex-direction: row 
+      justify-content: space-between
+      .form 
+        margin-top: 40px
+        form 
+          padding: 35px 30px 45px 30px
+          border: 2px solid $blue
+
+          display: flex 
+          flex-direction: row
+          justify-content: space-between
+
+          position: relative
+
+
+          fieldset 
+            border: none
+            padding: 0
+            margin: 0
+
+          input, textarea
+            width: 330px
+            border: 2px solid $blue
+            display: block 
+
+            margin-top: 12px
+            background-color: $dark
+
+          input
+            height: 55px
+            padding: 0px 20px
+
+          label
+            display: block
+            color: $white
+
+        &-phone 
+          margin-top: 40px
+
+        &-txt
+          margin-left: 30px
+
+          label
+            
+
+          
+
+          textarea
+            padding: 15px 0px 20px 20px
+            height: 182px
+            resize: none
+            
+
+
+
+        &-button
+          margin: 0 auto
+          position: absolute
+          bottom: -31px
+          right: 31px
+          width: 195px
+
+          button 
+            // background-color: $white !important
+            color: $white !important
+            border: 2px solid $blue !important
+
+            
+
+          
+
+          
+        
+
+
+
+            
+
+        &-name
+
+        &-phone
+
+
+      .form-photo
+        border: 2px solid $blue
+
+
+    
+    

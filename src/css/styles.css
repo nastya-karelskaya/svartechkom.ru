@@ -332,7 +332,7 @@ body .page .section-dark::before {
   opacity: .6;
 }
 
-body .page .section-dark .title h2 {
+body .page .section-dark .title h2, body .page .section-dark .title h1 {
   color: #ffffff;
   font-size: 29px;
 }
@@ -1924,5 +1924,271 @@ body .footer-politics a:hover {
 .anobject-stages .modal-button .button img {
   right: 20px;
   top: 19px;
+}
+
+.aservice-main {
+  padding: 0px 0px 95px 0px !important;
+  background: #050505 url("../images/index/main/main.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.aservice-main-title h1 {
+  color: #ffffff;
+  font-family: 'Russo One', 'san-serif';
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.aservice-main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 40px;
+}
+
+.aservice-main__left, .aservice-main__right {
+  color: #ffffff;
+  font-family: 'Roboto Mono', 'san-serif';
+}
+
+.aservice-main__left {
+  width: 49%;
+}
+
+.aservice-main__left .main-left__list {
+  list-style: none;
+}
+
+.aservice-main__left .main-left__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.aservice-main__left .main-left__list li img {
+  width: 14px;
+  height: 14px;
+}
+
+.aservice-main__left .main-left__list li div {
+  margin-left: 10px;
+}
+
+.aservice-main__right {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.aservice-main__right .main-right__txt:last-child {
+  margin-top: 35px;
+}
+
+.aservice-objects {
+  background: url("../images/services/aservice/aservice-objects-back.png") center no-repeat;
+}
+
+.aservice-objects-slider {
+  position: relative;
+  margin-top: 35px;
+}
+
+.aservice-objects-slider__left {
+  position: absolute;
+  left: 35px;
+  top: -10px;
+}
+
+.aservice-objects-slider__left img {
+  height: 37px;
+}
+
+.aservice-objects-slider__right {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+
+.aservice-objects-slider__right img {
+  height: 37px;
+}
+
+.aservice-objects-slider__left:hover, .aservice-objects-slider__right:hover {
+  cursor: pointer;
+}
+
+.aservice-objects-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aservice-objects-slider__item .slider-item__title {
+  font-family: Russo One;
+  font-size: 22px;
+  color: #0096ff;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.aservice-objects-slider__item .slider-item__txt {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.aservice-objects-slider__item .slider-item__descr {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.aservice-objects-slider__item .slider-item__button {
+  position: relative;
+  margin-top: 27px;
+  display: block !important;
+  width: 205px;
+}
+
+.aservice-objects-slider .aservice-slider-wrapper {
+  margin-top: 10px;
+  text-align: center;
+  padding: 50px 95px 50px 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aservice-objects-slider .aservice-slider-wrapper .aservice-objects-slider__item:last-child {
+  margin-left: 30px;
+}
+
+.aservice-objects-slider .aservice-slider-wrapper .aservice-objects-slider__item.active-item::after {
+  display: none;
+}
+
+.aservice-objects-slider .aservice-slider-wrapper .aservice-objects-slider__item.active-item .slider-item__button {
+  position: relative;
+}
+
+.aservice-order {
+  background: url("../images/services/aservice/aservice-order-back.jpeg") no-repeat center;
+}
+
+.aservice-order-subtitle {
+  margin-top: 30px;
+  font-family: Roboto Mono;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.aservice-order-form-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aservice-order-form-wrapper .form {
+  margin-top: 40px;
+}
+
+.aservice-order-form-wrapper .form form {
+  padding: 35px 30px 45px 30px;
+  border: 2px solid #0096ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.aservice-order-form-wrapper .form form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aservice-order-form-wrapper .form form input, .aservice-order-form-wrapper .form form textarea {
+  width: 330px;
+  border: 2px solid #0096ff;
+  display: block;
+  margin-top: 12px;
+  background-color: #050505;
+}
+
+.aservice-order-form-wrapper .form form input {
+  height: 55px;
+  padding: 0px 20px;
+}
+
+.aservice-order-form-wrapper .form form label {
+  display: block;
+  color: #ffffff;
+}
+
+.aservice-order-form-wrapper .form-phone {
+  margin-top: 40px;
+}
+
+.aservice-order-form-wrapper .form-txt {
+  margin-left: 30px;
+}
+
+.aservice-order-form-wrapper .form-txt textarea {
+  padding: 15px 0px 20px 20px;
+  height: 182px;
+  resize: none;
+}
+
+.aservice-order-form-wrapper .form-button {
+  margin: 0 auto;
+  position: absolute;
+  bottom: -31px;
+  right: 31px;
+  width: 195px;
+}
+
+.aservice-order-form-wrapper .form-button button {
+  color: #ffffff !important;
+  border: 2px solid #0096ff !important;
+}
+
+.aservice-order-form-wrapper .form-photo {
+  border: 2px solid #0096ff;
 }
 /*# sourceMappingURL=styles.css.map */
