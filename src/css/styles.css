@@ -1,9 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', 'Helvetica', sans-serif;
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   /************* FOOOTER ***********/
 }
 
@@ -1680,5 +1685,243 @@ body .footer-politics a:hover {
 
 .about-right__photo img {
   width: 100%;
+}
+
+.anobject {
+  background: #050505 url("../images/services/anobject/anobject-back.jpeg") center no-repeat;
+  position: relative;
+}
+
+.anobject__path, .anobject__subtitle, .anobject__descr {
+  font-family: Roboto Mono, san-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.anobject__title {
+  font-family: Russo One, san-serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.anobject__subtitle {
+  font-size: 15px;
+}
+
+.anobject__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 26px;
+}
+
+.anobject__descr {
+  font-size: 15px;
+  margin-left: 33px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.anobject__descr .descr-lists {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.anobject__descr .descr-lists ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.anobject__descr .descr-lists ul li img {
+  width: 14px;
+  display: inline-block;
+}
+
+.anobject__descr .descr-lists ul li div {
+  display: inline-block;
+}
+
+.anobject__descr .descr-volume, .anobject__descr .descr-time, .anobject__descr .descr-year, .anobject__descr .descr-review {
+  margin-bottom: 22px;
+}
+
+.anobject__descr .descr-volume:last-child, .anobject__descr .descr-time:last-child, .anobject__descr .descr-year:last-child, .anobject__descr .descr-review:last-child {
+  margin-bottom: 0;
+}
+
+.anobject__descr .descr-volume span, .anobject__descr .descr-time span, .anobject__descr .descr-year span, .anobject__descr .descr-review span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #2e96e0;
+  text-decoration: underline;
+}
+
+.anobject-stages__first .stages-item__left, .anobject-stages__first .stages-item__right, .anobject-stages__second .stages-item__left, .anobject-stages__second .stages-item__right, .anobject-stages__third .stages-item__left, .anobject-stages__third .stages-item__right, .anobject-stages__fourth .stages-item__left, .anobject-stages__fourth .stages-item__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.anobject-stages__first .stages-item__digit, .anobject-stages__second .stages-item__digit, .anobject-stages__third .stages-item__digit, .anobject-stages__fourth .stages-item__digit {
+  min-width: 130px;
+  height: 130px;
+  background-color: #2da9ff;
+  color: #ffffff;
+  font-family: Russo One, san-serif;
+  font-size: 72px;
+  text-align: center;
+  padding-top: 25px;
+  -webkit-box-shadow: 0px 0px 10px 0px #0096ff;
+  box-shadow: 0px 0px 10px 0px #0096ff;
+}
+
+.anobject-stages__first .stages-item__txt, .anobject-stages__second .stages-item__txt, .anobject-stages__third .stages-item__txt, .anobject-stages__fourth .stages-item__txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+}
+
+.anobject-stages__first .stages-item__title, .anobject-stages__second .stages-item__title, .anobject-stages__third .stages-item__title, .anobject-stages__fourth .stages-item__title {
+  margin-top: 10px;
+  font-family: Russo One, san-serif;
+  color: #2da9ff;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.anobject-stages__first .stages-item__descr, .anobject-stages__second .stages-item__descr, .anobject-stages__third .stages-item__descr, .anobject-stages__fourth .stages-item__descr {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #050505;
+}
+
+.anobject-stages__first .stages-item__slider .slider-item, .anobject-stages__second .stages-item__slider .slider-item, .anobject-stages__third .stages-item__slider .slider-item, .anobject-stages__fourth .stages-item__slider .slider-item {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.anobject-stages__first .stages-item__slider .slider-item::before, .anobject-stages__second .stages-item__slider .slider-item::before, .anobject-stages__third .stages-item__slider .slider-item::before, .anobject-stages__fourth .stages-item__slider .slider-item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #050505;
+  opacity: .6;
+}
+
+.anobject-stages__first .stages-item__slider .slider-item.active, .anobject-stages__second .stages-item__slider .slider-item.active, .anobject-stages__third .stages-item__slider .slider-item.active, .anobject-stages__fourth .stages-item__slider .slider-item.active {
+  border: 2px solid #2da9ff;
+}
+
+.anobject-stages__first .stages-item__slider .slider-item.active::before, .anobject-stages__second .stages-item__slider .slider-item.active::before, .anobject-stages__third .stages-item__slider .slider-item.active::before, .anobject-stages__fourth .stages-item__slider .slider-item.active::before {
+  opacity: 0;
+}
+
+.anobject-stages__first .stages-item__slider .slider-item img, .anobject-stages__second .stages-item__slider .slider-item img, .anobject-stages__third .stages-item__slider .slider-item img, .anobject-stages__fourth .stages-item__slider .slider-item img {
+  width: 100%;
+}
+
+.anobject-stages__first .stages-item__photo, .anobject-stages__second .stages-item__photo, .anobject-stages__third .stages-item__photo, .anobject-stages__fourth .stages-item__photo {
+  width: 502px;
+  height: 340px;
+  margin-left: 9px;
+  border: 2px solid #2da9ff;
+}
+
+.anobject-stages__first .stages-item__photo img, .anobject-stages__second .stages-item__photo img, .anobject-stages__third .stages-item__photo img, .anobject-stages__fourth .stages-item__photo img {
+  width: 100%;
+}
+
+.anobject-stages__first, .anobject-stages__third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 60px;
+}
+
+.anobject-stages__first .stages-item__left, .anobject-stages__third .stages-item__left {
+  width: 45%;
+}
+
+.anobject-stages__first .stages-item__right, .anobject-stages__third .stages-item__right {
+  width: 54%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.anobject-stages__second, .anobject-stages__fourth {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.anobject-stages__second .stages-item__left, .anobject-stages__fourth .stages-item__left {
+  width: 54%;
+  margin-left: 60px;
+}
+
+.anobject-stages__second .stages-item__right, .anobject-stages__fourth .stages-item__right {
+  width: 45%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.anobject-stages .modal-button {
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.anobject-stages .modal-button .button {
+  position: relative;
+}
+
+.anobject-stages .modal-button .button button {
+  background-color: #ffffff;
+  color: #050505;
+  padding: 20px 45px 16px 20px;
+  border-color: #2da9ff;
+}
+
+.anobject-stages .modal-button .button img {
+  right: 20px;
+  top: 19px;
 }
 /*# sourceMappingURL=styles.css.map */

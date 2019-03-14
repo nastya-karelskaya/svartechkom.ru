@@ -1,0 +1,202 @@
+.anobject
+ 
+  background: $dark url('../images/services/anobject/anobject-back.jpeg') center no-repeat
+  position: relative
+
+
+  &__path, &__subtitle, &__descr  
+    font-family: Roboto Mono, san-serif
+    font-size: 14px
+    color: $white
+    text-align: left
+
+  &__title 
+    font-family: Russo One, san-serif
+    font-size: 32px
+    color: $white
+    text-align: left
+
+  &__subtitle 
+    font-size: 15px
+
+  &__wrapper
+    display: flex 
+    flex-direction: row 
+    margin-top: 26px
+
+  &__photo, &__descr
+    //display: inline-block
+
+  &__photo
+    
+
+  &__descr
+    font-size: 15px
+    margin-left: 33px
+    align-self: center
+
+    .descr-txt
+
+    .descr
+      &-lists
+        margin-bottom: 25px
+        display: flex 
+        flex-direction: row 
+
+        ul 
+          list-style: none
+          padding-left: 20px
+          li 
+            img 
+              width: 14px
+              display: inline-block
+            div
+              display: inline-block 
+      
+      &-volume, &-time, &-year, &-review
+        margin-bottom: 22px
+        &:last-child 
+          margin-bottom: 0
+        span 
+          font-weight: bold
+          font-size: 16px
+          color: $blue-lt
+          text-decoration: underline
+
+      &-volume
+
+      &-time 
+      
+      &-year 
+
+      &-review
+
+
+
+
+  &-stages
+
+    &__first, &__second, &__third, &__fourth
+      .stages-item
+        &__left, &__right
+          display: flex 
+          flex-direction: row 
+
+        &__left
+          //width: 45%
+        &__right
+          // width: 54%
+          // justify-content: flex-end
+
+
+        &__digit
+          min-width: 130px
+          height: 130px
+          background-color: $blue-lt-2
+          color: $white 
+          font-family: Russo One, san-serif
+          font-size: 72px
+          text-align: center
+          padding-top: 25px
+          -webkit-box-shadow: 0px 0px 10px 0px $blue //55,55,56,1
+          -moz-box-shadow: 0px 0px 10px 0px $blue
+          box-shadow: 0px 0px 10px 0px $blue
+
+
+
+        &__txt
+          display: flex 
+          flex-direction: column 
+          margin-left: 30px
+        &__title
+          margin-top: 10px
+          font-family: Russo One, san-serif
+          color: $blue-lt-2
+          text-transform: uppercase
+          font-size: 22px
+
+        &__descr 
+          margin-top: 18px
+          font-size: 16px
+          color: $dark
+
+        
+        &__slider
+          .slider-item
+            width: 110px
+            height: 110px
+            
+            margin-bottom: 5px
+            position: relative
+            &::before
+              content: ''
+              width: 100%
+              height: 100%
+              position: absolute
+              top: 0
+              left: 0
+              background-color: $dark
+              opacity: .6
+            &.active
+              border: 2px solid $blue-lt-2
+              
+              &::before
+                opacity: 0
+
+            img 
+              width: 100%
+
+        &__photo      
+          width: 502px
+          height: 340px 
+
+          margin-left: 9px
+          border: 2px solid $blue-lt-2
+          img 
+            width: 100%
+
+
+
+    &__first, &__third 
+      
+      display: flex 
+      flex-direction: row
+      margin-top: 60px
+      .stages-item
+        &__left
+          width: 45%
+        &__right
+          width: 54%
+          justify-content: flex-end
+
+    &__second, &__fourth
+      margin-top: 60px
+      display: flex 
+      flex-direction: row 
+      .stages-item
+        &__left
+          width: 54%
+          margin-left: 60px
+        &__right
+          width: 45%
+          justify-content: flex-end
+
+
+    .modal-button 
+      display: block
+      margin-top: 100px
+      text-align: center
+      .button
+        position: relative
+        button 
+          background-color: $white
+          color: $dark
+          padding: 20px 45px 16px 20px
+          border-color: $blue-lt-2
+
+        img 
+          right: 20px
+          top: 19px
+
+
+
