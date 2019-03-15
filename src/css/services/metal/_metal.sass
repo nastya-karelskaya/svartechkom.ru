@@ -137,11 +137,16 @@
               left: 0
               background-color: $dark
               opacity: .6
-            &.active
+            &.active, &.current
               border: 2px solid $blue-lt-2
+              transition: .3s all
               
               &::before
                 opacity: 0
+                transition: .3s all
+
+              &:hover
+                cursor: pointer
 
             img 
               width: 100%
@@ -154,6 +159,8 @@
           border: 2px solid $blue-lt-2
           img 
             width: 100%
+            &:hover
+              cursor: pointer
 
 
 
@@ -191,7 +198,7 @@
         button 
           background-color: $white
           color: $dark
-          padding: 20px 45px 16px 20px
+          padding: 20px 55px 16px 20px
           border-color: $blue-lt-2
 
         img 

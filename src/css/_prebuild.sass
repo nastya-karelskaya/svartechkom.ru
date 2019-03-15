@@ -214,18 +214,21 @@ body
             
               
 
-        &.active
+        &.active, &.current
           background-color: $white
           -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
           -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
           box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          transition: .3s all
           a 
             color: $dark
             border-bottom: 2px solid $blue
             font-size: 16px
+            transition: .3s all
           span
             border-bottom: 2px solid $blue
             margin-top: 5px
+            transition: .3s all
 
 
 
@@ -295,6 +298,10 @@ body
 
     /*********** BUTTONS *********/
     .button
+    
+
+
+
       display: inline-block
       // margin: 0 auto
       
@@ -324,14 +331,129 @@ body
           cursor: pointer
           transition: color .3s
 
-        a 
+        
 
 
-      img 
+      .img-tool 
         height: 23px
+        width: 23px
         position: absolute
         top: 16px
-        right: 25px  
+        right: 25px 
+        background-size: cover !important
+        &.gray 
+          background: url('../images/tool-gray.png') center no-repeat
+
+        &.blue
+          background: url('../images/tool-blue.png') center no-repeat
+        
+        &.white 
+          background: url('../images/tool-white.png') center no-repeat
+
+      &-c
+        &.active
+          button, a
+            background-color: $blue
+            color: $white
+            transition: .3s all
+          .img-tool
+            background: url('../images/tool-white.png') center no-repeat
+            transition: .3s all
+
+      &-w 
+        &.active
+          button, a
+            background-color: $blue !important
+            color: $white !important
+            
+            transition: .3s all
+            border: 2px solid $blue !important
+          .img-tool
+            background: url('../images/tool-white.png') center no-repeat
+            transition: .3s all
+            
+  /*** arrows ***/
+  .arrow
+    img 
+      &:hover
+        cursor: pointer
+
+    &.active
+      img 
+        // height: 30px  
+        width: 30px
+        transition: .4s all
+        
+
+
+
+  /******   PAGINATOR *******/
+  .reviews-main, .objects
+    &-paginator 
+  
+    .paginator
+      &-left, &-center, &-right
+        
+        &__wrapper 
+          width: 30% 
+
+        &__digit
+          background-color: $blue
+          height: 70px
+          width: 70px 
+          display: inline-block
+          text-decoration: none
+          &:hover 
+            cursor: pointer
+
+          &.active
+            background-color: $dark
+            transition: .3s all
+            
+
+      &-left
+        &__wrapper
+          text-align: right
+        &__digit
+          position: relative
+          img 
+            position: absolute
+            top: 23px
+            left: 25px
+            height: 25px
+          
+
+      &-center
+        &__wrapper
+          text-align: center
+        &__digit
+          color: $white
+          font-family: Russo One
+          font-size: 30px
+          padding-top: 18px
+          
+
+          &.active,&.current
+            background-color: $dark
+
+          &:first-child
+            margin-right: 15%
+      
+      &-right
+        &__wrapper
+          text-align: left
+        &__digit
+          position: relative
+          img 
+            position: absolute
+            top: 23px
+            left: 30px
+            height: 25px
+
+      &.active 
+        background-color: $dark
+
+
 
 
 

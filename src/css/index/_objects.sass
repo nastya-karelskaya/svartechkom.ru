@@ -2,6 +2,7 @@
   background: url('../images/index/objects/objects-back.jpeg') no-repeat center
   background-size: cover
   
+  
   // &::before 
   //   content: ''
   //   width: 100%
@@ -47,6 +48,11 @@
         left: 0
         background-color: $dark
         opacity: .4
+
+      &.active
+        &::before 
+          opacity: 0
+          transition: .3s all
       
 
       .slider-item
