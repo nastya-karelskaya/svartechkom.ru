@@ -45,6 +45,7 @@
         &-vk 
           width: 15%
 
+    
 
 @media (max-width: 991px) 
   body
@@ -96,10 +97,19 @@
         &-padding 
           display: none
          
-
+    
 
 @media (max-width: 767px) 
   body
+    .page 
+      .section 
+        padding-top: 50px !important
+      .section-first 
+        padding-top: 70px !important
+      .content 
+        padding-left: 0
+        padding-right: 0
+
     .fixed-header
       margin-top: 0
       position: relative
@@ -108,6 +118,9 @@
 
 
       .header
+        margin-right: 0
+        margin-left: 0
+
               
         position: relative
         padding: 10px 15px
@@ -206,6 +219,15 @@
 
 @media (max-width: 500px) 
   body 
+    .page .section 
+      &-first 
+      
+        padding-top: 50px !important
+      .title 
+        h2 
+          font-size: 26px
+        img
+          height: 60px
     .fixed-header
       .header 
         &-search 
@@ -220,6 +242,7 @@
           display: none
 
     .footer 
+      margin: 0px 10px 10px 10px
       
 
 
