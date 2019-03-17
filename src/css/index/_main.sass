@@ -22,7 +22,7 @@
       top: 0
       left: 0
       background-color: $dark
-      opacity: .5
+      opacity: .7
     &-title
       // margin-top: 35px
 
@@ -49,10 +49,13 @@
     &-txt
       color: $white
       a 
-        color: $blue
-        text-decoration: none
+        color: $white
+        font-size: 16px
+        text-decoration: underline
         &:hover
-          text-decoration: underline 
+          //text-decoration: underline 
+          color: $blue
+          transition: .3s all
 
       &__title 
         font-weight: 500
@@ -80,7 +83,8 @@
 
     &-img 
       text-align: right
-      margin-top: 30px
+      margin-top: 60px
+      //width: 300px
       
       img 
         width: 80%
