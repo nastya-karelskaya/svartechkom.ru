@@ -934,15 +934,15 @@ body .footer-politics a:hover {
 }
 
 .reasons-rowone__item {
-  width: 49%;
+  width: 100%;
 }
 
 .reasons-rowone__item:first-child {
-  padding-right: 20%;
+  padding-right: 5%;
 }
 
 .reasons-rowone__item:last-child {
-  padding-left: 20%;
+  padding-left: 5%;
 }
 
 .reasons-rowone__item .item__title {
@@ -957,7 +957,7 @@ body .footer-politics a:hover {
 }
 
 .reasons-rowtwo__item {
-  width: 99%;
+  width: 100%;
 }
 
 .reasons-rowtwo__item .item__title {
@@ -972,15 +972,15 @@ body .footer-politics a:hover {
 }
 
 .reasons-rowthree__item {
-  width: 49%;
+  width: 100%;
 }
 
 .reasons-rowthree__item:first-child {
-  padding-right: 20%;
+  padding-right: 5%;
 }
 
 .reasons-rowthree__item:last-child {
-  padding-left: 20%;
+  padding-left: 5%;
 }
 
 .reasons-rowthree__item .item__title {
@@ -1023,20 +1023,11 @@ body .footer-politics a:hover {
 .reviews .slider-wrapper {
   text-align: center;
   padding: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .reviews .slider-wrapper .reviews-slider__item {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   border: 2px solid #0096ff;
   position: relative;
   padding: 28px;
@@ -1139,6 +1130,7 @@ body .footer-politics a:hover {
 }
 
 .order-form-wrapper .form {
+  width: 100%;
   margin-top: 40px;
 }
 
@@ -1162,10 +1154,11 @@ body .footer-politics a:hover {
   border: none;
   padding: 0;
   margin: 0;
+  width: 49.5%;
 }
 
 .order-form-wrapper .form form input, .order-form-wrapper .form form textarea {
-  width: 330px;
+  width: 100%;
   border: 2px solid #dddddd;
   display: block;
   margin-top: 12px;
@@ -1208,7 +1201,12 @@ body .footer-politics a:hover {
   border: 2px solid #dddddd !important;
 }
 
-.order-form-wrapper .form-photo {
+.order .form-photo {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.order .form-photo img {
   border: 2px solid #0096ff;
 }
 
@@ -2408,6 +2406,15 @@ body .footer-politics a:hover {
   }
 }
 
+@media (max-width: 1500px) {
+  .page .order .form-photo {
+    margin-top: 40px;
+  }
+  .page .order .form-photo img {
+    width: 310px;
+  }
+}
+
 @media (max-width: 1300px) {
   .page .main-title h1 {
     font-size: 46px;
@@ -2436,6 +2443,15 @@ body .footer-politics a:hover {
   .page .objects-slider .slider-wrapper {
     padding: 70px 35px;
   }
+  .page .reviews-slider .slider-wrapper {
+    padding: 40px;
+  }
+  .page .order-form-wrapper .form-txt {
+    margin-left: 10px;
+  }
+  .page .order-form-wrapper .form form {
+    padding: 35px 20px 45px 20px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2454,6 +2470,36 @@ body .footer-politics a:hover {
   }
   .page .objects-slider__item .slider-item__title {
     margin-top: 90px;
+  }
+  .page .order-form-wrapper .form-txt {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .page .order-form-wrapper .form-phone {
+    margin-top: 20px;
+  }
+  .page .order-form-wrapper .form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .order-form-wrapper .form form fieldset {
+    width: 100%;
+  }
+  .page .order-form-wrapper .form form textarea {
+    height: 150px;
+  }
+  .page .order .form-photo {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+  }
+  .page .order .form-photo img {
+    width: 100%;
+  }
+  .page .reviews-slider .slider-wrapper .row .col-12:last-child .reviews-slider__item {
+    display: none;
   }
 }
 
@@ -2498,6 +2544,15 @@ body .footer-politics a:hover {
   .page .objects-slider__item {
     height: 354px;
     width: 354px;
+  }
+  .page .reasons-rowone__item .item__title, .page .reasons-rowtwo__item .item__title, .page .reasons-rowthree__item .item__title {
+    margin-top: 20px;
+  }
+  .page .order-form-wrapper .form form {
+    padding: 35px;
+  }
+  .page .order .form-photo {
+    display: none;
   }
 }
 
@@ -2544,6 +2599,29 @@ body .footer-politics a:hover {
     width: 300px;
     margin-left: -150px;
   }
+  .page .reasons-rowone, .page .reasons-rowtwo, .page .reasons-rowthree {
+    margin-top: 0px;
+  }
+  .page .reasons-rowone__item, .page .reasons-rowtwo__item, .page .reasons-rowthree__item {
+    margin-top: 40px;
+  }
+  .page .order-form-wrapper .form form {
+    padding: 25px 20px 35px 20px;
+  }
+  .page .order-form-wrapper .form form .form-button {
+    left: 50%;
+    width: 195px;
+    margin-left: -95px;
+  }
+  .page .reviews-slider__right {
+    bottom: -20px;
+  }
+  .page .reviews-slider__left {
+    top: -10px;
+  }
+  .page .reviews-slider .slider-wrapper {
+    padding: 15px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2571,6 +2649,29 @@ body .footer-politics a:hover {
   }
   .page .objects-slider .arrow img {
     height: 30px;
+  }
+  .page .reviews-slider__right {
+    bottom: -40px;
+  }
+  .page .reviews-slider__left {
+    top: -30px;
+  }
+  .page .reviews-slider .arrow img {
+    height: 30px;
+  }
+  .page .reviews-slider__item {
+    padding: 20px 20px 45px 20px !important;
+  }
+  .page .reviews-slider__item .slider-item__title .title-txt {
+    margin-left: 20px !important;
+  }
+  .page .reviews-slider__item .slider-item__descr .descr-img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .page .reviews-slider__item .slider-item__button {
+    left: 50% !important;
+    margin-left: -97px !important;
   }
 }
 

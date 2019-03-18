@@ -7,6 +7,27 @@
         &__item 
           // height: 290px
           // width: 290px 
+
+    .order
+      &-form-wrapper 
+        .form 
+          &-txt
+          
+
+          form
+            // padding: 35px 20px 45px 20px
+
+            
+
+              // &:last-child 
+              //   width: 54%
+
+      .form-photo 
+        margin-top: 40px
+        img 
+          width: 310px
+
+          
   
   
   
@@ -49,6 +70,37 @@
         &__item 
           // height: 265px
           // width: 265px   
+    .reviews
+      &-slider 
+        
+        &__left
+         
+          img 
+           
+        &__right
+          
+          img 
+          
+
+        .slider-wrapper 
+          
+          padding: 40px
+
+    .order-form-wrapper 
+      .form
+        //width: 80%
+        &-phone 
+          //margin-top: 20px 
+        &-txt
+          margin-left: 10px
+          //margin-top: 20px
+        form
+          padding: 35px 20px 45px 20px
+          //flex-direction: column
+          fieldset.textarea
+            //display: block
+
+        
 
 @media (max-width: 1200px) 
   .page 
@@ -68,7 +120,67 @@
           .slider-item__title
             margin-top: 90px
 
+    .order
+      &-form-wrapper 
+        .form 
+          &-txt
+            margin-left: 0px
+            margin-top: 20px
+          
 
+          &-phone 
+            margin-top: 20px
+          
+
+          form
+            flex-direction: column
+            fieldset 
+              width: 100%
+
+            textarea 
+              height: 150px
+            
+
+
+            
+
+              // &:last-child 
+              //   width: 54%
+
+      .form-photo 
+        position: absolute
+        bottom: 70px
+        right: 0
+        img 
+          width: 100%
+        // display: none
+
+    .reviews
+      &-slider 
+        
+        &__left
+         
+          img 
+           
+        &__right
+          
+          img 
+
+        &__item 
+          
+          &:last-child 
+            
+          
+
+        .slider-wrapper 
+          .row 
+            .col-12 
+              &:last-child 
+                .reviews-slider__item 
+                  display: none
+
+          
+        
 
 @media (max-width: 991px) 
   .page 
@@ -117,6 +229,36 @@
           &:last-child 
             // margin-top: 20px   
 
+    .reasons
+      &-rowone, &-rowtwo, &-rowthree
+        &__item
+          .item__title
+            margin-top: 20px
+
+    .order
+      &-form-wrapper 
+        .form 
+          &-txt
+            
+
+          // &-phone 
+          //   margin-top: 20px
+          
+
+          form
+            //flex-direction: column
+            padding: 35px
+            
+
+            
+
+              // &:last-child 
+              //   width: 54%
+
+      .form-photo 
+        display: none
+
+
 @media (max-width: 767px) 
   .page 
     
@@ -159,6 +301,47 @@
           
           width: 300px
           margin-left: -150px
+    .reasons
+      &-rowone, &-rowtwo, &-rowthree
+
+        margin-top: 0px
+        &__item
+          margin-top: 40px
+      &-rowone
+        
+      &-rowtwo 
+      &-rowthree
+        
+          .item__title
+
+    .order
+      &-form-wrapper 
+        .form 
+          &-txt
+            
+
+          // &-phone 
+          //   margin-top: 20px
+          
+
+          form
+            //flex-direction: column
+            padding: 25px 20px 35px 20px
+
+            .form-button 
+              left: 50%
+              width: 195px
+              margin-left: -95px
+
+    .reviews
+      &-slider
+        &__right
+          bottom: -20px
+        &__left 
+          top: -10px
+
+        .slider-wrapper    
+          padding: 15px
 
 
 @media (max-width: 500px) 
@@ -194,6 +377,37 @@
         .arrow 
           img
             height: 30px
+
+    .reviews
+      &-slider
+        &__right
+          bottom: -40px
+           
+        &__left 
+          top: -30px
+
+        .arrow 
+          img
+            height: 30px
+
+        &__item 
+          padding: 20px 20px 45px 20px !important
+
+          .slider-item 
+            &__title 
+              .title-txt
+                margin-left: 20px !important
+
+            &__descr 
+              .descr-img 
+                width: 100px !important
+                height: 100px !important
+
+            &__button 
+              left: 50% !important
+              margin-left: -97px !important
+
+          //padding: 20px
 
 @media (max-width: 380px) 
   body 
