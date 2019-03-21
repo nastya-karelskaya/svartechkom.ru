@@ -12,20 +12,21 @@
 
   &-grid
     position: relative 
-    margin-bottom: 55px
-    display: flex 
-    flex-direction: row 
-    justify-content: space-between
+    margin-bottom: 25px
+    // display: flex 
+    // flex-direction: row 
+    // justify-content: space-between
     
 
     &__item
       height: 354px
-      width: 30%//354px
+      width: 100%//30%//354px
       background-color: $dark
       background: url('../images/index/objects/arena.jpeg')
 
       display: inline-block
       position: relative
+      margin-bottom: 30px
 
       text-align: center
 
@@ -56,7 +57,7 @@
           max-width: 207px
           background-color: rgba(0,150,255, .90)//#0096ff
           padding: 20px 30px
-          display: inline-block
+          display: block//inline-block
           margin: 0 auto
           margin-top: 120px
           position: relative
@@ -128,59 +129,14 @@
     display: flex
     flex-direction: row
     justify-content: space-between
-  //   .paginator
-  //     &-left, &-center, &-right
-  //       &__wrapper 
-  //         width: 30% 
-
-  //       &__digit
-  //         background-color: $blue
-  //         height: 70px
-  //         width: 70px 
-  //         display: inline-block
-  //         text-decoration: none
-  //         &:hover 
-  //           cursor: pointer
-            
-
-  //     &-left
-  //       &__wrapper
-  //         text-align: right
-  //       &__digit
-  //         position: relative
-  //         img 
-  //           position: absolute
-  //           top: 23px
-  //           left: 25px
-  //           height: 25px
-          
-
-  //     &-center
-  //       &__wrapper
-  //         text-align: center
-  //       &__digit
-  //         color: $white
-  //         font-family: Russo One
-  //         font-size: 30px
-  //         padding-top: 18px
-          
-
-  //         &.active
-  //           background-color: $dark
-
-  //         &:first-child
-  //           margin-right: 15%
+    .paginator
+      &-left, &-center, &-right
       
-  //     &-right
-  //       &__wrapper
-  //         text-align: left
-  //       &__digit
-  //         position: relative
-  //         img 
-  //           position: absolute
-  //           top: 23px
-  //           left: 30px
-  //           height: 25px
+      &-center
 
+        &__digit
 
+          padding-top: 15px !important
+          
 
+ 

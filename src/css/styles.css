@@ -500,6 +500,7 @@ body .reviews-main .paginator-left__digit img, body .objects .paginator-left__di
 
 body .reviews-main .paginator-center__wrapper, body .objects .paginator-center__wrapper {
   text-align: center;
+  width: 40%;
 }
 
 body .reviews-main .paginator-center__digit, body .objects .paginator-center__digit {
@@ -514,7 +515,7 @@ body .reviews-main .paginator-center__digit.active, body .reviews-main .paginato
 }
 
 body .reviews-main .paginator-center__digit:first-child, body .objects .paginator-center__digit:first-child {
-  margin-right: 15%;
+  margin-right: 20px;
 }
 
 body .reviews-main .paginator-right__wrapper, body .objects .paginator-right__wrapper {
@@ -1225,26 +1226,17 @@ body .footer-politics a:hover {
 
 .objects-grid {
   position: relative;
-  margin-bottom: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .objects-grid__item {
   height: 354px;
-  width: 30%;
+  width: 100%;
   background-color: #050505;
   background: url("../images/index/objects/arena.jpeg");
   display: inline-block;
   position: relative;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -1274,7 +1266,7 @@ body .footer-politics a:hover {
   max-width: 207px;
   background-color: rgba(0, 150, 255, 0.9);
   padding: 20px 30px;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   margin-top: 120px;
   position: relative;
@@ -1320,6 +1312,10 @@ body .footer-politics a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.objects-paginator .paginator-center__digit {
+  padding-top: 15px !important;
 }
 
 .services-items {
@@ -2717,6 +2713,24 @@ body .footer-politics a:hover {
   }
   .services-descr__two .descr-two__txt {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .objects-paginator .paginator-center__digit:first-child {
+    margin-right: 7px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .objects-paginator .paginator-left__wrapper, .objects-paginator .paginator-right__wrapper {
+    width: 50% !important;
+  }
+  .objects-paginator .paginator-left__wrapper {
+    margin-right: 20px;
+  }
+  .objects-paginator .paginator-center__wrapper {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
