@@ -1331,29 +1331,18 @@ body .footer-politics a:hover {
 }
 
 .services-descr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin-top: 15px;
 }
 
 .services-descr__one, .services-descr__two {
-  display: inline-block;
   font-family: Roboto Mono;
   font-size: 15px;
-}
-
-.services-descr__one {
-  width: 45%;
 }
 
 .services-descr__one .descr-one__txt ul {
   margin-top: 20px;
   list-style: none;
+  padding-left: 7%;
 }
 
 .services-descr__one .descr-one__txt ul li {
@@ -1362,10 +1351,6 @@ body .footer-politics a:hover {
 
 .services-descr__one .descr-one__txt ul li img {
   height: 13px;
-}
-
-.services-descr__two {
-  width: 54%;
 }
 
 .services-descr__two .descr-two__txt {
@@ -2707,6 +2692,31 @@ body .footer-politics a:hover {
   }
   body .footer {
     margin: 10px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .services-descr__one .descr-one__txt ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .services-descr__two .descr-two__txt {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-items, .services-descr {
+    text-align: center;
+  }
+  .services-descr__one .descr-one__txt ul {
+    text-align: left;
+    padding: 8px 0px 15px 20px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .services-descr__two .descr-two__txt {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
