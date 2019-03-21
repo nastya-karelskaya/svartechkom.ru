@@ -1,0 +1,71 @@
+@media(max-width: 991px)
+  .reviews
+    &-main
+      &-paginator 
+      
+        .paginator
+          &-left, &-center, &-right
+          
+          &-center
+
+            
+            &__wrapper
+            
+            &__digit
+            
+              &:first-child
+                margin-right: 7px !important //15%
+
+@media(max-width: 767px)
+  .reviews
+    &-main
+      &-paginator 
+      
+        .paginator
+          &-left, &-right
+            &__wrapper
+              width: 50% !important
+
+          &-left
+            &__wrapper 
+              margin-right: 20px
+
+
+          
+          &-center
+
+            &__wrapper
+              display: none
+            
+            &__digit
+            
+              &:first-child
+                //margin-right: 7px !important //15%
+
+@media(max-width: 500px)
+  .reviews
+    &-main
+      &-grid
+        &__item
+          padding: 20px
+          .grid-item__top
+            display: block
+
+            .item-top
+              &__txt 
+                text-align: center
+                margin: 0 auto
+                margin-top: 20px
+
+              &__title
+                text-align: center
+
+              &__subtitle 
+                margin-top: 0px
+
+          .grid-item__bottom
+            text-align: center
+            margin-top: 10px
+
+      &-descr 
+        margin-bottom: 30px

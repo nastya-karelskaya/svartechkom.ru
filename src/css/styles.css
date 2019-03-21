@@ -1501,7 +1501,6 @@ body .footer-politics a:hover {
 
 .reviews-main-grid {
   position: relative;
-  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1516,11 +1515,12 @@ body .footer-politics a:hover {
 
 .reviews-main-grid__item {
   padding: 30px;
-  width: 655px;
+  width: 100%;
   background-color: #ffffff;
   border: 2px solid #dddddd;
   display: inline-block;
   position: relative;
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -1553,7 +1553,7 @@ body .footer-politics a:hover {
   font-family: Russo One;
   font-size: 20px;
   color: #0096ff;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -1594,7 +1594,7 @@ body .footer-politics a:hover {
 }
 
 .reviews-main-paginator {
-  margin-top: 55px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2731,6 +2731,51 @@ body .footer-politics a:hover {
   }
   .objects-paginator .paginator-center__wrapper {
     display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .reviews-main-paginator .paginator-center__digit:first-child {
+    margin-right: 7px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews-main-paginator .paginator-left__wrapper, .reviews-main-paginator .paginator-right__wrapper {
+    width: 50% !important;
+  }
+  .reviews-main-paginator .paginator-left__wrapper {
+    margin-right: 20px;
+  }
+  .reviews-main-paginator .paginator-center__wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .reviews-main-grid__item {
+    padding: 20px;
+  }
+  .reviews-main-grid__item .grid-item__top {
+    display: block;
+  }
+  .reviews-main-grid__item .grid-item__top .item-top__txt {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .reviews-main-grid__item .grid-item__top .item-top__title {
+    text-align: center;
+  }
+  .reviews-main-grid__item .grid-item__top .item-top__subtitle {
+    margin-top: 0px;
+  }
+  .reviews-main-grid__item .grid-item__bottom {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .reviews-main-descr {
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

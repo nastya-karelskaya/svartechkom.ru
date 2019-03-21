@@ -11,7 +11,7 @@
 
   &-grid
     position: relative 
-    margin-bottom: 40px
+    // margin-bottom: 40px
     display: flex 
     flex-direction: row 
     justify-content: space-between
@@ -19,12 +19,14 @@
 
     &__item
       padding: 30px
-      width: 655px//354px
+      width: 100%//655px//354px
+      //height: 100%
       background-color: $white
       border: 2px solid #dddddd
 
       display: inline-block
       position: relative
+      margin-bottom: 30px
 
       text-align: left
 
@@ -61,7 +63,7 @@
               font-family: Russo One 
               font-size: 20px
               color: $blue
-              text-align: center
+              text-align: left//center
               text-transform: uppercase
               // max-width: 207px
               display: inline-block
@@ -144,7 +146,7 @@
 
 
   &-paginator 
-    margin-top: 55px
+    margin-top: 5px
     display: flex
     flex-direction: row
     justify-content: space-between
