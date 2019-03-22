@@ -7,15 +7,7 @@
 
     position: relative
 
-    // &::before 
-    //   content: ''
-    //   width: 100%
-    //   height: 100%
-    //   position: absolute
-    //   top: 0
-    //   left: 0
-    //   background-color: $dark
-    //   opacity: .5
+    
     &-title
       // margin-top: 35px
 
@@ -30,8 +22,8 @@
         margin-top: 20px
 
     &__wrapper
-      display: flex 
-      flex-direction: row
+      // display: flex 
+      // flex-direction: row
       margin-top: 40px
 
      
@@ -42,7 +34,7 @@
 
        
     &__left
-      width: 49%
+      width: 100%//49%
       
       .main-left
         &__txt
@@ -63,7 +55,7 @@
 
 
     &__right
-      width: 50%
+      width: 100%//50%
       padding-left: 20px
       .main-right__txt
         &:last-child
@@ -126,11 +118,12 @@
             // left: 80px
 
           &__txt 
-            margin-left: 25px
-            margin-top: 10px
+            padding: 10px 0px 10px 20px
+            //margin-left: 20px
+            //margin-top: 10px
 
           &__descr
-            margin-top: 18px
+            margin-top: 8px
             text-align: left
 
           &__button
@@ -139,55 +132,19 @@
             display: block !important
             width: 205px
             
-            
-            
-          //   button
-          //     width: 100%
-          //     padding: 20px 0px
-          //     padding-right: 35px
-          //     display: block
-          //     margin: 0 auto
-
-          //     font-family: Russo One
-          //     font-size: 14px
-          //     text-transform: uppercase
-          //     color: $white
-          //     text-align: center
-          //     letter-spacing: 1px
-          //     background-color: rgba(0,0,0,.85)
-          //     // opacity: .7
-
-          //     border: 2px solid $blue
-          //     &:hover 
-          //       color: $blue
-          //       cursor: pointer
-          //       transition: color .3s
-          //     // &::after
-          //     //   content: ''
-          //     //   position: absolute
-          //     //   top: 0
-          //     //   left: 0
-          //     //   width: 100%
-          //     //   height: 100%
-          //     //   background-color: $dark
-          //     //   opacity: .5
-
-          //   img 
-          //     position: absolute
-          //     top: 17px
-          //     right: 25px
-
+          
       .aservice-slider-wrapper
         margin-top: 10px
         text-align: center
         padding: 50px 95px 50px 85px
-        display: flex
-        flex-direction: row
-        justify-content: space-between
+        // display: flex
+        // flex-direction: row
+        // justify-content: space-between
 
         .aservice-objects-slider__item
+          margin-left: 8%//30px
           &:last-child 
-            margin-left: 30px
+            
             
           &.active-item
             &::after
@@ -201,6 +158,7 @@
 
   &-order
     background: url('../images/services/aservice/aservice-order-back.jpeg') no-repeat center
+    background-size: cover
 
     &-subtitle 
       margin-top: 30px
@@ -215,6 +173,7 @@
       flex-direction: row 
       justify-content: space-between
       .form 
+        width: 100%
         margin-top: 40px
         form 
           padding: 35px 30px 45px 30px
@@ -231,9 +190,10 @@
             border: none
             padding: 0
             margin: 0
+            width: 49.5%
 
           input, textarea
-            width: 330px
+            width: 100%//330px
             border: 2px solid $blue
             display: block 
 
@@ -295,7 +255,10 @@
         &-phone
 
 
-      .form-photo
+    .form-photo
+      margin-top: 30px
+      text-align: right
+      img 
         border: 2px solid $blue
 
 
