@@ -2,19 +2,31 @@
   background: url('../images/index/order/order-back.png') no-repeat center
 
   &-left 
-    width: 65%
+    width: 100%//65%
     display: inline-block
   
   &-right 
-    width: 34%
-    display: inline-block
-    text-align: right
+    width: 100%//34%
+    //display: inline-block
+    //text-align: right
     
     &__photo
-      padding-top: 20px
+      //margin-top: 65px
+      position: absolute
+      bottom: 0
+      right: 0
+      text-align: right
+      width: 350px
+      //margin-left: auto
+      // padding-top: 20px
       // padding-top: 100px
       img 
         border: 2px solid $blue
+        width: 100%
+
+  &-title 
+    margin-top: 15px
+        
 
   &-subtitle 
     margin-top: 20px
@@ -24,7 +36,7 @@
 
   &-part 
     margin-bottom: 30px
-    width: 49%
+    width: 100%//49%
     display: inline-block
     &__phone, &__email, &__mode, &__address
       font-size: 16px
@@ -53,8 +65,10 @@
     display: flex 
     flex-direction: row 
     justify-content: space-between
+    margin-top: 10px
     .form 
-      margin-top: 40px
+      width: 100%
+      margin-top: 10px
       form 
         padding: 35px 30px 45px 30px
         border: 2px solid $blue
@@ -70,9 +84,10 @@
           border: none
           padding: 0
           margin: 0
+          width: 49.5%
 
         input, textarea
-          width: 330px
+          width: 100%//330px
           border: 2px solid $blue
           display: block 
 
