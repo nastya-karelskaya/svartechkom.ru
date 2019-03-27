@@ -11,6 +11,12 @@
 
 ?>
 
+    </div>
+    <!-- ./page -->
+  </div>
+
+  <?php wp_footer(); ?>
+
   
 
  <div class="container-fluid fixed-container" >
@@ -43,7 +49,7 @@
 <!-- <script src="js/main.js"></script> -->
 <!-- <script src="js/bootstrap.min.js"></script> -->
 
-<?php wp_footer(); ?>
+
 
 </body>
 </html>

@@ -51,7 +51,7 @@ get_header();
                   <div class="col-12 col-lg-8">
                       <div class="main-txt__block">
                           <div class="block-img">
-                            <img src="images/index/main/img-left.jpeg" alt="Работы ООО СварТехКом">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/img-left.jpeg';?>" alt="Работы ООО СварТехКом">
                           </div>
                           <div class="block-descr">
                               <div class="block-descr__title">
@@ -60,21 +60,21 @@ get_header();
                               </div>
     
                               <ul class="block-descr__subtitle">
-                                <li><img src="images/index/main/list-item.png" alt="Пункт">
+                                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/list-item.png';?>" alt="Пункт">
                                   Подготовка проектной документации</li>
-                                <li><img src="images/index/main/list-item.png" alt="Пункт">
+                                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/list-item.png';?>" alt="Пункт">
                                   Изготовление изделия    
                                   </li>
-                                <li><img src="images/index/main/list-item.png" alt="Пункт">
+                                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/list-item.png';?>" alt="Пункт">
                                   Покраска    
                                   </li>
-                                <li><img src="images/index/main/list-item.png" alt="Пункт">
+                                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/list-item.png';?>" alt="Пункт">
                                   Доставка    
                                   </li>
-                                <li><img src="images/index/main/list-item.png" alt="Пункт">
+                                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/list-item.png';?>" alt="Пункт">
                                   Монтаж конструкции   
                                   </li>
-                                <li><img src="images/index/main/list-item.png" alt="Пункт">
+                                <li><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/list-item.png';?>" alt="Пункт">
                                   Передача технадзору</li>
                               </ul>
                             
@@ -83,7 +83,7 @@ get_header();
                   </div>
                   <div class="col-12 col-lg-4">
                       <div class="main-img">
-                          <img src="images/index/main/img-right.jpeg" alt="Комплекс мероприятий">
+                          <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/img-right.jpeg';?>" alt="Комплекс мероприятий">
                       </div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ get_header();
                 
                 <div class="title services-title">
                   <h2>УСЛУГИ</h2>
-                  <img src="images/index/services/services.png" alt="Услуги">
+                  <img src="<?php echo get_template_directory_uri() . '/assets/images/index/services/services.png';?>" alt="Услуги">
                 </div>
                 
               </div>
@@ -228,10 +228,10 @@ get_header();
                 
                 <div class="objects-slider">
                     <div class="objects-slider__left arrow">
-                      <img src="images/left-arrow.png" alt="лево">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
                     </div>
                     <div class="objects-slider__right arrow">
-                      <img src="images/right-arrow.png" alt="право">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
                     </div>
 
                   <div class="slider-wrapper">
@@ -304,7 +304,7 @@ get_header();
                 
                   <div class="title reasons-title">
                     <h2>5 причин обратиться к нам</h2>
-                    <img src="images/index/reasons/reasons.png" alt="Наши объекты">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons.png';?>" alt="Наши объекты">
                   </div>
 
                 </div>
@@ -316,7 +316,7 @@ get_header();
                       <div class="col-12 col-md-6">
                         <div class="reasons-rowone__item">
                           <div class="item__img">
-                            <img src="images/index/reasons/reasons-item.png" alt="6 лет опыта">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="6 лет опыта">
                           </div>
                           <div class="item__title">6 лет опыта</div>
                         </div>
@@ -328,7 +328,7 @@ get_header();
 
                         <div class="reasons-rowone__item">
                           <div class="item__img">
-                            <img src="images/index/reasons/reasons-item.png" alt="Свое 
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="Свое 
                             профоборудование">
                           </div>
                           <div class="item__title">Свое 
@@ -345,7 +345,7 @@ get_header();
                       <div class="col-12">
                         <div class="reasons-rowtwo__item">
                           <div class="item__img">
-                            <img src="images/index/reasons/reasons-item.png" alt="9 из 10 проектов сдаем 
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="9 из 10 проектов сдаем 
                             без замечаний">
                           </div>
                           <div class="item__title">9 из 10 проектов сдаем 
@@ -360,7 +360,7 @@ get_header();
                       <div class="col-12 col-md-6">
                           <div class="reasons-rowthree__item">
                               <div class="item__img">
-                                <img src="images/index/reasons/reasons-item.png" alt="Сертификаты НАКС">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="Сертификаты НАКС">
                               </div>
                               <div class="item__title">Специалисты высокой 
                                 квалификации <br>
@@ -370,7 +370,7 @@ get_header();
                       <div class="col-12 col-md-6">
                           <div class="reasons-rowthree__item">
                               <div class="item__img">
-                                <img src="images/index/reasons/reasons-item.png" alt="Сопровождение проекта 
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png'?>" alt="Сопровождение проекта 
                                 руководством 
                                 на каждом этапе">
                               </div>
@@ -403,15 +403,15 @@ get_header();
                   
                   <div class="title reviews-title">
                     <h2>отзывы</h2>
-                    <img src="images/index/reviews/reviews.png" alt="Наши объекты">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reviews/reviews.png';?>" alt="Наши объекты">
                   </div>
                 
                 <div class="reviews-slider">
                     <div class="reviews-slider__left arrow">
-                      <img src="images/left-arrow.png" alt="лево">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
                     </div>
                     <div class="reviews-slider__right arrow">
-                      <img src="images/right-arrow.png" alt="право">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
                     </div>
 
                   <div class="slider-wrapper">
@@ -420,7 +420,7 @@ get_header();
                           <div class="reviews-slider__item">
                               <div class="slider-item__title"> 
                                 <div class="title-img">
-                                  <img src="images/quote.png" alt="quote">
+                                  <img src="<?php echo get_template_directory_uri() . '/assets/images/quote.png';?>" alt="quote">
                                 </div>
                                 <div class="title-txt">Название компании</div> 
                               </div>
@@ -438,7 +438,7 @@ get_header();
                           <div class="reviews-slider__item">
                               <div class="slider-item__title"> 
                                 <div class="title-img">
-                                  <img src="images/quote.png" alt="quote">
+                                  <img src="<?php echo get_template_directory_uri() . '/assets/images/quote.png';?>" alt="quote">
                                 </div>
                                 <div class="title-txt">Название компании</div> 
                               </div>
@@ -484,7 +484,7 @@ get_header();
                 
                 <div class="title order-title">
                   <h2>заказать</h2>
-                  <img src="images/index/order/order.png" alt="Наши объекты">
+                  <img src="<?php echo get_template_directory_uri() . '/assets/images/index/order/order.png';?>" alt="Наши объекты">
                 </div>
 
               </div>
@@ -530,7 +530,7 @@ get_header();
               </div> 
               <div class="col-12 col-lg-5 col-xl-4">
                 <div class="form-photo">
-                  <img src="images/index/order/order-photo.jpeg" alt="ООО СварТехКом">
+                  <img src="<?php echo get_template_directory_uri() . '/assets/images/index/order/order-photo.jpeg';?>" alt="ООО СварТехКом">
                 </div>
               </div>
             </div>
@@ -542,10 +542,9 @@ get_header();
       <!-- ./order -->
   
   
-    </div>
-    <!-- ./page -->
-  </div>
+    
 
 <?php
 // get_sidebar();
 get_footer();
+?>

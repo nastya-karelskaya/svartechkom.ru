@@ -1,55 +1,54 @@
-<?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package svartechkom
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+ <!-- section search -->
+ <section class="section section-first search ">
+      <div class="container-fluid">
+   
+        <div class="content">
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+          <div class="row">
+            <div class="col-12">
 
-		<?php if ( have_posts() ) : ?>
+              <div class="title">
+                <h1>
+                Результаты поиска по запросу: "<?php echo $_GET['s'];?>"
+                </h1>
+              </div>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'svartechkom' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
+              <div class="subtitle">
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+              <?php 
+                if (have_posts()) : while (have_posts()) : the_post(); 
+              ?>
+                <div>
+                  <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                </div>
 
-			endwhile;
+              <?php the_content(''); ?>
 
-			the_posts_navigation();
+              <?php endwhile; else: ?>
 
-		else :
+                <p>Поиск не дал результатов.</p>
 
-			get_template_part( 'template-parts/content', 'none' );
+              <?php endif;?>
 
-		endif;
-		?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+              </div>
 
-<?php
-get_sidebar();
-get_footer();
+            </div>
+          </div>
+
+
+        <!-- ./content -->
+        </div>
+
+      </div>
+
+  </section>
+        
+
+
+
+ 
+ <?php get_footer(); ?>

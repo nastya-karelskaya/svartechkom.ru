@@ -31,70 +31,6 @@
 </head>
 <body>
 
-<div class="container-fluid fixed-container">
-  <div class="fixed-menu">
-    <?php wp_nav_menu( [
-    'theme_location'  => 'bottom',
-    'menu'            => '', 
-    'container'       => null, 
-    // 'container_class' => '', 
-    // 'container_id'    => '',
-    'menu_class'      => 'menu-desktop', 
-    'menu_id'         => 'menu-desktop',
-    'echo'            => true,
-    'fallback_cb'     => 'wp_page_menu',
-    'before'          => '<div class="menu-item__icon"><div class="img"></div></div><div class="menu-item__txt">',
-    'after'           => '</div>',
-    'link_before'     => '',
-    'link_after'      => '',
-    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-    'depth'           => 0,
-    'walker'          => '',
-  ] );?>
-      
-      <!-- <div class="menu-desktop">
-        <div class="menu-desktop-item">
-            <div class="menu-desktop-item__icon">
-              <img src="images/index/main/menu-services.png" alt="Услуги">
-            </div>
-            <div class="menu-desktop-item__txt">
-              <a href="services.html">Услуги</a>
-            </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon">
-            <img src="images/index/main/menu-objects.png" alt="Наши объекты">
-          </div>
-          <div class="menu-desktop-item__txt">
-            <a href="objects.html">Наши <span>объекты</span></a> 
-          </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon"><img src="images/index/main/menu-company.png" alt=" О компании">
-          </div>
-          <div class="menu-desktop-item__txt">
-            <a href="about.html">О компании</a> 
-          </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon"><img src="images/index/main/menu-reviews.png" alt="Отзывы">
-          </div>
-          <div class="menu-desktop-item__txt">
-          <a href="reviews.html">Отзывы</a>  
-          </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon"><img src="images/index/main/menu-contacts.png" alt="Контакты">
-          </div>
-          <div class="menu-desktop-item__txt">
-            <a href="contacts.html">Контакты</a>
-            
-          </div>
-        </div>
-      </div> -->
-  </div>
-</div> 
-
   <div class="container-fluid fixed-container">
 
     <div class="page">
@@ -193,11 +129,8 @@
         
                 <div class="header-other">
                     <div class="header-search">
-
-                    <?php get_search_form(); ?>
-                      <!-- <input type="text" placeholder="Поиск">
-                       
-                      <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-search.png';?>" alt="Поиск"></a> -->
+                      <input type="text" placeholder="Поиск">
+                      <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-search.png';?>" alt="Поиск"></a>
                       
                     </div>
                     <div class="header-padding"></div>

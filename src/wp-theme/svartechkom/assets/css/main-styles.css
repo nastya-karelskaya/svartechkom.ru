@@ -174,16 +174,45 @@ body .fixed-header .header-search {
 }
 
 body .fixed-header .header-search input {
+  /* height: 50px;
+  
+  width: 100%; */
+  background-color: transparent;
+  
+  border: none;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  /* color: #ffffff; */
+}
+
+body .fixed-header .header-search input#searchsubmit {
+
+background: url('../images/index/main/icon-search.png') center no-repeat;
+background-size: contain;
+
+width: 20px;
+
+}
+
+body .fixed-header .header-search input#searchsubmit:hover  {
+  cursor: pointer;
+
+}
+
+body .fixed-header .header-search input#s {
   height: 50px;
   border: 2px solid #0096ff;
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
   padding-left: 20px;
   padding-right: 20px;
   color: #ffffff;
 }
 
-body .fixed-header .header-search a {
+body .fixed-header .header-search div{
+} 
+
+body .fixed-header .header-search a, body .fixed-header .header-search div{
   display: block;
   position: absolute;
   top: 13px;
@@ -405,6 +434,10 @@ body .page .section-dark .title h2, body .page .section-dark .title h1 {
   font-size: 29px;
 }
 
+body .page .section-404 {
+  padding: 75px 0px 280px 0px;
+}
+
 body .page .button {
   display: inline-block;
 }
@@ -512,6 +545,38 @@ body .reviews-main .paginator-left__digit.active, body .reviews-main .paginator-
   -webkit-transition: .3s all;
   transition: .3s all;
 }
+
+/* PAGINATOR */
+.paginator a {
+  background-color: #0096ff;
+  height: 70px;
+  width: 70px;
+  padding: 23px 28px;
+  display: block;
+  margin: 0 auto;
+}
+
+.objects-paginator {
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; */
+  display: block;
+  
+  text-align: center;
+}
+
+.objects-paginator a {
+  
+
+}
+
 
 body .reviews-main .paginator-left__wrapper, body .objects .paginator-left__wrapper {
   text-align: right;
@@ -1332,7 +1397,7 @@ body .footer-politics a:hover {
 }
 
 .objects-paginator {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -1341,8 +1406,17 @@ body .footer-politics a:hover {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-between; */
+  /* display: block;
+  
+  text-align: center; */
 }
+
+/* .objects-paginator a {
+  display: block;
+  margin: 0 auto;
+
+} */
 
 .objects-paginator .paginator-center__digit {
   padding-top: 15px !important;
@@ -2282,6 +2356,10 @@ body .footer-politics a:hover {
   body .page .section-first {
     padding-top: 70px !important;
   }
+  body .page .section-404 { 
+    padding: 70px 0px !important;
+  }
+
   body .page .content {
     padding-left: 0;
     padding-right: 0;
