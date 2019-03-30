@@ -32,9 +32,11 @@ function svartechkom_scripts() {
 	wp_enqueue_style( 'svartechkom-styles', get_template_directory_uri() . '/assets/css/main-styles.css');
 
 
-	// wp_enqueue_script( 'svartechkom-js-main', get_template_directory_uri() . '/js/main.js', true );
+	// wp_enqueue_script( 'svartechkom-js-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', true);
 
-	// wp_enqueue_script( 'svartechkom-js-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', true );
+	//wp_enqueue_script( 'svartechkom-js-main', get_template_directory_uri() . '/assets/js/main.js', true);
+
+	
 
 }
 

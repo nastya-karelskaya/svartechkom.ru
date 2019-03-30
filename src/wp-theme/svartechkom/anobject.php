@@ -177,6 +177,8 @@ get_header();
                   </div>
                   <div class="col-12 col-xl-6">
                       <div class="stages-item__right">
+
+                      
                           <div class="stages-item__slider">
                             <div class="slider-item current">
                               <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-small.jpeg';?>" alt="">
@@ -188,8 +190,73 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-small.jpeg';?>" alt="">
                             </div>
                           </div>
-                          <div class="stages-item__photo">
+                          <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal">
                               <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                          </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="modal-photo">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                          <!-- <img src="<?php //echo get_template_directory_uri() . '/assets/images/services/anobject/slider-small.jpeg';?>" alt=""> -->
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                          
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                          
+                                        </li>
+                                      </ol>
+
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <div class="img-wrapper">
+                                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          </div>
+                                          
+                                        </div>
+                                        <div class="carousel-item">
+                                          <div class="img-wrapper">
+                                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                          <div class="img-wrapper">
+                                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
+                                      </a>
+                                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
+                                      </a>
+                                    </div>
+                                    
+                                  </div>
+
+                                  
+                                    
+                                  
+                                    
+                                  
+                                </div>
+                                
+                              </div>
+                            </div>
                           </div>
         
                         </div>
@@ -302,7 +369,7 @@ get_header();
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-small.jpeg';?>" alt="">
                         </div>
                       </div>
-                      <div class="stages-item__photo">
+                      <div class="stages-item__photo" >
                           <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
                       </div>
     
@@ -336,12 +403,64 @@ get_header();
             <div class="col-12">
                 <div class="modal-button">
                     <div class="button button-w">
-                        <button type="button">заказать проект</button>
+                        <button type="button" data-toggle="modal" data-target="#orderModal">заказать проект</button>
                         <div class="img-tool blue"></div>
                       </div>
                 </div>
             </div>
           </div> 
+
+
+          <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5> Есть вопросы? Напишите нам!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12">     
+                      <!-- <div class="order-subtitle">
+                          Есть вопросы? Напишите нам!
+                      </div> -->
+                      <div class="contacts-form-wrapper">
+                          <div class="form">
+                            <form action="">
+                              <fieldset>
+                                <div class="form-name">
+                                    <label for="name">Ваше имя:</label>
+                                    <input type="text" name="name" placeholder="Имя">
+                                </div>
+                                
+                                <div class="form-phone">
+                                    <label for="phone">Ваш телефон:</label>
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                
+                              </fieldset>
+                              
+                            
+                              
+          
+                              <div class="button button-w form-button">
+                                <button type="button">заказать</button>
+                                <div class="img-tool blue"></div>
+                              </div>
+                            </form>
+                          </div>
+          
+                        </div>
+                      
+                    </div> 
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           
           

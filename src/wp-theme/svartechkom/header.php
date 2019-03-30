@@ -17,7 +17,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>СварТехКом - надежный производитель металлоконструкций различного назначения</title>
+  <title><?php bloginfo('name'); ?></title>
 
   <!-- <meta name="robots" content="noindex"> -->
 
@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="css/styles.css"> -->
   <!-- <meta name="robots" content="noindex"> -->
   <?php wp_head(); ?>
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+
   
 </head>
 <body>
@@ -95,7 +97,7 @@
   </div>
 </div> 
 
-  <div class="container-fluid fixed-container">
+  <div class="container-fluid fixed-container page-container">
 
     <div class="page">
 
@@ -155,9 +157,9 @@
                               Телефон:
                           </div>
                         </div>
-                        <div class="header-phones__bottom">
+                        <a href="tel:+77777777777" class="header-phones__bottom">
                             +7 777 7777777
-                        </div>
+                        </a>
                       </div>
                   
                       <div class="header-address">
@@ -167,10 +169,10 @@
                               Адрес:
                           </div>
                         </div>
-                        <div class="header-address__bottom">
+                        <a href="<?php echo home_url() . '/contacts' ?>" class="header-address__bottom">
                             185001, Петрозаводск, <br> 
                             ул. Путейская, 5
-                        </div>
+                        </a>
                       </div>
                     
                       <div class="header-mail">
@@ -180,9 +182,9 @@
                               Email:
                           </div>
                         </div>
-                        <div class="header-mail__bottom">
+                        <a href="mailto:svartechcom@gmail.com" class="header-mail__bottom">
                             svartechcom@gmail.com
-                        </div>
+                        </a>
           
                       </div>
                 </div>

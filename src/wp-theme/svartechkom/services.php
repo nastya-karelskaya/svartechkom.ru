@@ -86,7 +86,7 @@ get_header();
             </div> 
           </div>
 
-<div class="services-items">
+          <div class="services-items">
             
 
 
@@ -132,12 +132,7 @@ get_header();
               <?php 
 
               }
-  
-              
-  
-  
-              // setup_postdata($big_post);
-  
+
                   
   
             ?>
@@ -150,16 +145,10 @@ get_header();
               if($post != $big_post) {
                 setup_postdata($post);
                     
-                   
-                    
-                    
-                   
-                      // формат вывода the_title() ...
+                
                   
             ?>
-  
-                 
-  
+
   
                 <div class="col-12 col-md-6 col-lg-4">  
                   <div class="services-items__small">
@@ -185,11 +174,7 @@ get_header();
               </div>
             </div>
   
-        
 
-         
-
-             
           
 
         </div>

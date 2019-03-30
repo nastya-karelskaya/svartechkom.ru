@@ -152,22 +152,43 @@ body
         height: 50px
         position: relative
         input
-          height: 50px
-          border: 2px solid #0096ff
+          // height: 50px
+          border: none //2px solid #0096ff
           // margin-top: auto
           // margin-bottom: auto
-          width: 100%//300px
+          //width: 100%//300px
           background-color: transparent
-          padding-left: 20px
-          padding-right: 20px
+          // padding-left: 20px
+          // padding-right: 20px
           color: $white
+
+          &#searchsubmit
+            background: url('../images/index/main/icon-search.png') center no-repeat
+            background-size: contain
+
+            width: 20px
+            &:hover 
+              cursor: pointer
+
+          &#s 
+            height: 50px
+            border: 2px solid #0096ff
+            width: 100%
+            /* background-color: transparent; */
+            padding-left: 20px
+            padding-right: 20px
+            color: #ffffff
+
+
           
           
-        a 
+        a, div 
           display: block
           position: absolute
           top: 13px
           right: 32px 
+
+        a
           img 
             
             width: 20px
@@ -213,63 +234,96 @@ body
         // justify-content: space-between
         text-align: center
         height: 100%
+        list-style-type: none
 
         -webkit-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1) //55,55,56,1
         -moz-box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
         box-shadow: 0px 0px 25px 0px rgba(05,05,05,1)
+
+        .menu-item
+          &:nth-child(2) 
+            .menu-item__icon 
+              .img
+                background-image: url('../images/index/main/menu-objects.png')
+
+          &:nth-child(3) 
+            .menu-item__icon 
+              .img
+                background-image: url('../images/index/main/menu-company.png')
+
+          
+          &:nth-child(4) 
+            .menu-item__icon 
+              .img
+                background-image: url('../images/index/main/menu-reviews.png')
+
+
+          &:nth-child(5) 
+            .menu-item__icon 
+              .img
+                background-image: url('../images/index/main/menu-contacts.png')
+
+
+
         
         
 
-        &-item
-          text-align: center
-          height: 15.3vh //(82.5 - 3 - 3) / 5
-          max-height: 165px
-          display: flex
-          flex-direction: column
-          align-content: space-around
-          justify-content: center
-          // padding: 3vh 0
-          // margin-bottom: 3vh
-          &:last-child 
-            // margin-bottom: 0
-          &__icon
-            // height: 6vh
-            img 
-              max-height: 5vh
-          &__txt
-            margin-top: 10px
-            padding: 0px 10px
-            a
-              color: $white
-              font-family: 'Russo One', 'san-serif'
-              font-size: 15px
-              text-decoration: none
-              text-transform: uppercase
-              &:hover 
-                color: $blue
+      &-item
+        text-align: center
+        height: 15.3vh //(82.5 - 3 - 3) / 5
+        max-height: 165px
+        display: flex
+        flex-direction: column
+        align-content: space-around
+        justify-content: center
+        // padding: 3vh 0
+        // margin-bottom: 3vh
+        &:last-child 
+          // margin-bottom: 0
+        &__icon
+          // height: 6vh
+          img 
+            max-height: 5vh
+            width: 100%
+            height: 50px
+            background-image: url('../images/index/main/menu-services.png')
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+        &__txt
+          margin-top: 10px
+          padding: 0px 10px
+          a
+            color: $white
+            font-family: 'Russo One', 'san-serif'
+            font-size: 15px
+            text-decoration: none
+            text-transform: uppercase
+            &:hover 
+              color: $blue
 
-            span
-              display: block
-              width: fit-content
-              margin: 0 auto
+          span
+            display: block
+            width: fit-content
+            margin: 0 auto
+            
               
-                
 
-          &.active, &.current
-            background-color: $white
-            -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
-            -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
-            box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+        &.active, &.current
+          background-color: $white
+          -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          -moz-box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.55)
+          transition: .3s all
+          a 
+            color: $dark
+            border-bottom: 2px solid $blue
+            font-size: 16px
             transition: .3s all
-            a 
-              color: $dark
-              border-bottom: 2px solid $blue
-              font-size: 16px
-              transition: .3s all
-            span
-              border-bottom: 2px solid $blue
-              margin-top: 5px
-              transition: .3s all
+          span
+            border-bottom: 2px solid $blue
+            margin-top: 5px
+            transition: .3s all
 
 
   .page
@@ -317,6 +371,11 @@ body
           // -webkit-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) //55,55,56,1
           // -moz-box-shadow: 0px 0px 34px 0px rgba(05,05,05,1)
           // box-shadow: 0px 0px 34px 0px rgba(05,05,05,1) 
+      
+      
+
+      
+      
       &-first 
         padding-top: 150px !important
       &-dark
@@ -335,6 +394,10 @@ body
           h2, h1 
             color: $white
             font-size: 29px 
+  
+
+    .section-404 
+      padding: 75px 0px 280px 0px
 
 
     /*********** BUTTONS *********/
@@ -428,30 +491,26 @@ body
 
 
 
-  /******   PAGINATOR *******/
+  /******  PAGINATOR *******/
+
+  .paginator a 
+    background-color: #0096ff
+    height: 70px
+    width: 70px
+    padding: 23px 28px
+    display: block
+    margin: 0 auto
+
+  .objects-paginator 
+    display: block
+    
+    text-align: center
+  
+
   .reviews-main, .objects
     &-paginator 
   
     .paginator
-      &-left, &-center, &-right
-        
-        &__wrapper 
-          width: 30% 
-
-        &__digit
-          background-color: $blue
-          height: 70px
-          width: 70px 
-          display: inline-block
-          text-decoration: none
-          &:hover 
-            cursor: pointer
-
-          &.active
-            background-color: $dark
-            transition: .3s all
-            
-
       &-left
         &__wrapper
           text-align: right
@@ -462,7 +521,6 @@ body
             top: 23px
             left: 25px
             height: 25px
-          
 
       &-center
         &__wrapper
@@ -480,7 +538,7 @@ body
 
           &:first-child
             margin-right: 20px //15%
-      
+          
       &-right
         &__wrapper
           text-align: left
@@ -492,8 +550,37 @@ body
             left: 30px
             height: 25px
 
+
       &.active 
         background-color: $dark
+
+
+      &-left, &-center, &-right
+        
+        &__wrapper 
+          // width: 30% 
+
+        &__digit
+          // background-color: $blue
+          // height: 70px
+          // width: 70px 
+          // display: inline-block
+          // text-decoration: none
+          &:hover 
+            // cursor: pointer
+
+          &.active
+            // background-color: $dark
+            // transition: .3s all
+            
+
+      
+
+      
+      
+      
+
+      
 
 
 

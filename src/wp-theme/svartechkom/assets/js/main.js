@@ -1,16 +1,52 @@
 "use strict";
 
 function init() {
+
+  var pistureSwitchers = document.querySelectorAll(' .anobject-stages__first .stages-item__slider .slider-item');
   
-  var menuItems = document.querySelectorAll('.menu .menu-item');
-  //console.log(menuItems);
+  var pisturePhoto = document.querySelector(' .anobject-stages__first .stages-item__photo');
+
+  console.log(pistureSwitchers);
   //console.log(menuItems[1]);
 
-  for(var i=0; i<5; i++) {
-    menuItems[i].addEventListener('mouseover', markAsActive);
+  if( pistureSwitchers.length != 0) {
+    for(var i=0; i<3; i++) {
+      pistureSwitchers[i].addEventListener('click', function(event) {
 
-    menuItems[i].addEventListener('mouseout', markAsNotActive);
+        var currentSwitcher = document.querySelector(' .anobject-stages__first .stages-item__slider .slider-item.current');
+        console.log(currentSwitcher);
+        currentSwitcher.classList.remove('current');
+        
+        this.classList.add('current');
+
+
+        var pictureSrc = this.childNodes[1].src; 
+        console.log(pictureSrc);
+        console.log(pisturePhoto.childNodes[1].src);
+        //pisturePhoto.childNodes[0].src = pictureSrc;
+        pisturePhoto.childNodes[1].src = pictureSrc;
+      }
+      );
+  
+      //menuItems[i].addEventListener('click', markAsNotActive);
+    }
   }
+
+
+  
+  var menuItems = document.querySelectorAll('.menu .menu-item');
+  console.log(menuItems);
+  //console.log(menuItems[1]);
+
+  if( menuItems.length != 0) {
+    for(var i=0; i<5; i++) {
+      menuItems[i].addEventListener('mouseover', markAsActive);
+  
+      menuItems[i].addEventListener('mouseout', markAsNotActive);
+    }
+  }
+
+  
 
 
   var darkButtons = document.querySelectorAll('.button-c');

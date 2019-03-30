@@ -103,68 +103,114 @@ get_header();
           </div>
         </div>
 
-        <div class="row">
-          <!-- .slider -->
-          <div class="aservice-objects-slider">
-              <a class="aservice-objects-slider__left arrow">
+        <div id="carouselObjects" class="carousel slide aservice-objects-slider">
+
+            <div class="aservice-slider-wrapper">
+
+
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  
+                    
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="aservice-objects-slider__item ">
+                          <div class="slider-item__photo">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
+                          </div>
+                          <div class="slider-item__txt">
+                            <div class="slider-item__title"> 
+                              «АРЕНА-LIFE»
+                            </div>
+                            <div class="slider-item__descr"> 
+                                Изготовление и монтаж 
+                                металоконструкций для 
+                                батутного центра
+                            </div>
+                            <div class="button button-c slider-item__button">
+                              <a href="anobject.html">посмотреть</a>
+                              <div class="img-tool gray" ></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+
+                <div class="carousel-item ">
+                  
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                      <div class="aservice-objects-slider__item ">
+                        <div class="slider-item__photo">
+                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
+                        </div>
+                        <div class="slider-item__txt">
+                          <div class="slider-item__title"> 
+                            «АРЕНА-LIFE»
+                          </div>
+                          <div class="slider-item__descr"> 
+                              Изготовление и монтаж 
+                              металоконструкций для 
+                              батутного центра
+                          </div>
+                          <div class="button button-c slider-item__button">
+                            <a href="anobject.html">посмотреть</a>
+                            <div class="img-tool gray" ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                      <div class="aservice-objects-slider__item ">
+                        <div class="slider-item__photo">
+                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
+                        </div>
+                        <div class="slider-item__txt">
+                            <div class="slider-item__title"> 
+                              «АРЕНА-LIFE»
+                            </div>
+                            <div class="slider-item__descr"> 
+                                Изготовление и монтаж 
+                                металоконструкций для 
+                                батутного центра
+                            </div>
+                            <div class="button button-c slider-item__button">
+                              <a href="anobject.html">посмотреть</a>
+                              <div class="img-tool gray" ></div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                 
+                </div>
+
+               
+              </div>
+
+
+              <a class="carousel-control-prev aservice-objects-slider__left arrow" href="#carouselObjects" role="button" data-slide="prev">
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
               </a>
-              <a class="aservice-objects-slider__right arrow">
+              <a class="carousel-control-next aservice-objects-slider__right arrow" href="#carouselObjects" role="button" data-slide="next">
                 <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
               </a>
 
-            <div class="aservice-slider-wrapper">
-              <div class="row">
-                  <div class="col-12 col-xl-6">
-                      <div class="aservice-objects-slider__item ">
-                          <div class="slider-item__photo">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
-                          </div>
-                          <div class="slider-item__txt">
-                              <div class="slider-item__title"> 
-                                «АРЕНА-LIFE»
-                              </div>
-                              <div class="slider-item__descr"> 
-                                  Изготовление и монтаж 
-                                  металоконструкций для 
-                                  батутного центра
-                              </div>
-                              <div class="button button-c slider-item__button">
-                                <a href="anobject.html">посмотреть</a>
-                                <div class="img-tool gray" ></div>
-                              </div>
-                          </div>
-                        </div>
-                  </div>
-                  <div class="col-12 col-xl-6 ">
-                      <div class="aservice-objects-slider__item ">
-                          <div class="slider-item__photo">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
-                          </div>
-                          <div class="slider-item__txt">
-                              <div class="slider-item__title"> 
-                                «АРЕНА-LIFE»
-                              </div>
-                              <div class="slider-item__descr"> 
-                                  Изготовление и монтаж 
-                                  металоконструкций для 
-                                  батутного центра
-                              </div>
-                              <div class="button button-c  slider-item__button">
-                                <a href="anobject.html">посмотреть</a>
-                                <div class="img-tool gray"></div>
-                              </div>
-                          </div>
-                        </div>
-                  </div>
-              </div>
-              
-
             </div>
 
-          </div>
-          <!-- .slider -->
         </div>
+
+       
         
       </div>
       <!-- ./content -->
