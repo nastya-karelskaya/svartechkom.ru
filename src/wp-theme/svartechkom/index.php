@@ -699,7 +699,7 @@ get_header();
                 </div>
                 <div class="order-form-wrapper">
                   <div class="form">
-                    <form action="">
+                    <!-- <form action="">
                       <fieldset>
                         <div class="form-name">
                             <label for="name">Ваше имя:</label>
@@ -726,8 +726,12 @@ get_header();
                         <button type="button">заказать</button>
                         <div class="img-tool blue"></div>
                       </div>
-                    </form>
+                    </form> -->
+                    <?php echo do_shortcode('[contact-form-7 id="150" title="main_form"]');?>
                   </div>
+
+                  
+                  
                 </div>
                 
               </div> 

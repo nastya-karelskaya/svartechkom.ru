@@ -86,6 +86,7 @@ function register_svar_services(){
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
+		//'taxonomies'         => array('services_type'),
 		'query_var'          => true,
 		'rewrite'            => true,
 		'capability_type'    => 'post',
@@ -161,5 +162,66 @@ function register_svar_reviews(){
 		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
 	) );
 }
+
+
+
+/** 
+ * Register Taxonomies
+ */
+
+ // хук для регистрации
+// add_action( 'init', 'create_taxonomy' );
+
+// function create_taxonomy(){
+	
+// 	register_taxonomy('services_type', array('objects'), array(
+// 		'label'                 => '', // определяется параметром $labels->name
+// 		'labels'                => array(
+// 			'name'              => 'Типы работ',
+// 			'singular_name'     => 'Типы работ',
+// 			'search_items'      => 'Поиск Типы работ',
+// 			'all_items'         => 'Все Типы работ',
+// 			'view_item '        => 'Показать Типы работ',
+// 			'parent_item'       => 'Родитель Типы работ',
+// 			'parent_item_colon' => 'Родитель Типы работ:',
+// 			'edit_item'         => 'Редактировать Типы работ',
+// 			'update_item'       => 'Обновить Типы работ',
+// 			'add_new_item'      => 'Добавить новое Типы работ',
+// 			'new_item_name'     => 'Новое имя для Типы работ',
+// 			'menu_name'         => 'Типы работ',
+// 		),
+// 		'description'           => '', // описание таксономии
+// 		'public'                => true,
+// 		'publicly_queryable'    => null, // равен аргументу public
+// 		// 'show_in_nav_menus'     => true, // равен аргументу public
+// 		// 'show_ui'               => true, // равен аргументу public
+// 		// 'show_in_menu'          => true, // равен аргументу show_ui
+// 		// 'show_tagcloud'         => true, // равен аргументу show_ui
+// 		// 'show_in_rest'          => null, // добавить в REST API
+// 		// 'rest_base'             => null, // $taxonomy
+// 		'hierarchical'          => false,
+// 		//'update_count_callback' => '_update_post_term_count',
+// 		'rewrite'               => true,
+// 		//'query_var'             => $taxonomy, // название параметра запроса
+// 		//'capabilities'          => array(),
+// 		//'meta_box_cb'           => null, // callback функция. Отвечает за html код метабокса (с версии 3.8): post_categories_meta_box или post_tags_meta_box. Если указать false, то метабокс будет отключен вообще
+// 		//'show_admin_column'     => false, // Позволить или нет авто-создание колонки таксономии в таблице ассоциированного типа записи. (с версии 3.5)
+// 		//'_builtin'              => false,
+// 		//'show_in_quick_edit'    => null, // по умолчанию значение show_ui
+// 	) );
+
+
+// }
+
+
+// add_action( 'init', 'services_type_for_pages' );
+// function services_type_for_pages(){
+// 	register_taxonomy_for_object_type( 'services_type', 'objects');
+// }
+
+
+
+
+
 
 ?>

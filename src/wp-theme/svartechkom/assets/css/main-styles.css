@@ -456,7 +456,7 @@ body .page .button {
   display: inline-block;
 }
 
-body .page .button button, body .page .button a {
+body .page .button button, body .page .button input,  body .page .button a {
   width: 100%;
   padding: 17px 0px;
   padding-right: 35px;
@@ -473,7 +473,7 @@ body .page .button button, body .page .button a {
   border: 2px solid #0096ff;
 }
 
-body .page .button button:hover, body .page .button a:hover {
+body .page .button button:hover, body .page .button input:hover, body .page .button a:hover {
   color: #0096ff;
   cursor: pointer;
   -webkit-transition: color .3s;
@@ -1323,15 +1323,21 @@ body .footer-politics a:hover {
 .order-form-wrapper .form-button {
   margin: 0 auto;
   position: absolute;
-  bottom: -31px;
+  bottom: -65px;
   right: 31px;
   width: 195px;
 }
 
-.order-form-wrapper .form-button button {
+.order-form-wrapper .form-button button, .order-form-wrapper .form-button input  {
   background-color: #ffffff !important;
   color: #050505 !important;
   border: 2px solid #dddddd !important;
+  padding: 0px 10px !important;
+}
+
+.order-form-wrapper .form-button button, .order-form-wrapper .form-button .img-tool  {
+  top: 28px !important;
+
 }
 
 .order .form-photo {
@@ -2142,6 +2148,10 @@ body .footer-politics a:hover {
   /* background: url('../images/index/order/order-back.png') no-repeat center;
   background-size: contain; */
   
+}
+
+.aservice-path {
+  color: #ffffff;
 }
 
 .aservice-main {
