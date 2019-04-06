@@ -308,11 +308,12 @@ get_header();
                   <img src="<?php echo get_template_directory_uri() . '/assets/images/index/objects/objects.png';?>" alt="Наши объекты">
                 </div>
                 
-                <div id="carouselObjects" class="carousel slide objects-slider">
+               
 
                   <div class="slider-wrapper">
 
-                    <div class="carousel-inner ">
+                    <div class="main-objects-slider">
+                      
 
                       <?php
                         $posts = get_posts( array(
@@ -324,112 +325,42 @@ get_header();
                           'post_type'   => 'objects',
                           //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
                         ) );
-        
-                    
-                    $first_post = $posts[0];
-                    //echo $big_post;
-                    
-                    if($first_post) {
-                      $first_post_id = $first_post->ID;
-                      $first_post_link = get_the_permalink ( $first_post_id);
 
-                      ?>
-
-                      <div class="carousel-item active">
-                        
-                          
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="objects-slider__item">
-                              <div class="slider-item__title"> <?php echo $first_post->post_title; ?>
-
-                              </div>
-                              <div class="button button-c slider-item__button">
-                                <a href="<?php echo $first_post_link; ?>">посмотреть</a>
-                                
-                                <div class="img-tool gray"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    
-
-                      </div>
-                        
-                      <!-- <div class="carousel-item ">
-                      
-                        
-                            <div class="row">
-                              <div class="col-12">
-                              <div class="objects-slider__item">
-                                <div class="slider-item__title"> «АРЕНА-LIFE»
-
-                                </div>
-                                <div class="button button-c slider-item__button">
-                                  <a href="anobject.html">посмотреть</a>
-                                  
-                                  <div class="img-tool gray"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                      </div> -->
-                    
-
-                     <?php  
-                        }
-
-                        foreach( $posts as $post ){
-                          if($post != $first_post) {
+                        foreach($posts as $post) {
+                         
                             setup_postdata($post);
 
                       ?>
 
+                      <div class="objects-wrapper">
+                        <div class="objects-slider__item" style="width: 350px;">
+                          <div class="slider-item__title"> <?php the_title(); ?>
 
-
-                      <div class="carousel-item">
-                        
-                          
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="objects-slider__item">
-                              <div class="slider-item__title"> <?php the_title(); ?>
-
-                              </div>
-                              <div class="button button-c slider-item__button">
-                                <a href="<?php the_permalink(); ?>">посмотреть</a>
-                                
-                                <div class="img-tool gray"></div>
-                              </div>
-                            </div>
+                          </div>
+                          <div class="button button-c slider-item__button">
+                            <a href="<?php the_permalink(); ?>">посмотреть</a>
+                            
+                            <div class="img-tool gray"></div>
                           </div>
                         </div>
-                    
-
                       </div>
+                    
+                   
 
-                      <?php
-                        }
-                        }
-        
-                        wp_reset_postdata(); // сброс
-        
-                      ?>
+                    <?php  
+                      }
+      
+                      wp_reset_postdata(); // сброс
+                    ?>
 
+                   
                     </div>
 
 
-                    <a class="carousel-control-prev objects-slider__left arrow" href="#carouselObjects" role="button" data-slide="prev">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
-                    </a>
-                    <a class="carousel-control-next objects-slider__right arrow" href="#carouselObjects" role="button" data-slide="next">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
-                    </a>
 
                   </div>
 
-                </div>
+            
 
               </div> 
             </div>
@@ -554,15 +485,17 @@ get_header();
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reviews/reviews.png';?>" alt="Наши объекты">
                   </div>
                 
-                  <div id="carouselReviews" class="carousel slide reviews-slider">
+                  <!-- <div id="carouselReviews" class="carousel slide reviews-slider"> -->
 
-                    <div class="slider-wrapper">
+                  <div class="slider-wrapper">
+
+                    <div class="main-reviews-slider">
 
 
-                      <div class="carousel-inner ">
+                      <!-- <div class="carousel-inner "> -->
 
                         <?php
-                          $posts = get_posts( array(
+                          $reviews_posts = get_posts( array(
                             
                             'orderby'     => 'date',
                             'order'       => 'ASC',
@@ -572,58 +505,15 @@ get_header();
                             //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
                           ) );
           
-                      
-                          $first_post = $posts[0];
-                          //echo $big_post;
+                          foreach( $reviews_posts as $post ) {
                           
-                          if($first_post) {
-                            $first_post_id = $first_post->ID;
-                            $first_post_link = get_the_permalink ( $first_post_id);
-
-                        ?>
-
-                          <div class="carousel-item active">
-                            
-                              
-                                <div class="row">
-                                  <div class="col-12">
-                                    <div class="reviews-slider__item">
-                                      <div class="slider-item__title"> 
-                                        <div class="title-img">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/quote.png';?>" alt="quote">
-                                        </div>
-                                        <div class="title-txt"><?php echo $first_post->post_title; ?></div> 
-                                      </div>
-                                      <div class="slider-item__descr">
-                                        <div class="descr-img"></div>
-                                        <div class="descr-txt">Текст отзыва</div>
-                                      </div>
-                                      <div class="button button-c  slider-item__button">
-                                          <a href="<?php echo $first_post_link; ?>">посмотреть</a>
-                                        <div class="img-tool gray"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              
-                            
-
-                          </div>
-
-                        <?php 
-
-                          }
-
-                          foreach( $posts as $post ){
-                            if($post != $first_post) {
                               setup_postdata($post);
 
-                        ?>
 
-                          <div class="carousel-item">
-                             
-                            <div class="row">
-                              <div class="col-12">
+                        ?>
+      
+                            
+                              <div class="reviews-item__wrapper">
                                 <div class="reviews-slider__item">
                                   <div class="slider-item__title"> 
                                     <div class="title-img">
@@ -641,27 +531,25 @@ get_header();
                                   </div>
                                 </div>
                               </div>
-                            </div>
-
-                          </div>
+                                         
 
                         <?php
-                          }
+                          
                           }
           
                           wp_reset_postdata(); // сброс
           
                         ?>
                      
-                      </div>
+                    
 
 
-                      <a class="carousel-control-prev reviews-slider__left arrow" href="#carouselReviews" role="button" data-slide="prev">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
+                      <!-- <a class="carousel-control-prev reviews-slider__left arrow" href="#carouselReviews" role="button" data-slide="prev">
+                        <img src="<?php //echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
                       </a>
                       <a class="carousel-control-next reviews-slider__right arrow" href="#carouselReviews" role="button" data-slide="next">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
-                      </a>
+                        <img src="<?php //echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
+                      </a> -->
 
                     </div>
 

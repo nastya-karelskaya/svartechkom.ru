@@ -2,6 +2,25 @@
 
 function init() {
 
+  var burgerMenu = document.querySelector(' .header-burger');
+
+  burgerMenu.addEventListener('click', function(event) {
+    var fixedMenu = document.querySelector(' .fixed-menu');
+
+    if(fixedMenu.classList.contains('opened')) {
+      fixedMenu.style['margin-left'] = '-200px';
+      fixedMenu.classList.remove('opened');
+    }
+    else {
+      fixedMenu.classList.add('opened');
+      fixedMenu.style['margin-left'] = 0;
+    }
+    
+
+
+    
+  });
+
   var pistureSwitchers = document.querySelectorAll(' .anobject-stages__first .stages-item__slider .slider-item');
   
   var pisturePhoto = document.querySelector(' .anobject-stages__first .stages-item__photo');

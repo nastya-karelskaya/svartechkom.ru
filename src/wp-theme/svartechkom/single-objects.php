@@ -178,12 +178,12 @@ get_header();
                                 <img src="<?php the_field("stage_1_photo_4"); ?>" alt="">
                             </div>
                           </div>
-                          <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal">
+                          <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal1">
                               <img src="<?php the_field("stage_1_photo_big"); ?>" alt="">
                           </div>
 
                           <!-- Modal -->
-                          <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="photoModalLabel" aria-hidden="true">
+                          <div class="modal fade" id="photoModal1" tabindex="-1" role="dialog" aria-labelledby="photoModal1Label" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
@@ -194,10 +194,10 @@ get_header();
                                 </div>
                                 <div class="modal-body">
                                   <div class="modal-photo">
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                      <ol class="carousel-indicators">
+                                    <div id="photoModal1Indicators" class="carousel slide" data-ride="carousel">
+                                      <!-- <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                          <!-- <img src="<?php //echo get_template_directory_uri() . '/assets/images/services/anobject/slider-small.jpeg';?>" alt=""> -->
+                                          
                                         </li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1">
                                           
@@ -205,7 +205,7 @@ get_header();
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2">
                                           
                                         </li>
-                                      </ol>
+                                      </ol> -->
 
                                       <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -226,10 +226,10 @@ get_header();
                                         </div>
                                       </div>
 
-                                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <a class="carousel-control-prev" href="#photoModal1Indicators" role="button" data-slide="prev">
                                         <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
                                       </a>
-                                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <a class="carousel-control-next" href="#photoModal1Indicators" role="button" data-slide="next">
                                         <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
                                       </a>
                                     </div>
@@ -268,12 +268,78 @@ get_header();
                             <img src="<?php the_field("stage_2_photo_4"); ?>" alt="">
                         </div>
                       </div>
-                      <div class="stages-item__photo">
+                      <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal2">
                           <img src="<?php the_field("stage_2_photo_big"); ?>" alt="">
                       </div>
-    
-                    </div>
-              </div>
+
+                       <!-- Modal -->
+                        <div class="modal fade" id="photoModal2" tabindex="-1" role="dialog" aria-labelledby="photoModal2Label" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="modal-photo">
+                                  <div id="photoModal2Indicators" class="carousel slide" data-ride="carousel">
+                                    <!-- <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                        
+                                      </li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                        
+                                      </li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                        
+                                      </li>
+                                    </ol> -->
+
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                        
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#photoModal2Indicators" role="button" data-slide="prev">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
+                                    </a>
+                                    <a class="carousel-control-next" href="#photoModal2Indicators" role="button" data-slide="next">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
+                                    </a>
+                                  </div>
+                                  
+                                </div>
+
+                                
+                                  
+                                
+                                  
+                                
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+          
+      
+                      </div>
+                </div>
               <div class="col-12 col-xl-6">
                   <div class="stages-item__left">
                       <div class="stages-item__digit">
@@ -318,9 +384,75 @@ get_header();
                             <img src="<?php the_field("stage_3_photo_4"); ?>" alt="">
                         </div>
                       </div>
-                      <div class="stages-item__photo">
+                      <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal3">
                           <img src="<?php the_field("stage_3_photo_big"); ?>" alt="">
                       </div>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="photoModal3" tabindex="-1" role="dialog" aria-labelledby="photoModal2Label" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="modal-photo">
+                                  <div id="photoModal3Indicators" class="carousel slide" data-ride="carousel">
+                                    <!-- <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                       
+                                      </li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                        
+                                      </li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                        
+                                      </li>
+                                    </ol> -->
+
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                        
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#photoModal3Indicators" role="button" data-slide="prev">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
+                                    </a>
+                                    <a class="carousel-control-next" href="#photoModal3Indicators" role="button" data-slide="next">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
+                                    </a>
+                                  </div>
+                                  
+                                </div>
+
+                                
+                                  
+                                
+                                  
+                                
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+
     
                     </div>
               </div>
@@ -343,9 +475,74 @@ get_header();
                             <img src="<?php the_field("stage_4_photo_4"); ?>" alt="">
                         </div>
                       </div>
-                      <div class="stages-item__photo" >
+                      <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal4">
                           <img src="<?php the_field("stage_4_photo_big"); ?>" alt="">
                       </div>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="photoModal4" tabindex="-1" role="dialog" aria-labelledby="photoModal4Label" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="modal-photo">
+                                  <div id="photoModal4Indicators" class="carousel slide" data-ride="carousel">
+                                    <!-- <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                       
+                                      </li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                                        
+                                      </li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                                        
+                                      </li>
+                                    </ol> -->
+
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                        
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#photoModal4Indicators" role="button" data-slide="prev">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
+                                    </a>
+                                    <a class="carousel-control-next" href="#photoModal4Indicators" role="button" data-slide="next">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
+                                    </a>
+                                  </div>
+                                  
+                                </div>
+
+                                
+                                  
+                                
+                                  
+                                
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
     
                     </div>
               </div>
@@ -393,30 +590,9 @@ get_header();
                       <!-- <div class="order-subtitle">
                           Есть вопросы? Напишите нам!
                       </div> -->
-                      <div class="contacts-form-wrapper">
+                      <div class="contacts-form-wrapper modal-form">
                           <div class="form">
-                            <form action="">
-                              <fieldset>
-                                <div class="form-name">
-                                    <label for="name">Ваше имя:</label>
-                                    <input type="text" name="name" placeholder="Имя">
-                                </div>
-                                
-                                <div class="form-phone">
-                                    <label for="phone">Ваш телефон:</label>
-                                    <input type="text" name="phone" placeholder="Телефон">
-                                </div>
-                                
-                              </fieldset>
-                              
-                            
-                              
-          
-                              <div class="button button-w form-button">
-                                <button type="button">заказать</button>
-                                <div class="img-tool blue"></div>
-                              </div>
-                            </form>
+                            <?php echo do_shortcode('[contact-form-7 id="159" title="modal_form"]'); ?>
                           </div>
           
                         </div>

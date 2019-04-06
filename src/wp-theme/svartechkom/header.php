@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="css/styles.css"> -->
   <!-- <meta name="robots" content="noindex"> -->
   <?php wp_head(); ?>
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
   
 </head>
@@ -54,46 +54,7 @@
     'walker'          => '',
   ] );?>
       
-      <!-- <div class="menu-desktop">
-        <div class="menu-desktop-item">
-            <div class="menu-desktop-item__icon">
-              <img src="images/index/main/menu-services.png" alt="Услуги">
-            </div>
-            <div class="menu-desktop-item__txt">
-              <a href="services.html">Услуги</a>
-            </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon">
-            <img src="images/index/main/menu-objects.png" alt="Наши объекты">
-          </div>
-          <div class="menu-desktop-item__txt">
-            <a href="objects.html">Наши <span>объекты</span></a> 
-          </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon"><img src="images/index/main/menu-company.png" alt=" О компании">
-          </div>
-          <div class="menu-desktop-item__txt">
-            <a href="about.html">О компании</a> 
-          </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon"><img src="images/index/main/menu-reviews.png" alt="Отзывы">
-          </div>
-          <div class="menu-desktop-item__txt">
-          <a href="reviews.html">Отзывы</a>  
-          </div>
-        </div>
-        <div class="menu-desktop-item">
-          <div class="menu-desktop-item__icon"><img src="images/index/main/menu-contacts.png" alt="Контакты">
-          </div>
-          <div class="menu-desktop-item__txt">
-            <a href="contacts.html">Контакты</a>
-            
-          </div>
-        </div>
-      </div> -->
+      
   </div>
 </div> 
 
@@ -103,120 +64,76 @@
 
       <header class="fixed-header">
         
-            <div class="header">
-               
-                <nav class="navbar menu-mobile">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <a class="navbar-brand" href="<?php home_url()?>">Logo</a>
-                
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="services.html">Услуги</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="objects.html">Наши <span>объекты</span></a>
-                       
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">О компании</a>
-                        
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Отзывы</a>
-                        
-                      </li>
+        <div class="header">
+          <div class="header-burger"></div>
 
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                        
-                      </li>
-                      
-                      
-                    </ul>
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form> -->
-                  </div>
-                </nav>
-
-                
-        
-                <div class="header-logo">
-                  <a href="index.html">logo</a>
-                </div>
-        
-                <div class="header-contacts">
-                    <div class="header-phones">
-                        <div class="header-phones__top">
-                          <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-phones.png';?>" alt="Телефоны">
-                          <div>
-                              Телефон:
-                          </div>
-                        </div>
-                        <a href="tel:+77777777777" class="header-phones__bottom">
-                            +7 777 7777777
-                        </a>
-                      </div>
-                  
-                      <div class="header-address">
-                        <div class="header-address__top">
-                          <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-address.png';?>" alt="Адрес">
-                          <div>
-                              Адрес:
-                          </div>
-                        </div>
-                        <a href="<?php echo home_url() . '/contacts' ?>" class="header-address__bottom">
-                            185001, Петрозаводск, <br> 
-                            ул. Путейская, 5
-                        </a>
-                      </div>
-                    
-                      <div class="header-mail">
-                        <div class="header-mail__top">
-                          <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-mail.png';?>" alt="Почта">
-                          <div>
-                              Email:
-                          </div>
-                        </div>
-                        <a href="mailto:svartechcom@gmail.com" class="header-mail__bottom">
-                            svartechcom@gmail.com
-                        </a>
-          
-                      </div>
-                </div>
-
-                <div class="header-hidden">
-
-                </div>
-        
-                <div class="header-other">
-                    <div class="header-search">
-
-                    <?php get_search_form(); ?>
-                      <!-- <input type="text" placeholder="Поиск">
-                       
-                      <a href="#"><img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-search.png';?>" alt="Поиск"></a> -->
-                      
-                    </div>
-                    <div class="header-padding"></div>
-                    <div class="header-vk">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-vk.png';?>" alt="Вконтакте">
-                    </div>
-                    <div class="header-padding"></div>
-                </div>
+          <div class="header-logo">
+            
               
+              <?php the_custom_logo(); ?>
+            
+          </div>
+
+          <div class="header-center">
+            <div class="row">
+              <div class="col-12 col-sm-5 col-md-4 col-lg-6 col-xl-8 pl-0 pr-0">
+                <div class="header-contacts">
+                  <div class="header-phones">
+                    <div class="header-phones__top">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-phones.png';?>" alt="Телефоны">
+                      <div>
+                          Телефон:
+                      </div>
+                    </div>
+                    <a href="tel:77777777777" class="header-phones__bottom">
+                        +7 777 7777777
+                    </a>
+                  </div>
                 
-        
+                  <div class="header-address">
+                    <div class="header-address__top">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-address.png';?>" alt="Адрес">
+                      <div>
+                          Адрес:
+                      </div>
+                    </div>
+                    <a href="<?php echo home_url() . '/contacts' ?>" class="header-address__bottom">
+                        185001, Петрозаводск, <br> 
+                        ул. Путейская, 5
+                    </a>
+                  </div>
                 
+                  <div class="header-mail">
+                    <div class="header-mail__top">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-mail.png';?>" alt="Почта">
+                      <div>
+                          Email:
+                      </div>
+                    </div>
+                    <a href="mailto:svartechcom@gmail.com" class="header-mail__bottom">
+                        svartechcom@gmail.com
+                    </a>
+      
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 d-none d-sm-block col-sm-7 col-md-8 col-lg-6 col-xl-4 pr-0 pr-md-auto">
+                <div class="header-other">
+                  <div class="header-search">
+                    <?php get_search_form(); ?>
+                  </div>
                 
-                
-            </div> 
+                  <div class="header-vk">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-vk.png';?>" alt="Вконтакте">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 
             
-        
-            
+          </div> 
+                            
+        </div> 
+          
       </header>

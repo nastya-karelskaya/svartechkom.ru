@@ -37,11 +37,11 @@ get_header();
                     <div class="col-12 col-md-6">
                         <div class="contacts-part">
                             <div class="contacts-part__phone">
-                              <span>Телефон</span>:
+                              <span>Телефон</span>: 8 911 429 66 34
                             </div>
                   
                             <div class="contacts-part__email">
-                              <span>E-mail</span>:
+                              <span>E-mail</span>: svartechcom@mail.ru 
                             </div>
                           </div>
                     </div>
@@ -73,34 +73,7 @@ get_header();
                 
                 <div class="contacts-form-wrapper">
                   <div class="form">
-                    <form action="">
-                      <fieldset>
-                        <div class="form-name">
-                            <label for="name">Ваше имя:</label>
-                            <input type="text" name="name" placeholder="Имя">
-                        </div>
-                        
-                        <div class="form-phone">
-                            <label for="phone">Ваш телефон:</label>
-                            <input type="text" name="phone" placeholder="Телефон">
-                        </div>
-                        
-                      </fieldset>
-                      
-                      <fieldset>
-                        <div class="form-txt">
-                            <label for="txt">Сообщение:</label>
-                            <textarea name="txt" id="" cols="30"  placeholder="Сообщение"></textarea>
-                        </div>
-                        
-                      </fieldset>
-                      
-  
-                      <div class="button button-w form-button">
-                        <button type="button">посмотреть</button>
-                        <div class="img-tool blue"></div>
-                      </div>
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="151" title="contacts_form"]');?>
                   </div>
   
                 </div>

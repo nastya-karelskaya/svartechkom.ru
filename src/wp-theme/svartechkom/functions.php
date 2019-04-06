@@ -55,6 +55,14 @@ function svartechkom_menus() {
 
 	add_theme_support( 'html5', array( 'search-form' ) );
 
+	add_theme_support( 'custom-logo', [
+		'height'      => 70,
+		'width'       => 70,
+		'flex-width'  => false,
+		'flex-height' => false,
+		'header-text' => '',
+	] );
+
 
 }
 

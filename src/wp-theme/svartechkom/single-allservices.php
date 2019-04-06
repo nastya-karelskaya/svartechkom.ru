@@ -107,13 +107,11 @@ get_header();
           </div>
         </div>
 
-        <div id="carouselObjects" class="carousel slide aservice-objects-slider">
+        <!-- <div id="carouselObjects" class="carousel slide aservice-objects-slider"> -->
 
-            <div class="aservice-slider-wrapper">
-
-
-              <div class="carousel-inner ">
-                <div class="carousel-item active">
+            <div class="aservice-objects-slider__wrapper">
+              
+              <div class="aservice-objects-slider">
 
                 <?php  
 
@@ -125,97 +123,85 @@ get_header();
                   $example_post_1_excerpt = get_field('descr-short', get_field("example-1"));
                   $example_post_2_excerpt = get_field('descr-short', get_field("example-2"));
                   $example_post_3_excerpt = get_field('descr-short', get_field("example-3"));
-          
-              ?>
+            
+                ?>
                   
+                
+                <div class="aservice-item__wrapper">
+                  <div class="aservice-objects-slider__item ">
+                    <div class="slider-item__photo">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
+                    </div>
+                    <div class="slider-item__txt">
+                      <div class="slider-item__title"> 
+                      <?php echo $example_post_1->post_title; ?> 
+                      </div>
+                      <div class="slider-item__descr"> 
+                      <?php echo $example_post_1_excerpt; ?> 
+                      </div>
+                      <div class="button button-c slider-item__button">
+                        <a href="<?php echo get_the_permalink( get_field("example-1") );?>">посмотреть</a>
+                        <div class="img-tool gray" ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                     
-                  <div class="row">
-                    <div class="col-12 col-xl-6">
-                        <div class="aservice-objects-slider__item ">
-                          <div class="slider-item__photo">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
-                          </div>
-                          <div class="slider-item__txt">
-                            <div class="slider-item__title"> 
-                            <?php echo $example_post_1->post_title; ?> 
-                            </div>
-                            <div class="slider-item__descr"> 
-                            <?php echo $example_post_1_excerpt; ?> 
-                            </div>
-                            <div class="button button-c slider-item__button">
-                              <a href="<?php echo get_the_permalink( get_field("example-1") );?>">посмотреть</a>
-                              <div class="img-tool gray" ></div>
-                            </div>
-                          </div>
-                        </div>
+
+                <div class="aservice-item__wrapper">
+                  <div class="aservice-objects-slider__item ">
+                    <div class="slider-item__photo">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
                     </div>
-                  </div>
-                  
-
-                </div>
-
-                <div class="carousel-item ">
-                  
-                  <div class="row">
-                    <div class="col-12 col-xl-6">
-                      <div class="aservice-objects-slider__item ">
-                        <div class="slider-item__photo">
-                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
-                        </div>
-                        <div class="slider-item__txt">
-                          <div class="slider-item__title"> 
-                            <?php echo $example_post_2->post_title; ?>
-                          </div>
-                          <div class="slider-item__descr"> 
-                            <?php echo $example_post_2_excerpt; ?>
-                          </div>
-                          <div class="button button-c slider-item__button">
-                            <a href="<?php echo get_the_permalink( get_field("example-2") );?>">посмотреть</a>
-                            <div class="img-tool gray" ></div>
-                          </div>
-                        </div>
+                    <div class="slider-item__txt">
+                      <div class="slider-item__title"> 
+                        <?php echo $example_post_2->post_title; ?>
+                      </div>
+                      <div class="slider-item__descr"> 
+                        <?php echo $example_post_2_excerpt; ?>
+                      </div>
+                      <div class="button button-c slider-item__button">
+                        <a href="<?php echo get_the_permalink( get_field("example-2") );?>">посмотреть</a>
+                        <div class="img-tool gray" ></div>
                       </div>
                     </div>
                   </div>
-
                 </div>
+                  
 
-                <div class="carousel-item ">
-                  <div class="row">
-                    <div class="col-12 col-xl-6">
-                      <div class="aservice-objects-slider__item ">
-                        <div class="slider-item__photo">
-                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
+                <div class="aservice-item__wrapper">
+                  <div class="aservice-objects-slider__item ">
+                    <div class="slider-item__photo">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/services/aservice/aservice-object-item.jpeg';?>" alt="">                      
+                    </div>
+                    <div class="slider-item__txt">
+                        <div class="slider-item__title"> 
+                          <?php echo $example_post_3->post_title; ?>
                         </div>
-                        <div class="slider-item__txt">
-                            <div class="slider-item__title"> 
-                              <?php echo $example_post_3->post_title; ?>
-                            </div>
-                            <div class="slider-item__descr"> 
-                              <?php echo $example_post_3_excerpt; ?>
-                            </div>
-                            <div class="button button-c slider-item__button">
-                              <a href="<?php echo get_the_permalink( get_field("example-3") );?>">посмотреть</a>
-                              <div class="img-tool gray" ></div>
-                            </div>
+                        <div class="slider-item__descr"> 
+                          <?php echo $example_post_3_excerpt; ?>
                         </div>
-                      </div>
+                        <div class="button button-c slider-item__button">
+                          <a href="<?php echo get_the_permalink( get_field("example-3") );?>">посмотреть</a>
+                          <div class="img-tool gray" ></div>
+                        </div>
                     </div>
                   </div>
-
-                 
                 </div>
 
-               
+                
               </div>
 
+              
+            </div>
 
-              <a class="carousel-control-prev aservice-objects-slider__left arrow" href="#carouselObjects" role="button" data-slide="prev">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
+
+              <!-- <a class="carousel-control-prev aservice-objects-slider__left arrow" href="#carouselObjects" role="button" data-slide="prev">
+                <img src="<?php //echo //get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
               </a>
               <a class="carousel-control-next aservice-objects-slider__right arrow" href="#carouselObjects" role="button" data-slide="next">
-                <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
-              </a>
+                <img src="<?php //echo //get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
+              </a> -->
 
             </div>
 
@@ -253,34 +239,7 @@ get_header();
             </div>
             <div class="aservice-order-form-wrapper">
               <div class="form">
-                <form action="">
-                  <fieldset>
-                    <div class="form-name">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" name="name" placeholder="Имя">
-                    </div>
-                    
-                    <div class="form-phone">
-                        <label for="phone">Ваш телефон:</label>
-                        <input type="text" name="phone" placeholder="Телефон">
-                    </div>
-                    
-                  </fieldset>
-                  
-                  <fieldset>
-                    <div class="form-txt">
-                        <label for="txt">Сообщение:</label>
-                        <textarea name="txt" id="" cols="30"  placeholder="Сообщение"></textarea>
-                    </div>
-                    
-                  </fieldset>
-                  
-
-                  <div class="button button-c form-button">
-                    <button type="button">посмотреть</button>
-                    <div class="img-tool blue"></div>
-                  </div>
-                </form>
+                <?php echo do_shortcode('[contact-form-7 id="152" title="service_form"]');?> 
               </div>
             </div>
           </div>
