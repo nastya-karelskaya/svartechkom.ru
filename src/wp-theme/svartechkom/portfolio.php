@@ -60,9 +60,9 @@ get_header();
             <div class="col-12 col-lg-6 col-xl-4">
 
               <div class="objects-grid__item ">
-                <div class="grid-item__title">
+                <h2 class="grid-item__title">
                 <?php the_title(); ?>
-                </div>
+                </h2>
                 <div class="button button-c grid-item__button">
                     <a href="<?php the_permalink(); ?>">посмотреть</a>
                     <div class="img-tool gray"></div>

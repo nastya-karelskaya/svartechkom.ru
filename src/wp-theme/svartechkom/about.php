@@ -39,17 +39,17 @@ get_header();
                         <div class="col-12 col-sm-6">
                             <ul>
                               <li>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Изготовление металлоконструкций">
                                 Изготовление 
                                   <br> металлоконструкций
                               </li>
                               <li>
-                                  <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                  <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Газовая резка металла">
                                   Газовая резка металла                    
                                             
                               </li>
                               <li>
-                                  <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                  <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Покрасочные работы">
                                   Покрасочные работы   
                               </li>
                             
@@ -58,22 +58,22 @@ get_header();
                         <div class="col-12 col-sm-6">
                           <ul>
                             <li>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Гибка металла и труб">
                                 Гибка металла и труб
         
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Холодная ковка">
                               Холодная ковка
         
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Строительные работы">
                                 Строительные работы                
                                     
                             </li>
                             <li>
-                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Демонтаж конструкций">
                                 Демонтаж конструкций 
                             </li>
                           </ul>
@@ -87,13 +87,13 @@ get_header();
                     <div class="about-left__lists">
                       <ul>
                         <li>
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Пункт">
                             Перед началом работ проводим ревизию проектной 
                             документации, помогаем исправить чертежи, если 
                             необходимо.
                         </li>
                         <li>
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Пункт">
                             Руководители проектов обеспечивают сопровождение на 
                             каждом этапе и лично сдают работу заказчику.
                              
@@ -103,7 +103,7 @@ get_header();
                     </div>
     
                     <div class="about-left__photo">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/about/photo-left.jpeg';?>" alt="">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/about/photo-left.jpeg';?>" alt="Пункт">
                     </div>
     
                   </div>
@@ -111,7 +111,7 @@ get_header();
             <div class="col-12 col-xl-6">
                 <div class="about-right">
                     <div class="about-right__photo">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/about/photo-right.jpeg';?>" alt="">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/about/photo-right.jpeg';?>" alt="Пункт">
                     </div>
                     <div class="about-right__descr">
                         В нашем штате есть специалисты, сертифицированые НАКС. 

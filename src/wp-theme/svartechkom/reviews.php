@@ -44,148 +44,6 @@ get_header();
 
           <div class="row">
 
-            <?php  
-              // $posts = get_posts( array(
-              //       'numberposts' => 6,
-                    
-              //       'orderby'     => 'date',
-              //       'order'       => 'ASC',
-              //       //'meta_key'    => '',
-              //       //'meta_value'  =>'',
-              //       'post_type'   => 'reviews',
-              //       //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-              //     ) );
-
-
-              // foreach( $posts as $post ) {
-                
-              //     setup_postdata($post);
-                      
-            ?>
-
-            <!-- <div class="col-12 col-xl-6">
-              <div class="reviews-main-grid__item ">
-                <div class="grid-item__top">
-                    <div class="item-top__img">
-                      <img src="<?php //echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="">
-                    </div>
-
-                    <div class="item-top__txt">
-                      <div class="item-top__title"> 
-                        <?php //the_title(); ?>
-                      </div>
-  
-                      <div class="item-top__subtitle">
-                        Руководитель
-                      </div>
-                    </div>
-
-                </div>
-                <div class="grid-item__bottom">
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва  
-                </div>
-                
-              
-              </div>
-            </div> -->
-
-            <!-- <div class="col-12 col-xl-6">
-                <div class="reviews-main-grid__item ">
-                    <div class="grid-item__top">
-                        <div class="item-top__img">
-                          <img src="<?php echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="">
-                        </div>
-
-                        <div class="item-top__txt">
-                          <div class="item-top__title"> 
-                            Название компании
-                          </div>
-      
-                          <div class="item-top__subtitle">
-                            Руководитель
-                          </div>
-                        </div>
-
-                    </div>
-                    <div class="grid-item__bottom">
-                        текст отзыва текст отзыва текст отзыва текст отзыва 
-                        текст отзыва текст отзыва текст отзыва текст отзыва 
-                        текст отзыва текст отзыва текст отзыва текст отзыва 
-                        текст отзыва  
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-12 col-xl-6">
-              <div class="reviews-main-grid__item ">
-                <div class="grid-item__top">
-                    <div class="item-top__img">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="">
-                    </div>
-
-                    <div class="item-top__txt">
-                      <div class="item-top__title"> 
-                        Название компании
-                      </div>
-  
-                      <div class="item-top__subtitle">
-                        Руководитель
-                      </div>
-                    </div>
-
-                </div>
-                <div class="grid-item__bottom">
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва 
-                    
-                </div>
-                
-              
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-6">
-              <div class="reviews-main-grid__item ">
-                <div class="grid-item__top">
-                    <div class="item-top__img">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="">
-                    </div>
-
-                    <div class="item-top__txt">
-                      <div class="item-top__title"> 
-                        Название компании
-                      </div>
-  
-                      <div class="item-top__subtitle">
-                        Руководитель
-                      </div>
-                    </div>
-
-                </div>
-                <div class="grid-item__bottom">
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва  
-                </div>
-                  
-                
-              </div>
-            </div> -->
-
-            <?php
-                
-              //}
-
-              //wp_reset_postdata(); // сброс
-
-            ?>
-
             <?php
               global $wp_query;
 
@@ -198,31 +56,37 @@ get_header();
               while( have_posts() ){
                 the_post();
 
+                $review_post_id = get_the_ID();
+
             ?>
 
             <div class="col-12 col-xl-6">
               <div class="reviews-main-grid__item ">
                 <div class="grid-item__top">
                     <div class="item-top__img">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="">
+                      <img src="<?php echo get_field('review_logo', $review_post_id); ?>" alt="Логотип компании">
                     </div>
 
                     <div class="item-top__txt">
-                      <div class="item-top__title"> 
-                        <?php the_title(); ?>
-                      </div>
+                      <h3 class="item-top__title"> 
+                        <?php echo get_field('review_company_name', $review_post_id); ?>
+                      </h3>
   
-                      <div class="item-top__subtitle">
-                        Руководитель
-                      </div>
+                      <h4 class="item-top__subtitle">
+                        <?php echo get_field('review_author', $review_post_id); ?>
+                      </h4>
                     </div>
 
                 </div>
                 <div class="grid-item__bottom">
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва  
+                  <?php echo substr( get_field('review_text', $review_post_id), 0, 190 ) . ' ...'; ?>
+                </div>
+
+                <div class="grid-item__button">
+                  <div class="button button-o">
+                    <a href="<?php the_permalink(); ?>">посмотреть</a>
+                    <div class="img-tool gray"></div>
+                  </div>
                 </div>
                 
               
@@ -235,6 +99,7 @@ get_header();
               }
 
             ?>
+            
 
 
             
@@ -264,30 +129,6 @@ get_header();
 
 
 
-
-            
-        <!-- reviews-paginator -->
-        <!-- <div class="reviews-main-paginator paginator current">
-          <div class="paginator-left__wrapper">
-              <a  href="#" class="paginator-left__digit">
-                <img src="<?php //echo get_template_directory_uri() . '/assets/images/objects/arrow-left.png';?>" alt="Назад">
-              </a>
-          </div>
-          <div class="paginator-center__wrapper">
-              <a  href="#" class="paginator-center__digit current">
-                1
-              </a>
-              <a href="#" class="paginator-center__digit">
-                2 
-              </a>
-          </div>
-          <div class="paginator-right__wrapper">
-              <a  href="#" class="paginator-right__digit">
-                <img src="<?php //echo get_template_directory_uri() . '/assets/images/objects/arrow-right.png';?>" alt="Вперед"> 
-              </a>
-          </div>
-        </div> -->
-        <!-- ./reviews-paginator -->
           
       </div>
       <!-- ./content -->

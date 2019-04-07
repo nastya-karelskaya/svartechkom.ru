@@ -38,7 +38,7 @@ get_header();
             <div class="row">
               <div class="col-12 col-xl-6">
                 <div class="anobject__photo">
-                  <img src="<?php the_field("object_photo"); ?>" alt="">
+                  <img src="<?php the_field("object_photo"); ?>" alt="Фото объекта">
                 </div>
 
               </div>
@@ -49,57 +49,126 @@ get_header();
                       </div>
                       <div class="descr-lists">
                         <ul>
-                          <li>
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_1"); ?>   
-                            </div>
-                          </li>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_2"); ?>                   
-                            </div>
-                          </li>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_3"); ?>        
-                            </div>
-                          </li>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_4"); ?>
-                            </div>
-                          </li>
+                          
+                          <?php $descr_services_1 = get_field('descr_services_1');
+                            if($descr_services_1) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_1; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
+                            
+                            <?php $descr_services_2 = get_field('descr_services_2');
+                            if($descr_services_2) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_2; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
+                          <?php $descr_services_3 = get_field('descr_services_3');
+                            if($descr_services_3) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_3; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
+                          <?php $descr_services_4 = get_field('descr_services_4');
+                            if($descr_services_4) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_4; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
                         </ul>
     
                         <ul>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_5"); ?>
-                            </div>
-                          </li>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_6"); ?>
-                            </div>
-                          </li>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_7"); ?>
-                            </div>
-                          </li>
-                          <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
-                            <div>
-                              <?php the_field("descr_services_8"); ?>
-                            </div>
-                          </li>
+                        <?php $descr_services_5 = get_field('descr_services_5');
+                            if($descr_services_5) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_5; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
+
+                          <?php $descr_services_6 = get_field('descr_services_6');
+                            if($descr_services_6) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_6; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
+
+                          <?php $descr_services_7 = get_field('descr_services_7');
+                            if($descr_services_7) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_7; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
+
+                          <?php $descr_services_8 = get_field('descr_services_8');
+                            if($descr_services_8) {
+                          ?>  
+
+                            <li>
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Посмотреть">
+                              <div>
+                                <?php echo $descr_services_8; ?>   
+                              </div>
+                            </li>    
+
+                          <?php 
+                            }
+                          ?>
                         </ul>
                       </div>
                       <div class="descr-volume">
@@ -114,9 +183,17 @@ get_header();
                         <span>Год</span>:
                         <?php the_field("descr_year"); ?>
                       </div>
-                      <div class="descr-review">
-                        <span>Отзыв заказчика</span>: <a href="<?php the_field("descr_customer"); ?>">Посмотреть</a>
-                      </div>
+
+                      <?php $descr_review = get_field('descr_customer');
+                        if($descr_review) {
+                      ?>
+                        <div class="descr-review">
+                          <span>Отзыв заказчика</span>: <a href="<?php echo $descr_review; ?>">Посмотреть</a>
+                        </div>
+                      <?php 
+                        }
+                      ?>
+                      
                   </div>
               </div>
             </div>
@@ -157,7 +234,7 @@ get_header();
                             1
                           </div>
                           <div class="stages-item__txt">
-                              <div class="stages-item__title"><?php the_field("stage_1_title"); ?></div>
+                              <h3 class="stages-item__title"><?php the_field("stage_1_title"); ?></h3>
                               <div class="stages-item__descr"><?php the_field("stage_1_subtitle"); ?></div>
                           </div>
                           
@@ -169,17 +246,29 @@ get_header();
                       
                           <div class="stages-item__slider">
                             <div class="slider-item current">
-                              <img src="<?php the_field("stage_1_photo_2"); ?>" alt="">
+                              <img src="<?php the_field("stage_1_photo_big"); ?>" alt="Фото объекта">
                             </div>
-                            <div class="slider-item">
-                                <img src="<?php the_field("stage_1_photo_3"); ?>" alt="">
-                            </div>
-                            <div class="slider-item">
-                                <img src="<?php the_field("stage_1_photo_4"); ?>" alt="">
-                            </div>
+                            <?php $stage_1_photo_2 = get_field('stage_1_photo_2');
+                              if($stage_1_photo_2) {
+                            ?>
+                             <div class="slider-item">
+                                <img src="<?php echo $stage_1_photo_2; ?>" alt="Фото объекта">
+                              </div>
+                            <?php  
+                              }
+                            ?>                           
+                           <?php $stage_1_photo_3 = get_field('stage_1_photo_3');
+                              if($stage_1_photo_3) {
+                            ?>
+                             <div class="slider-item">
+                                <img src="<?php echo $stage_1_photo_3; ?>" alt="Фото объекта">
+                              </div>
+                            <?php  
+                              }
+                            ?>
                           </div>
                           <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal1">
-                              <img src="<?php the_field("stage_1_photo_big"); ?>" alt="">
+                              <img src="<?php the_field("stage_1_photo_big"); ?>" alt="Фото объекта">
                           </div>
 
                           <!-- Modal -->
@@ -195,36 +284,59 @@ get_header();
                                 <div class="modal-body">
                                   <div class="modal-photo">
                                     <div id="photoModal1Indicators" class="carousel slide" data-ride="carousel">
-                                      <!-- <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                          
-                                        </li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                                          
-                                        </li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                                          
-                                        </li>
-                                      </ol> -->
+                                      
 
                                       <div class="carousel-inner">
+
                                         <div class="carousel-item active">
                                           <div class="img-wrapper">
-                                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
-                                          </div>
-                                          
-                                        </div>
-                                        <div class="carousel-item">
-                                          <div class="img-wrapper">
-                                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                            <img src="<?php the_field("stage_1_photo_big"); ?>" alt="Фото объекта">
                                           </div>
                                         </div>
-                                        <div class="carousel-item">
-                                          <div class="img-wrapper">
-                                            <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+
+                                        <?php 
+                                          if($stage_1_photo_2) {
+                                        ?>
+
+                                          <div class="carousel-item">
+                                            <div class="img-wrapper">
+                                              <img src="<?php echo $stage_1_photo_2; ?>" alt="Фото объекта">
+                                            </div>
                                           </div>
+
+                                        <?php 
+                                          }
+                                        ?>
+
+                                        <?php 
+                                          if($stage_1_photo_3) {
+                                        ?>
+
+                                          <div class="carousel-item">
+                                            <div class="img-wrapper">
+                                              <img src="<?php echo $stage_1_photo_3; ?>" alt="Фото объекта">
+                                            </div>
+                                          </div>
+
+                                        <?php 
+                                          }
+                                        ?>
+
+                                        <?php 
+                                          if($stage_1_photo_4) {
+                                        ?>
+
+                                          <div class="carousel-item">
+                                            <div class="img-wrapper">
+                                              <img src="<?php echo $stage_1_photo_4; ?>" alt="Фото объекта">
+                                            </div>
+                                          </div>
+
+                                        <?php 
+                                          }
+                                        ?>
+
                                         </div>
-                                      </div>
 
                                       <a class="carousel-control-prev" href="#photoModal1Indicators" role="button" data-slide="prev">
                                         <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
@@ -259,17 +371,29 @@ get_header();
                   <div class="stages-item__right">
                       <div class="stages-item__slider">
                         <div class="slider-item current">
-                          <img src="<?php the_field("stage_2_photo_2"); ?>" alt="">
+                          <img src="<?php the_field("stage_2_photo_big"); ?>" alt="Фото объекта">
                         </div>
+                        <?php $stage_2_photo_2 = get_field('stage_2_photo_2');
+                          if($stage_2_photo_2) {
+                        ?>
                         <div class="slider-item">
-                            <img src="<?php the_field("stage_2_photo_3"); ?>" alt="">
-                        </div>
+                            <img src="<?php echo $stage_2_photo_2; ?>" alt="Фото объекта">
+                          </div>
+                        <?php  
+                          }
+                        ?>                           
+                      <?php $stage_2_photo_3 = get_field('stage_2_photo_3');
+                          if($stage_2_photo_3) {
+                        ?>
                         <div class="slider-item">
-                            <img src="<?php the_field("stage_2_photo_4"); ?>" alt="">
-                        </div>
+                            <img src="<?php echo $stage_2_photo_3; ?>" alt="Фото объекта">
+                          </div>
+                        <?php  
+                          }
+                        ?>
                       </div>
                       <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal2">
-                          <img src="<?php the_field("stage_2_photo_big"); ?>" alt="">
+                          <img src="<?php the_field("stage_2_photo_big"); ?>" alt="Фото объекта">
                       </div>
 
                        <!-- Modal -->
@@ -285,35 +409,56 @@ get_header();
                               <div class="modal-body">
                                 <div class="modal-photo">
                                   <div id="photoModal2Indicators" class="carousel slide" data-ride="carousel">
-                                    <!-- <ol class="carousel-indicators">
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                        
-                                      </li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                                        
-                                      </li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                                        
-                                      </li>
-                                    </ol> -->
+                                  <div class="carousel-inner">
 
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
-                                        </div>
-                                        
+                                    <div class="carousel-item active">
+                                      <div class="img-wrapper">
+                                        <img src="<?php the_field("stage_2_photo_big"); ?>" alt="Фото объекта">
                                       </div>
+                                    </div>
+
+                                    <?php 
+                                      if($stage_2_photo_2) {
+                                    ?>
+
                                       <div class="carousel-item">
                                         <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          <img src="<?php echo $stage_2_photo_2; ?>" alt="Фото объекта">
                                         </div>
                                       </div>
+
+                                    <?php 
+                                      }
+                                    ?>
+
+                                    <?php 
+                                      if($stage_2_photo_3) {
+                                    ?>
+
                                       <div class="carousel-item">
                                         <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          <img src="<?php echo $stage_2_photo_3; ?>" alt="Фото объекта">
                                         </div>
                                       </div>
+
+                                    <?php 
+                                      }
+                                    ?>
+
+                                    <?php 
+                                      if($stage_2_photo_4) {
+                                    ?>
+
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo $stage_2_photo_4; ?>" alt="Фото объекта">
+                                        </div>
+                                      </div>
+
+                                    <?php 
+                                      }
+                                    ?>
+
                                     </div>
 
                                     <a class="carousel-control-prev" href="#photoModal2Indicators" role="button" data-slide="prev">
@@ -346,7 +491,7 @@ get_header();
                         2
                       </div>
                       <div class="stages-item__txt">
-                          <div class="stages-item__title"><?php the_field("stage_2_title"); ?></div>
+                          <h3 class="stages-item__title"><?php the_field("stage_2_title"); ?></h3>
                           <div class="stages-item__descr"><?php the_field("stage_2_subtitle"); ?></div>
                       </div>
                       
@@ -365,7 +510,7 @@ get_header();
                         3
                       </div>
                       <div class="stages-item__txt">
-                          <div class="stages-item__title"><?php the_field("stage_3_title"); ?></div>
+                          <h3 class="stages-item__title"><?php the_field("stage_3_title"); ?></h3>
                           <div class="stages-item__descr"><?php the_field("stage_3_subtitle"); ?></div>
                       </div>
                       
@@ -375,17 +520,29 @@ get_header();
                   <div class="stages-item__right">
                       <div class="stages-item__slider">
                         <div class="slider-item current">
-                          <img src="<?php the_field("stage_3_photo_2"); ?>" alt="">
+                          <img src="<?php the_field("stage_3_photo_big"); ?>" alt="Фото объекта">
                         </div>
-                        <div class="slider-item">
-                            <img src="<?php the_field("stage_3_photo_3"); ?>" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="<?php the_field("stage_3_photo_4"); ?>" alt="">
-                        </div>
+                        <?php $stage_3_photo_2 = get_field('stage_3_photo_2');
+                          if($stage_3_photo_2) {
+                        ?>
+                          <div class="slider-item">
+                            <img src="<?php echo $stage_3_photo_2; ?>" alt="Фото объекта">
+                          </div>
+                        <?php  
+                          }
+                        ?>                           
+                        <?php $stage_3_photo_3 = get_field('stage_3_photo_3');
+                          if($stage_3_photo_3) {
+                        ?>
+                          <div class="slider-item">
+                            <img src="<?php echo $stage_3_photo_3; ?>" alt="Фото объекта">
+                          </div>
+                        <?php  
+                          }
+                        ?>
                       </div>
                       <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal3">
-                          <img src="<?php the_field("stage_3_photo_big"); ?>" alt="">
+                          <img src="<?php the_field("stage_3_photo_big"); ?>" alt="Фото объекта">
                       </div>
 
                       <!-- Modal -->
@@ -401,35 +558,56 @@ get_header();
                               <div class="modal-body">
                                 <div class="modal-photo">
                                   <div id="photoModal3Indicators" class="carousel slide" data-ride="carousel">
-                                    <!-- <ol class="carousel-indicators">
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                       
-                                      </li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                                        
-                                      </li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                                        
-                                      </li>
-                                    </ol> -->
+                                  <div class="carousel-inner">
 
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
-                                        </div>
-                                        
+                                    <div class="carousel-item active">
+                                      <div class="img-wrapper">
+                                        <img src="<?php the_field("stage_3_photo_big"); ?>" alt="Фото объекта">
                                       </div>
+                                    </div>
+
+                                    <?php 
+                                      if($stage_3_photo_2) {
+                                    ?>
+
                                       <div class="carousel-item">
                                         <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          <img src="<?php echo $stage_3_photo_2; ?>" alt="Фото объекта">
                                         </div>
                                       </div>
+
+                                    <?php 
+                                      }
+                                    ?>
+
+                                    <?php 
+                                      if($stage_3_photo_3) {
+                                    ?>
+
                                       <div class="carousel-item">
                                         <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
+                                          <img src="<?php echo $stage_3_photo_3; ?>" alt="Фото объекта">
                                         </div>
                                       </div>
+
+                                    <?php 
+                                      }
+                                    ?>
+
+                                    <?php 
+                                      if($stage_3_photo_4) {
+                                    ?>
+
+                                      <div class="carousel-item">
+                                        <div class="img-wrapper">
+                                          <img src="<?php echo $stage_3_photo_4; ?>" alt="Фото объекта">
+                                        </div>
+                                      </div>
+
+                                    <?php 
+                                      }
+                                    ?>
+
                                     </div>
 
                                     <a class="carousel-control-prev" href="#photoModal3Indicators" role="button" data-slide="prev">
@@ -441,11 +619,6 @@ get_header();
                                   </div>
                                   
                                 </div>
-
-                                
-                                  
-                                
-                                  
                                 
                               </div>
                               
@@ -463,88 +636,111 @@ get_header();
           <div class="anobject-stages__fourth">
             <div class="row">
               <div class="col-12 col-xl-6">
-                  <div class="stages-item__right">
-                      <div class="stages-item__slider">
-                        <div class="slider-item current">
-                          <img src="<?php the_field("stage_4_photo_2"); ?>" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="<?php the_field("stage_4_photo_3"); ?>" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="<?php the_field("stage_4_photo_4"); ?>" alt="">
-                        </div>
+                <div class="stages-item__right">
+                  <div class="stages-item__slider">
+                    <div class="slider-item current">
+                      <img src="<?php the_field("stage_4_photo_big"); ?>" alt="">
+                    </div>
+                    <?php $stage_4_photo_2 = get_field('stage_4_photo_2');
+                      if($stage_4_photo_2) {
+                    ?>
+                      <div class="slider-item">
+                        <img src="<?php echo $stage_4_photo_2; ?>" alt="Фото объекта">
                       </div>
-                      <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal4">
-                          <img src="<?php the_field("stage_4_photo_big"); ?>" alt="">
+                    <?php  
+                      }
+                    ?>                           
+                    <?php $stage_4_photo_3 = get_field('stage_4_photo_3');
+                      if($stage_4_photo_3) {
+                    ?>
+                      <div class="slider-item">
+                        <img src="<?php echo $stage_4_photo_3; ?>" alt="Фото объекта">
                       </div>
+                    <?php  
+                      }
+                    ?>
+                  </div>
+                  <div class="stages-item__photo" data-toggle="modal" data-target="#photoModal4">
+                      <img src="<?php the_field("stage_4_photo_big"); ?>" alt="">
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="photoModal4" tabindex="-1" role="dialog" aria-labelledby="photoModal4Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">  
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-photo">
+                            <div id="photoModal4Indicators" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
 
-                      <!-- Modal -->
-                      <div class="modal fade" id="photoModal4" tabindex="-1" role="dialog" aria-labelledby="photoModal4Label" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="modal-photo">
-                                  <div id="photoModal4Indicators" class="carousel slide" data-ride="carousel">
-                                    <!-- <ol class="carousel-indicators">
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                                       
-                                      </li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                                        
-                                      </li>
-                                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                                        
-                                      </li>
-                                    </ol> -->
-
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
-                                        </div>
-                                        
-                                      </div>
-                                      <div class="carousel-item">
-                                        <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
-                                        </div>
-                                      </div>
-                                      <div class="carousel-item">
-                                        <div class="img-wrapper">
-                                          <img src="<?php echo get_template_directory_uri() . '/assets/images/services/anobject/slider-big.jpeg';?>" alt="">
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <a class="carousel-control-prev" href="#photoModal4Indicators" role="button" data-slide="prev">
-                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
-                                    </a>
-                                    <a class="carousel-control-next" href="#photoModal4Indicators" role="button" data-slide="next">
-                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
-                                    </a>
+                                <div class="carousel-item active">
+                                  <div class="img-wrapper">
+                                    <img src="<?php the_field("stage_4_photo_big"); ?>" alt="Фото объекта">
                                   </div>
-                                  
                                 </div>
 
+                                <?php 
+                                  if($stage_4_photo_2) {
+                                ?>
+
+                                  <div class="carousel-item">
+                                    <div class="img-wrapper">
+                                      <img src="<?php echo $stage_4_photo_2; ?>" alt="Фото объекта">
+                                    </div>
+                                  </div>
+
+                                <?php 
+                                  }
+                                ?>
                                 
-                                  
-                                
-                                  
-                                
+                                <?php 
+                                  if($stage_4_photo_3) {
+                                ?>
+
+                                  <div class="carousel-item">
+                                    <div class="img-wrapper">
+                                      <img src="<?php echo $stage_4_photo_3; ?>" alt="Фото объекта">
+                                    </div>
+                                  </div>
+
+                                <?php 
+                                  }
+                                ?>
+
+                                <?php 
+                                  if($stage_4_photo_4) {
+                                ?>
+
+                                  <div class="carousel-item">
+                                    <div class="img-wrapper">
+                                      <img src="<?php echo $stage_4_photo_4; ?>" alt="Фото объекта">
+                                    </div>
+                                  </div>
+
+                                <?php 
+                                  }
+                                ?>
+
                               </div>
-                              
+
+                              <a class="carousel-control-prev" href="#photoModal4Indicators" role="button" data-slide="prev">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" class="arrow-left" alt="лево">
+                              </a>
+                              <a class="carousel-control-next" href="#photoModal4Indicators" role="button" data-slide="next">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" class="arrow-right" alt="право">
+                              </a>
                             </div>
+                            
                           </div>
                         </div>
-    
+                      </div>
                     </div>
+                  </div>
+                </div>
               </div>
               <div class="col-12 col-xl-6">
                   <div class="stages-item__left">
@@ -552,7 +748,7 @@ get_header();
                         4
                       </div>
                       <div class="stages-item__txt">
-                          <div class="stages-item__title"><?php the_field("stage_4_title"); ?></div>
+                          <h3 class="stages-item__title"><?php the_field("stage_4_title"); ?></h3>
                           <div class="stages-item__descr"><?php the_field("stage_4_subtitle"); ?></div>
                       </div>
                       

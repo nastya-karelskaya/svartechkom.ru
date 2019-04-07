@@ -452,6 +452,25 @@ body .page .section-404 {
   padding: 75px 0px 280px 0px;
 }
 
+body .page .section.search {
+  height: 85vh;
+}
+
+body .page .section.search .subtitle {
+  margin-top: 40px;
+}
+
+body .page .section.search .link {
+  margin-bottom: 15px;
+  
+}
+
+body .page .section.search .link-title {
+  display: inline;
+  font-size: 16px;
+  /* font-weight: bold; */
+}
+
 body .page .button {
   display: inline-block;
 }
@@ -566,7 +585,7 @@ body .reviews-main .paginator-left__digit.active, body .reviews-main .paginator-
   height: 70px;
   width: 70px;
   padding: 23px 28px;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -1215,10 +1234,15 @@ body .footer-politics a:hover {
 
 .reviews .slider-wrapper .reviews-slider__item .slider-item__descr .descr-img {
   display: inline-block;
-  border: 2px solid #0096ff;
+  /* border: 2px solid #0096ff; */
   width: 118px;
   height: 118px;
   background-color: #050505;
+}
+
+.reviews .slider-wrapper .reviews-slider__item .slider-item__descr .descr-img img {
+  border: 2px solid #0096ff;
+
 }
 
 .reviews .slider-wrapper .reviews-slider__item .slider-item__descr .descr-txt {
@@ -1378,6 +1402,7 @@ body .footer-politics a:hover {
 .objects-grid__item {
   height: 354px;
   width: 100%;
+  max-width: 350px;
   background-color: #050505;
   background: url("../images/index/objects/arena.jpeg");
   display: inline-block;
@@ -1694,12 +1719,13 @@ body .footer-politics a:hover {
 
 .reviews-main-grid__item {
   padding: 30px;
+  padding-bottom: 40px;
   width: 100%;
   background-color: #ffffff;
   border: 2px solid #dddddd;
   display: inline-block;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   text-align: left;
 }
 
@@ -1747,6 +1773,20 @@ body .footer-politics a:hover {
 
 .reviews-main-grid__item .grid-item__bottom {
   margin-top: 21px;
+}
+
+.reviews-main-grid__item .grid-item__button {
+  position: relative;
+}
+
+.reviews-main-grid__item .grid-item__button .button {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+.reviews-main-grid__item .grid-item__button .button a {
+  padding: 17px 55px 17px 25px;
 }
 
 .reviews-main-grid .grid-wrapper {
@@ -1914,7 +1954,8 @@ body .footer-politics a:hover {
 }
 
 .anobject__descr .descr-lists ul li div {
-  display: inline-block;
+  /* display: inline-block; */
+  display: inline;
 }
 
 .anobject__descr .descr-volume, .anobject__descr .descr-time, .anobject__descr .descr-year, .anobject__descr .descr-review {

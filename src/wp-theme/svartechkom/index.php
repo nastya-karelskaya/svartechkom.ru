@@ -112,99 +112,8 @@ get_header();
               </div>
             </div> 
             
-            <!-- <div class="services-items">
-              <div class="row">
-                <div class="col-12">
-
-                  <div class="services-items__big services-item">
-                    <a href="aservice.html">
-                        <h3 class="services-item__title">
-                      
-                            Изготовление <br>
-                            металлоконструкций
-                        </h3>
-                    </a>
-                    
-                  </div>
-
-                </div>
-              </div>
-              
-              <div class="row">
-                  
-                <div class="col-12 col-md-6 col-lg-4">  
-                  <div class="services-items__small">
-                    <div class="services-item">
-                      <a href="aservice.html">
-                          <h3 class="services-item__title">ГИБКА МЕТАЛЛА <br>И ТРУБ</h3>
-                      </a>
-                      
-                    </div>                    
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">  
-                  <div class="services-items__small">
-                    <div class="services-item">
-                      <a href="aservice.html">
-                          <h3 class="services-item__title">ГАЗОВАЯ РЕЗКА 
-                              МЕТАЛА</h3>
-                      </a>
-                      
-                    </div>
-                  </div>  
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">  
-                  <div class="services-items__small">
-                    <div class="services-item">
-                      <a href="aservice.html">
-                          <h3 class="services-item__title">ХОЛОДНАЯ <br> 
-                            КОВКА</h3>
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>
-              
-                  
-                <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="services-items__small"> 
-                    <div class="services-item">
-                      <a href="aservice.html">
-                          <h3 class="services-item__title">ПОКРАСОЧНЫЕ 
-                              РАБОТЫ</h3>
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4"> 
-                  <div class="services-items__small">  
-                    <div class="services-item">
-                      <a href="aservice.html">
-                          <h3 class="services-item__title">СТРОИТЕЛЬНЫЕ 
-                              РАБОТЫ</h3>
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">  
-                  <div class="services-items__small">  
-                    <div class="services-item">
-                      <a href="aservice.html">
-                          <h3 class="services-item__title">ДЕМОНТАЖ 
-                              КОНСТРУКЦИЙ</h3>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div> -->
             <div class="services-items">
             
-
 
             <?php  
               $posts = get_posts( array(
@@ -212,10 +121,9 @@ get_header();
                     
                     'orderby'     => 'date',
                     'order'       => 'ASC',
-                    //'meta_key'    => '',
-                    //'meta_value'  =>'',
+                    
                     'post_type'   => 'allservices',
-                    //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                   
                   ) );
   
               
@@ -334,9 +242,9 @@ get_header();
 
                       <div class="objects-wrapper">
                         <div class="objects-slider__item" style="width: 350px;">
-                          <div class="slider-item__title"> <?php the_title(); ?>
+                          <h3 class="slider-item__title"> <?php the_title(); ?>
 
-                          </div>
+                          </h3>
                           <div class="button button-c slider-item__button">
                             <a href="<?php the_permalink(); ?>">посмотреть</a>
                             
@@ -397,7 +305,7 @@ get_header();
                           <div class="item__img">
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="6 лет опыта">
                           </div>
-                          <div class="item__title">6 лет опыта</div>
+                          <h3 class="item__title">6 лет опыта</h3>
                         </div>
                       </div>
               
@@ -410,8 +318,8 @@ get_header();
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="Свое 
                             профоборудование">
                           </div>
-                          <div class="item__title">Свое 
-                            профоборудование</div>
+                          <h3 class="item__title">Свое 
+                            профоборудование</h3>
                         </div>
                       </div>
                     </div>
@@ -427,8 +335,8 @@ get_header();
                             <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="9 из 10 проектов сдаем 
                             без замечаний">
                           </div>
-                          <div class="item__title">9 из 10 проектов сдаем 
-                            без замечаний</div>
+                          <h3 class="item__title">9 из 10 проектов сдаем 
+                            без замечаний</h3>
                         </div>
                       </div>
                     </div>
@@ -441,9 +349,9 @@ get_header();
                               <div class="item__img">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reasons/reasons-item.png';?>" alt="Сертификаты НАКС">
                               </div>
-                              <div class="item__title">Специалисты высокой 
+                              <h3 class="item__title">Специалисты высокой 
                                 квалификации <br>
-                                Сертификаты НАКС</div>
+                                Сертификаты НАКС</h3>
                             </div>
                       </div>
                       <div class="col-12 col-md-6">
@@ -453,9 +361,9 @@ get_header();
                                 руководством 
                                 на каждом этапе">
                               </div>
-                              <div class="item__title">Сопровождение проекта 
+                              <h3 class="item__title">Сопровождение проекта 
                                 руководством 
-                                на каждом этапе</div>
+                                на каждом этапе</h3>
                             </div>
                       </div>
                     </div>
@@ -471,6 +379,23 @@ get_header();
         </div>
       </section>
       <!-- ./reasons -->
+
+      <?php
+          
+            
+          //     setup_postdata($post);
+          $reviews_posts = get_posts( array(
+          
+            'orderby'     => 'date',
+            'order'       => 'ASC',
+            //'meta_key'    => '',
+            //'meta_value'  =>'',
+            'post_type'   => 'allreviews',
+            //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+          ) );
+
+          if(!empty($reviews_posts)) {
+      ?>
 
       <!-- reviews -->
       <section class="section section-dark reviews">
@@ -492,22 +417,27 @@ get_header();
                     <div class="main-reviews-slider">
 
 
-                      <!-- <div class="carousel-inner "> -->
+                    
 
                         <?php
-                          $reviews_posts = get_posts( array(
-                            
-                            'orderby'     => 'date',
-                            'order'       => 'ASC',
-                            //'meta_key'    => '',
-                            //'meta_value'  =>'',
-                            'post_type'   => 'allreviews',
-                            //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-                          ) );
-          
-                          foreach( $reviews_posts as $post ) {
+                        
                           
+                          // //     setup_postdata($post);
+                          // $reviews_posts = get_posts( array(
+                          
+                          //   'orderby'     => 'date',
+                          //   'order'       => 'ASC',
+                          //   //'meta_key'    => '',
+                          //   //'meta_value'  =>'',
+                          //   'post_type'   => 'allreviews',
+                          //   //'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                          // ) );
+  
+                          foreach($reviews_posts as $post) {
+                           
                               setup_postdata($post);
+
+                              $review_post_id = get_the_ID();
 
 
                         ?>
@@ -517,13 +447,19 @@ get_header();
                                 <div class="reviews-slider__item">
                                   <div class="slider-item__title"> 
                                     <div class="title-img">
-                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/quote.png';?>" alt="quote">
+                                      <img src="<?php echo get_template_directory_uri() . '/assets/images/quote.png';?>" alt="<?php the_title(); ?>">
                                     </div>
-                                    <div class="title-txt"><?php the_title(); ?></div> 
+                                    <h3 class="title-txt">
+                                      <?php echo get_field('review_company_name', $review_post_id); ?>
+                                    </h3> 
                                   </div>
                                   <div class="slider-item__descr">
-                                    <div class="descr-img"></div>
-                                    <div class="descr-txt">Текст отзыва</div>
+                                    <div class="descr-img">
+                                      <img src="<?php echo get_field('review_logo', $review_post_id); ?>" alt="Логотип компании">
+                                    </div>
+                                    <p class="descr-txt">
+                                      <?php echo substr( get_field('review_text', $review_post_id), 0, 100 ) . ' ...'; ?>
+                                    </p>
                                   </div>
                                   <div class="button button-c  slider-item__button">
                                       <a href="<?php the_permalink(); ?>">посмотреть</a>
@@ -534,22 +470,12 @@ get_header();
                                          
 
                         <?php
+                            }
                           
-                          }
-          
-                          wp_reset_postdata(); // сброс
           
                         ?>
                      
                     
-
-
-                      <!-- <a class="carousel-control-prev reviews-slider__left arrow" href="#carouselReviews" role="button" data-slide="prev">
-                        <img src="<?php //echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>" alt="лево">
-                      </a>
-                      <a class="carousel-control-next reviews-slider__right arrow" href="#carouselReviews" role="button" data-slide="next">
-                        <img src="<?php //echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>" alt="право">
-                      </a> -->
 
                     </div>
 
@@ -564,6 +490,12 @@ get_header();
         </div>
       </section>
       <!-- ./reviews -->
+
+      <?php 
+        }
+          
+        wp_reset_postdata(); // сброс
+      ?>
 
       <!-- order -->
       <section class="section order">
@@ -587,34 +519,7 @@ get_header();
                 </div>
                 <div class="order-form-wrapper">
                   <div class="form">
-                    <!-- <form action="">
-                      <fieldset>
-                        <div class="form-name">
-                            <label for="name">Ваше имя:</label>
-                            <input type="text" name="name" placeholder="Имя">
-                        </div>
-                        
-                        <div class="form-phone">
-                            <label for="phone">Ваш телефон:</label>
-                            <input type="text" name="phone" placeholder="Телефон">
-                        </div>
-                        
-                      </fieldset>
-                      
-                      <fieldset class="textarea">
-                        <div class="form-txt">
-                            <label for="txt">Сообщение:</label>
-                            <textarea name="txt" id="" cols="30"  placeholder="Сообщение"></textarea>
-                        </div>
-                        
-                      </fieldset>
-                      
-
-                      <div class="button button-w form-button">
-                        <button type="button">заказать</button>
-                        <div class="img-tool blue"></div>
-                      </div>
-                    </form> -->
+                   
                     <?php echo do_shortcode('[contact-form-7 id="150" title="main_form"]');?>
                   </div>
 

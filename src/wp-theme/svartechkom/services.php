@@ -41,27 +41,27 @@ get_header();
                       <div class="descr-one__txt">
                         <ul>
                           <li>
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Услуга">
                             Получение или создание проектной документации 
                           </li>
                           <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Услуга">
                               Изготовление изделия 
                           </li>
                           <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Услуга">
                               Покраска (опционально)
                           </li>
                           <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Услуга">
                               Доставка 
                           </li>
                           <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Услуга">
                               Монтаж конструкции 
                           </li>
                           <li>
-                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="">
+                              <img src="<?php echo get_template_directory_uri() . '/assets/images/tool-blue.png';?>" alt="Услуга">
                               Передача тех-надзору
                           </li>
                         </ul>

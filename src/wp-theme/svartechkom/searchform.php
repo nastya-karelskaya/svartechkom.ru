@@ -4,7 +4,7 @@
 
   <div>
     <input type="submit"  id="searchsubmit" value="" />
-    <!-- <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/icon-search.png';?>" alt="Поиск"> -->
+   
   </div>
 
 </form>

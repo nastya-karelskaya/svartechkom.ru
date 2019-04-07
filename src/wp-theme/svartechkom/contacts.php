@@ -37,24 +37,20 @@ get_header();
                     <div class="col-12 col-md-6">
                         <div class="contacts-part">
                             <div class="contacts-part__phone">
-                              <span>Телефон</span>: 8 911 429 66 34
+                              <span>Телефон</span>: <?php the_field('company_phone');?>
                             </div>
-                  
                             <div class="contacts-part__email">
-                              <span>E-mail</span>: svartechcom@mail.ru 
+                              <span>E-mail</span>: <?php the_field('company_email');?> 
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="contacts-part">
                             <div class="contacts-part__mode">
-                              <span>Режим работы</span>:
-                              09:00 - 18:00
+                              <span>Режим работы</span>: <?php the_field('company_shedule');?>
                             </div>
-                  
                             <div class="contacts-part__address">
-                              <span>Адрес</span>:
-                              Петрозаводск, ул. Путейская, 5
+                              <span>Адрес</span>: <?php the_field('company_address');?>
                             </div>
                         </div>
                     </div>

@@ -67,6 +67,25 @@ function svartechkom_menus() {
 }
 
 
+/**
+ * Remove admin menu items
+ */
+
+function remove_menu_items(){
+	//remove_menu_page( 'index.php' );                  //Консоль
+  remove_menu_page( 'edit.php' );                   //Записи
+  //remove_menu_page( 'upload.php' );                 //Медиафайлы
+  //remove_menu_page( 'edit.php?post_type=page' );    //Страницы
+  remove_menu_page( 'edit-comments.php' );          //Комментарии
+  //remove_menu_page( 'themes.php' );                 //Внешний вид
+  //remove_menu_page( 'plugins.php' );                //Плагины
+  //remove_menu_page( 'users.php' );                  //Пользователи
+  //remove_menu_page( 'tools.php' );                  //Инструменты
+  //remove_menu_page( 'options-general.php' );        //Настройки
+}
+add_action( 'admin_menu', 'remove_menu_items' );
+
+
 
 /**
  * Register Services type post

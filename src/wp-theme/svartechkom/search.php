@@ -17,21 +17,25 @@
 
               <div class="subtitle">
 
+                <ul>
+                  <?php 
+                    if (have_posts()) : while (have_posts()) : the_post(); 
+                  ?>
+                  
+                    <li class="link">
+                      <h2 class="link-title"><?php the_title(); ?></h2>
 
-              <?php 
-                if (have_posts()) : while (have_posts()) : the_post(); 
-              ?>
-                <div>
-                  <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-                </div>
+                      <a href="<?php the_permalink();?>">Открыть</a>
 
-              <?php the_content(''); ?>
+                      <?php the_content(''); ?>
+                    </li>
 
-              <?php endwhile; else: ?>
+                  <?php endwhile; else: ?>
+                </ul>
 
-                <p>Поиск не дал результатов.</p>
+                  <p>Поиск не дал результатов.</p>
 
-              <?php endif;?>
+                <?php endif;?>
 
 
               </div>

@@ -56,111 +56,71 @@
 
 <script>
   $('.main-objects-slider').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  prevArrow: '<a class="objects-slider__left arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>"</a>',
-  nextArrow: '<a class="objects-slider__right arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>"</a>',
-  
-  responsive: [
-    {
-      breakpoint: 1450,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: false,
-        dots: false
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<a class="objects-slider__left arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>"</a>',
+    nextArrow: '<a class="objects-slider__right arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>"</a>',
+    
+    responsive: [
+      {
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    },
-    {
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+    ]
+  });
+
+  $('.main-reviews-slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow: '<a class="reviews-slider__left arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>"</a>',
+    nextArrow: '<a class="reviews-slider__right arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>"</a>',
+    
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
       }
-    }
-  ]
-});
+    ]
+  });
 
-$('.main-reviews-slider').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  prevArrow: '<a class="reviews-slider__left arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>"</a>',
-  nextArrow: '<a class="reviews-slider__right arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>"</a>',
-  
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false
+  $('.aservice-objects-slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow: '<a class="aservice-objects-slider__left arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>"</a>',
+    nextArrow: '<a class="aservice-objects-slider__right arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>"</a>',
+    
+    responsive: [
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
       }
-    }
-  ]
-});
-
-$('.aservice-objects-slider').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  prevArrow: '<a class="aservice-objects-slider__left arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/left-arrow.png';?>"</a>',
-  nextArrow: '<a class="aservice-objects-slider__right arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/right-arrow.png';?>"</a>',
-  
-  responsive: [
-    {
-      breakpoint: 1250,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false
-      }
-    }
-  ]
-});
-
-aservice-slider
-      
-      
-
-      
-
-  // $('.obj-slider').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3,
-  //   responsive: [
-  //   {
-  //     breakpoint: 1024,
-  //     settings: {
-  //       slidesToShow: 3,
-  //       slidesToScroll: 3,
-  //       infinite: true,
-  //       dots: true
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 600,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       slidesToScroll: 2
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1
-  //     }
-  //   }
-  //   // You can unslick at a given breakpoint now by adding:
-  //   // settings: "unslick"
-  //   // instead of a settings object
-  // ]
-  // });
+    ]
+  });
 </script>
 
 

@@ -20,7 +20,7 @@ get_header();
           <div class="col-12">
             <!-- title -->
             <div class="title reviews-main-title">
-              <h2>Отзывы</h2>
+              <h2>Отзыв от «‎<?php echo get_field( 'review_company_name', get_the_ID() ); ?>» </h2>
               <img src="<?php echo get_template_directory_uri() . '/assets/images/index/reviews/reviews.png';?>" alt="Наши объекты">
             </div>
             <!-- ./title -->
@@ -39,25 +39,24 @@ get_header();
               <div class="reviews-main-grid__item ">
                 <div class="grid-item__top">
                     <div class="item-top__img">
-                      <img src="<?php echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="">
+                      <img src="<?php echo get_template_directory_uri() . '/assets/images/reviews/reviews-item.png';?>" alt="Логотип компании">
                     </div>
 
+                    
+
                     <div class="item-top__txt">
-                      <div class="item-top__title"> 
-                        <?php the_title(); ?>
-                      </div>
+                      <h3 class="item-top__title"> 
+                        <?php echo get_field( 'review_company_name', get_the_ID() ); ?>
+                      </h3>
   
-                      <div class="item-top__subtitle">
-                        Руководитель
-                      </div>
+                      <h4 class="item-top__subtitle">
+                        <?php echo get_field( 'review_author', get_the_ID() ); ?>
+                      </h4>
                     </div>
 
                 </div>
                 <div class="grid-item__bottom">
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва текст отзыва текст отзыва текст отзыва 
-                    текст отзыва  
+                  <?php echo get_field( 'review_text', get_the_ID() ); ?>
                 </div>
                 
               
