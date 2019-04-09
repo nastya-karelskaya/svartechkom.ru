@@ -65,7 +65,9 @@
       <header class="fixed-header">
         
         <div class="header">
-          <div class="header-burger"></div>
+          <div class="header-burger">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/menu.png';?>" alt="Меню">
+          </div>
 
           <div class="header-logo">
             
@@ -85,8 +87,8 @@
                           Телефон:
                       </div>
                     </div>
-                    <a href="tel:77777777777" class="header-phones__bottom">
-                        +7 777 7777777
+                    <a href="tel:89114296634" class="header-phones__bottom">
+                      8 911 429 66 34
                     </a>
                   </div>
                 
@@ -110,8 +112,8 @@
                           Email:
                       </div>
                     </div>
-                    <a href="mailto:svartechcom@gmail.com" class="header-mail__bottom">
-                        svartechcom@gmail.com
+                    <a href="mailto:svartechcom@mail.ru" class="header-mail__bottom">
+                        svartechcom@mail.ru
                     </a>
       
                   </div>

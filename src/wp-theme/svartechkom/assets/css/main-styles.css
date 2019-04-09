@@ -83,7 +83,7 @@ body .fixed-header .header-center {
   /* max-width: 1430px; */
   /* display: inline-block; */
   width: 100%;
-  padding-right: 10px;
+  padding-right: 20px;
   
 }
 
@@ -98,12 +98,16 @@ body .fixed-header .header-contacts {
   
 }
 body .fixed-header .header-burger {
-  width: 50px;
-  height: 50px;
-  background-color: #0096ff;
+  width: 40px;
+  height: 40px;
+  /* background-color: #0096ff; */
+  /* background: url('../images/menu.png') center no-repeat; */
   border-radius: 20px;
   display: none;
 
+}
+body .fixed-header .header-burger img {
+  height: 100%;
 }
 
 body .fixed-header .header-other {
@@ -267,6 +271,10 @@ body .fixed-menu .menu-desktop {
   -webkit-box-shadow: 0px 0px 25px 0px #050505;
   box-shadow: 0px 0px 25px 0px #050505;
   list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*** wp ***/
@@ -520,7 +528,7 @@ body .page .button .img-tool.white {
   background: url("../images/tool-white.png") center no-repeat;
 }
 
-body .page .button-c.active button, body .page .button-c.active a {
+body .page .button-c.active button, body .page .button-c.active input, body .page .button-c.active a {
   background-color: #0096ff;
   color: #ffffff;
   -webkit-transition: .3s all;
@@ -533,7 +541,7 @@ body .page .button-c.active .img-tool {
   transition: .3s all;
 }
 
-body .page .button-w.active button, body .page .button-w.active a {
+body .page .button-w.active input, body .page .button-w.active a {
   background-color: #0096ff !important;
   color: #ffffff !important;
   -webkit-transition: .3s all;
@@ -777,7 +785,7 @@ body .footer-politics a:hover {
 }
 
 .page .main-txt__block {
-  margin-top: 70px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,7 +803,7 @@ body .footer-politics a:hover {
 }
 
 .page .main-txt__block .block-descr {
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .page .main-txt__block .block-descr ul {
@@ -811,10 +819,11 @@ body .footer-politics a:hover {
   position: absolute;
   top: -100px;
   right: 20px;
+  height: 350px;
 }
 
 .page .main-img img {
-  width: 100%;
+  height: 100%;
   border: 2px solid #0096ff;
   -webkit-box-shadow: 0px 0px 34px 0px #050505;
   box-shadow: 0px 0px 34px 0px #050505;
@@ -994,6 +1003,7 @@ body .footer-politics a:hover {
 
 .objects-slider__item {
   width: 350px;
+  height: 354px;
   background-color: #050505;
   background: url("../images/index/objects/arena.jpeg");
   display: inline-block;
@@ -1026,7 +1036,7 @@ body .footer-politics a:hover {
   text-transform: uppercase;
   max-width: 207px;
   background-color: rgba(0, 150, 255, 0.9);
-  padding: 20px 30px;
+  padding: 20px 10px;
   display: inline-block;
   margin: 0 auto;
   margin-top: 120px;
@@ -1034,9 +1044,10 @@ body .footer-politics a:hover {
 }
 
 .objects-slider__item .slider-item__button {
-  position: relative;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -102px;
   width: 205px;
 }
 
@@ -1073,6 +1084,7 @@ body .footer-politics a:hover {
 
 .reasons {
   background: url("../images/index/reasons/reasons-back.png") no-repeat center;
+  box-shadow: 0 0 9px rgba(0,0,0,0.2);
 }
 
 .reasons-rowone__item, .reasons-rowtwo__item, .reasons-rowthree__item {
@@ -1364,7 +1376,13 @@ body .footer-politics a:hover {
   background-color: #ffffff !important;
   color: #050505 !important;
   border: 2px solid #dddddd !important;
-  padding: 0px 10px !important;
+  padding: 0px 30px 0px 10px !important;
+}
+
+.order-form-wrapper .form-button button, .order-form-wrapper .form-button input:hover  {
+  cursor: pointer;
+  background-color: #0096ff !important;
+  color: #ffffff !important;
 }
 
 .order-form-wrapper .form-button button, .order-form-wrapper .form-button .img-tool  {
@@ -1436,7 +1454,7 @@ body .footer-politics a:hover {
   text-transform: uppercase;
   max-width: 207px;
   background-color: rgba(0, 150, 255, 0.9);
-  padding: 20px 30px;
+  padding: 20px 10px;
   display: block;
   margin: 0 auto;
   margin-top: 120px;
@@ -1444,8 +1462,10 @@ body .footer-politics a:hover {
 }
 
 .objects-grid__item .grid-item__button {
-  position: relative;
-  margin-top: 60px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -102px;
   width: 205px;
 }
 
@@ -1678,10 +1698,11 @@ body .footer-politics a:hover {
   width: 195px;
 }
 
-.contacts-form-wrapper .form-button button {
+.contacts-form-wrapper .form-button input {
   background-color: #ffffff !important;
   color: #050505 !important;
   border: 2px solid #0096ff !important;
+  padding: 0px 30px 0px 10px !important;
 }
 
 .contacts-form-wrapper .form-button .img-tool {
@@ -2067,12 +2088,19 @@ body .footer-politics a:hover {
   height: 340px;
   margin-left: 9px;
   border: 2px solid #2da9ff;
+  text-align: center;
 }
 
 .anobject-stages__first .stages-item__photo img, .anobject-stages__second .stages-item__photo img, .anobject-stages__third .stages-item__photo img, .anobject-stages__fourth .stages-item__photo img {
-  width: 100%;
+  /* width: 100%;
   overflow-x: hidden;
-  height: 100%;
+  height: 100%; */
+      /* width: 100%; */
+    /* overflow-x: hidden; */
+    height: 100%;
+    margin: 0 auto;
+    /* z-index: -1; */
+    max-width: 498px;
 }
 
 .anobject-stages__first .stages-item__photo img:hover, .anobject-stages__second .stages-item__photo img:hover, .anobject-stages__third .stages-item__photo img:hover, .anobject-stages__fourth .stages-item__photo img:hover {
@@ -2165,10 +2193,14 @@ body .footer-politics a:hover {
 .anobject-stages #photoModal1 .carousel .carousel-item .img-wrapper, .anobject-stages #photoModal2 .carousel .carousel-item .img-wrapper, .anobject-stages #photoModal3 .carousel .carousel-item .img-wrapper, .anobject-stages #photoModal4 .carousel .carousel-item .img-wrapper {
   width: 80%;
   margin: 0 auto;
+  max-height: 520px;
+  text-align: center;
 }
 
 .anobject-stages #photoModal1 .carousel .carousel-item img, .anobject-stages #photoModal2 .carousel .carousel-item img, .anobject-stages #photoModal3 .carousel .carousel-item img, .anobject-stages #photoModal4 .carousel .carousel-item img {
-  width: 100%;
+  height: 490px;
+  max-width: 700px;
+
 }
 
 .anobject-stages #photoModal1 .carousel-control-next, .anobject-stages #photoModal2 .carousel-control-next, .anobject-stages #photoModal3 .carousel-control-next, .anobject-stages #photoModal4 .carousel-control-next {
@@ -2336,6 +2368,8 @@ body .footer-politics a:hover {
 }
 
 .aservice-objects-slider__item {
+  max-height: 210px;
+  max-width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2355,6 +2389,7 @@ body .footer-politics a:hover {
 
 .aservice-objects-slider__item .slider-item__txt {
   padding: 10px 0px 10px 20px;
+  position: relative;
 }
 
 .aservice-objects-slider__item .slider-item__descr {
@@ -2363,8 +2398,9 @@ body .footer-politics a:hover {
 }
 
 .aservice-objects-slider__item .slider-item__button {
-  position: relative;
-  margin-top: 27px;
+  position: absolute;
+  bottom: 0;
+  /* margin-top: 27px; */
   display: block !important;
   width: 205px;
 }
@@ -2461,7 +2497,7 @@ body .footer-politics a:hover {
 
 .aservice-order-form-wrapper .form form input {
   height: 55px;
-  padding: 0px 20px;
+  padding: 0px 30px 0px 10px;
 }
 
 .aservice-order-form-wrapper .form form label {

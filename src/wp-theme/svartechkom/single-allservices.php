@@ -20,7 +20,7 @@ get_header();
         <div class="row">
           <div class="col-12">
             <div class="aservice-path">
-              <a href="<?php echo get_site_url();?>">Главная</a> / <a href="<?php echo get_site_url() . '/allservices'  ?>">Услуги</a> / <span><?php the_title(); ?></span> 
+              <a href="<?php echo get_site_url();?>">Главная</a> / <a href="<?php echo get_site_url() . '/services'  ?>">Услуги</a> / <span><?php the_title(); ?></span> 
             </div>
             <div class="title aservice-main-title">
               <h1>
@@ -163,7 +163,7 @@ get_header();
           <div class="aservice-objects-slider">
 
             <?php  
-              $example_posts = array();
+              //$example_posts = array();
               $example_posts_keys = array();
 
               $example_posts_keys['example-1'] = get_field("example-1");
@@ -174,7 +174,7 @@ get_header();
                 if($value) {
 
                   $example_post = get_post($value);
-                  $example_post_excerpt = get_field('descr-short', get_field($value));
+                  $example_post_excerpt = get_field('subtitle', $value);
         
             ?>
               
@@ -189,7 +189,7 @@ get_header();
                   <?php echo $example_post->post_title; ?> 
                 </h3>
                   <div class="slider-item__descr"> 
-                  <?php echo $example_post_excerpt; ?> 
+                   <!-- <?php //echo substr( $example_post_excerpt, 0, 50 ) . ' ...'; ?> -->
                   </div>
                   <div class="button button-c slider-item__button">
                     <a href="<?php echo get_the_permalink( $example_post);?>">посмотреть</a>

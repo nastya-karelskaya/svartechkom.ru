@@ -21,35 +21,47 @@ function init() {
     
   });
 
-  var pistureSwitchers = document.querySelectorAll(' .anobject-stages__first .stages-item__slider .slider-item');
+  function stagesClicker(stageClassName) {
+    var pistureSwitchers = document.querySelectorAll(' .'+ stageClassName +' .stages-item__slider .slider-item');
+    
+    var pisturePhoto = document.querySelector(' .'+ stageClassName +' .stages-item__photo');
+
+    //console.log(stageClassName,pistureSwitchers);
+    //console.log(menuItems[1]);
+
+    if( pistureSwitchers.length != 0) {
+      for(var i=0; i<3; i++) {
+        if(pistureSwitchers[i] != null) {
+          pistureSwitchers[i].addEventListener('click', function(event) {
+
+            var currentSwitcher = document.querySelector(' .'+ stageClassName +' .stages-item__slider .slider-item.current');
+            //console.log(currentSwitcher);
+            currentSwitcher.classList.remove('current');
+            
+            this.classList.add('current');
   
-  var pisturePhoto = document.querySelector(' .anobject-stages__first .stages-item__photo');
-
-  console.log(pistureSwitchers);
-  //console.log(menuItems[1]);
-
-  if( pistureSwitchers.length != 0) {
-    for(var i=0; i<3; i++) {
-      pistureSwitchers[i].addEventListener('click', function(event) {
-
-        var currentSwitcher = document.querySelector(' .anobject-stages__first .stages-item__slider .slider-item.current');
-        console.log(currentSwitcher);
-        currentSwitcher.classList.remove('current');
+  
+            var pictureSrc = this.childNodes[1].src; 
+            //console.log(pictureSrc);
+            //console.log(pisturePhoto.childNodes[1].src);
+            //pisturePhoto.childNodes[0].src = pictureSrc;
+            pisturePhoto.childNodes[1].src = pictureSrc;
+          });
+        }
         
-        this.classList.add('current');
-
-
-        var pictureSrc = this.childNodes[1].src; 
-        console.log(pictureSrc);
-        console.log(pisturePhoto.childNodes[1].src);
-        //pisturePhoto.childNodes[0].src = pictureSrc;
-        pisturePhoto.childNodes[1].src = pictureSrc;
+    
+      
       }
-      );
-  
-      //menuItems[i].addEventListener('click', markAsNotActive);
     }
+
   }
+
+  stagesClicker('anobject-stages__first');
+  stagesClicker('anobject-stages__second');
+  stagesClicker('anobject-stages__third');
+  stagesClicker('anobject-stages__fourth');
+
+  
 
 
   
@@ -168,43 +180,7 @@ function markAsNotActive(event) {
 function markAsActive(event) {
 
   this.classList.add("active");
-  // document.querySelector('.menu-item .current').classList.remove("active");
-
   
-
-
-
-  
-
-
-
-  // var itemText = this.querySelector('.menu-item__txt a');
-
-  // itemText.style.color = "#000000";
-
-  //console.log(itemText);
-
-
-
-
-
-//   var appDiv = document.querySelector('.show-full-img');
-//   var isFullImgExists = document.querySelector('.show-full-img');
-  
-//   //appDiv.innerHTML = ""; 
-
-//   // var image = document.querySelector('.slider__img');
-//   var imgFullSrc = event.target.src;
-//   var srcArr = imgFullSrc.split('/');
-//   var imgSrc = 'img/' + srcArr[srcArr.length - 1]; 
-
-  
-//  //fullImg.src = imgSrc;
-
-
-//     fullImg.src = imgSrc;
-
-//     appDiv.appendChild(fullImg);
 }
 
 

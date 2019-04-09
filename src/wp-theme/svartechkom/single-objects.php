@@ -364,6 +364,10 @@ get_header();
                 </div>
           </div>
 
+          <?php 
+            if(get_field("stage_2_title")) {
+          ?>
+
           <div class="anobject-stages__second">
 
             <div class="row">
@@ -501,6 +505,13 @@ get_header();
 
           </div>
 
+          <?php 
+            }
+
+            if(get_field("stage_3_title")) {
+
+          ?>
+
 
           <div class="anobject-stages__third">
             <div class="row">
@@ -632,6 +643,13 @@ get_header();
             </div>
 
           </div>
+
+          <?php 
+            }
+
+            if(get_field("stage_4_title")) {
+
+          ?>
   
           <div class="anobject-stages__fourth">
             <div class="row">
@@ -757,6 +775,11 @@ get_header();
             </div>
 
           </div>
+
+          <?php 
+            }
+
+          ?>
 
           
           <div class="row">

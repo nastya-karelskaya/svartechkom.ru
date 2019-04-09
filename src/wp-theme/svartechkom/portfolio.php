@@ -59,7 +59,7 @@ get_header();
           ?>
             <div class="col-12 col-lg-6 col-xl-4">
 
-              <div class="objects-grid__item ">
+              <div class="objects-grid__item "  style="background:url(<?php echo get_field('object_photo', get_the_ID()); ?>) center no-repeat">
                 <h2 class="grid-item__title">
                 <?php the_title(); ?>
                 </h2>

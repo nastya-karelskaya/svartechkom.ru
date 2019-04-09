@@ -39,8 +39,8 @@ get_header();
                     </div>
                     <div class="main-txt__descr">
                       За 6 лет специалисты ООО "СварТехКом" выполнили работы различного объема 
-                        и сложности: от проектов по <a href="#">изготовлению и монтажу металлоконструкций для 
-                            жилых домов</a>, до создания <a href="#">нестандартных 
+                        и сложности: от проектов по <a href="http://svartechkom.ru/objects/stroitelnaya-kompaniya-mir/" target="_blank">изготовлению и монтажу металлоконструкций для 
+                            жилых домов</a>, до создания <a href="http://svartechkom.ru/objects/arena-lajf/" target="_blank">нестандартных 
                                 металлоконструкций</a>.
                     </div>
                   </div>
@@ -50,9 +50,9 @@ get_header();
                 <div class="row">
                   <div class="col-12 col-lg-8">
                       <div class="main-txt__block">
-                          <div class="block-img">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/images/index/main/img-left.jpeg';?>" alt="Работы ООО СварТехКом">
-                          </div>
+                          <!-- <div class="block-img">
+                            <img src="<?php //echo get_template_directory_uri() . '/assets/images/index/main/img-left.jpeg';?>" alt="Работы ООО СварТехКом">
+                          </div> -->
                           <div class="block-descr">
                               <div class="block-descr__title">
                                   Осуществляем полный комплекс мероприятий:
@@ -237,11 +237,12 @@ get_header();
                         foreach($posts as $post) {
                          
                             setup_postdata($post);
+                            //$img_url = get_field('object_photo', get_the_ID());
 
                       ?>
 
                       <div class="objects-wrapper">
-                        <div class="objects-slider__item" style="width: 350px;">
+                        <div class="objects-slider__item" style="background:url(<?php echo get_field('object_photo', get_the_ID()); ?>) center no-repeat">
                           <h3 class="slider-item__title"> <?php the_title(); ?>
 
                           </h3>
